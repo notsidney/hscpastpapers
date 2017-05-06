@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HSC Past Papers</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap Combobox CSS -->
+    <link rel="stylesheet" href="css/bootstrap-combobox.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/hscpapers.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <a href="?" class="navbar-brand">HSC Past Papers</a>
+
+        <form class="navbar-form navbar-left form-inline">
+
+          <select name="course" class="combobox form-control" id="select-course">
+            <option value="" selected>Course</option>
+            <option value="mathematics">Mathematics</option>
+            <option>Mathematics (Extension 1)</option>
+            <option>English</option>
+          </select>
+
+          <select name="year" class="combobox form-control" id="select-year">
+            <option value="" selected>Year</option>
+            <option>2001</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Go</button>
+
+        </form>
+
+      </div>
+    </nav>
+
+    <iframe src="placeholder.html" id="iframe">
+    </iframe>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap Combobox -->
+    <script src="js/bootstrap-combobox.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/hscpapers.js"></script>
+  </body>
+</html>
