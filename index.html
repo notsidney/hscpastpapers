@@ -15,23 +15,42 @@
 		<div class="ui top fixed menu">
 			<a href="?" class="header item">HSC Past Papers</a>
 
-      <form class="ui item equal width form">
+      <form class="ui form item">
 
-    				<div class="ui pointing dropdown">
-    					<input type="hidden" name="course">
-              <i class="book icon"></i>
-    					<span class="text">Course</span>
-              <i class="dropdown icon"></i>
-    					<div class="menu">
-              <div class="ui icon search input">
-      <i class="search icon"></i>
-      <input type="text" placeholder="Search courses...">
-    </div>
-    <div class="divider"></div>
-    						<div class="item">Mathematics</div>
-                <div class="item">English</div>
-    					</div>
-    				</div>
+				<div class="ui floating dropdown">
+					<input type="hidden" name="course">
+          <i class="book icon"></i>
+					<div class="text">Course</div>
+          <i class="dropdown icon"></i>
+					<div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search Courses&hellip;">
+            </div>
+
+						<div class="item">Mathematics</div>
+            <div class="item">English</div>
+            <div class="item">Physics</div>
+            <div class="item">Software Design and Development</div>
+					</div>
+				</div>
+
+        <div class="ui floating dropdown">
+          <input type="hidden" name="year">
+          <i class="time icon"></i>
+          <div class="text">Year</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="ui icon search input">
+              <input type="text" placeholder="Enter Year&hellip;">
+            </div>
+
+            <div class="item">2016</div>
+            <div class="item">2015</div>
+            <div class="item">2014</div>
+            <div class="item">2013</div>
+          </div>
+        </div>
 
       </form>
 		</div>
