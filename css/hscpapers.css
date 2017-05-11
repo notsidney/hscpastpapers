@@ -5,3 +5,11 @@ body {
 .ui.text.menu {
 	background: #fff;
 }
+
+.ui.form {
+	display: flex;
+}
+
+.ui.dropdown>.dropdown.icon {
+  margin-left: 0.5em;
+}
