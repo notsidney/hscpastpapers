@@ -14,3 +14,18 @@ body {
 .ui.buttons .button:last-child {
 	border-radius: 0;
 }
+
+iframe {
+	border: none;
+	height: 100%;
+	height: calc(100% - 41px);
+	position: absolute;
+	top: 41px;
+	width: 100%;
+}
+
+.ui.message {
+	background: 0 0;
+	box-shadow: none;
+	color: rgba(255,255,255,.9);
+}
