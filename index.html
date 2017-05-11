@@ -12,27 +12,28 @@
 	</head>
 
 	<body>
-		<div class="ui top fixed text menu">
+		<div class="ui top fixed menu">
 			<a href="?" class="header item">HSC Past Papers</a>
 
-			<div class="item">
-				<select class="ui search selection dropdown">
-					<option value="">Course</option>
-					<option value="mathematics">Mathematics</option>
-					<option value="english">English</option>
-				</select>
-			</div>
+      <form class="ui item equal width form">
 
-			<div class="item">
-				<div class="ui pointing dropdown labeled search icon button">
-					<input type="hidden" name="course">
-					<i class="graduate cap icon"></i>
-					<span class="text">Course</span>
-					<div class="menu">
-						<div class="item">Mathematics</div>
-					</div>
-				</div>
-			</div>
+    				<div class="ui pointing dropdown">
+    					<input type="hidden" name="course">
+              <i class="book icon"></i>
+    					<span class="text">Course</span>
+              <i class="dropdown icon"></i>
+    					<div class="menu">
+              <div class="ui icon search input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Search courses...">
+    </div>
+    <div class="divider"></div>
+    						<div class="item">Mathematics</div>
+                <div class="item">English</div>
+    					</div>
+    				</div>
+
+      </form>
 		</div>
 
 
