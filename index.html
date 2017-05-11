@@ -15,9 +15,9 @@
 		<div class="ui top fixed menu">
 			<a href="?" class="header item">HSC Past Papers</a>
 
-      <form class="ui form item">
+      <form class="ui form">
 
-				<div class="ui floating dropdown">
+				<div class="ui dropdown item">
 					<input type="hidden" name="course">
           <i class="book icon"></i>
 					<div class="text">Course</div>
@@ -35,9 +35,9 @@
 					</div>
 				</div>
 
-        <div class="ui floating dropdown">
+        <div class="ui dropdown item">
           <input type="hidden" name="year">
-          <i class="time icon"></i>
+          <i class="history icon"></i>
           <div class="text">Year</div>
           <i class="dropdown icon"></i>
           <div class="menu">
@@ -52,7 +52,31 @@
           </div>
         </div>
 
+        <div class="ui dropdown item">
+          <input type="hidden" name="doc">
+          <div class="text"><i class="file icon"></i>Document</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item"><i class="folder open outline icon"></i>Exam Pack</div>
+            <div class="item"><i class="file pdf outline icon"></i>Paper</div>
+            <div class="item"><i class="file pdf outline icon"></i>Marking Guidlines</div>
+            <div class="item"><i class="file pdf outline icon"></i>Notes</div>
+          </div>
+        </div>
+
       </form>
+
+      <div class="right menu">
+        <div class="compact ui buttons">
+          <button class="ui basic button" id="newtab">
+            <i class="add icon"></i>New tab
+          </button>
+          <button class="ui basic button" id="download">
+            <i class="download icon"></i>Download PDF
+          </button>
+        </div>
+      </div>
+
 		</div>
 
 

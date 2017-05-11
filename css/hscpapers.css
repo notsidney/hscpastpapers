@@ -2,14 +2,15 @@ body {
 	background-color: rgb(82, 86, 89);
 }
 
-.ui.text.menu {
-	background: #fff;
-}
-
 .ui.form {
 	display: flex;
 }
 
-.ui.dropdown>.dropdown.icon {
-  margin-left: 0.5em;
+.ui.menu .item:before {
+	content: none;
+}
+
+.ui.buttons .button:first-child,
+.ui.buttons .button:last-child {
+	border-radius: 0;
 }
