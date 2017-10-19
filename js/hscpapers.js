@@ -88,6 +88,8 @@ $('#doc-input').change( function(){
 	for (m = 0; m < jsonData[courseIndex].packs[yearIndex].docs.length; m++) {
 		if (jsonData[courseIndex].packs[yearIndex].docs[m]['doc_name'].toLowerCase() == $('#doc-input')[0].value) {
 			docLink = jsonData[courseIndex].packs[yearIndex].docs[m]['doc_link'];
+			// https fix
+			docLink = docLink.replace('http', 'https');
 			break;
 		}
 	}
