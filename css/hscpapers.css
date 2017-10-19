@@ -1,18 +1,46 @@
 body {
-	background-color: rgb(82, 86, 89);
+	background-color: #262626;
 }
 
-.ui.form {
-	display: flex;
+body,
+.ui.menu,
+.ui.input input,
+.ui.modal>.header {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.ui.menu .item:before {
-	content: none;
+.ui.loading.dropdown .text,
+.ui.loading.dropdown .left.icon {
+	display: none;
+}
+.ui.loading.dropdown i.dropdown.icon {
+	margin-left: 0;
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
 }
 
-.ui.buttons .button:first-child,
-.ui.buttons .button:last-child {
-	border-radius: 0;
+.ui.dropdown .text.overflow {
+	line-height: 40px;
+  margin: -13px 0;
+	max-width: 120px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui.menu .item.loader-item {
+	padding: 0 2em;
+}
+
+.ui.inverted.menu button.link.item.disabled:hover {
+	background: transparent;
+	color: rgba(225,225,225,.3);
+}
+
+button.item.link {
+	border: 0;
 }
 
 iframe {
@@ -20,10 +48,11 @@ iframe {
 	height: 100%;
 	height: calc(100% - 41px);
 	position: absolute;
-	top: 41px;
+	top: 40px;
 	width: 100%;
 }
 
+/* Placeholder.html */
 .vertical.align.container {
 	align-items: center;
 	display: flex;

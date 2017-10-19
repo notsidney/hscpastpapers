@@ -12,74 +12,94 @@
 	</head>
 
 	<body>
-		<div class="ui top fixed menu">
-			<a href="?" class="header item">HSC Past Papers</a>
+		<div class="ui top borderless inverted fixed menu">
+			<button class="header item link" id="reload">HSC Past Papers</button>
 
-      <form class="ui form">
-
-				<div class="ui dropdown item">
-					<input type="hidden" name="course">
-          <i class="book icon"></i>
-					<div class="text">Course</div>
+				<div class="ui loading dropdown item" id="course-dropdown">
+					<input type="hidden" name="course" id="course-input">
+          <i class="student left icon"></i>
+					<span class="text overflow">Course</span>
           <i class="dropdown icon"></i>
+
 					<div class="menu">
+            <div class="header">Select Course</div>
             <div class="ui icon search input">
               <i class="search icon"></i>
-              <input type="text" placeholder="Search Courses&hellip;">
+              <input type="text" placeholder="Search courses&hellip;">
             </div>
 
-						<div class="item">Mathematics</div>
-            <div class="item">English</div>
-            <div class="item">Physics</div>
-            <div class="item">Software Design and Development</div>
-					</div>
+            <div class="scrolling menu" id="course-menu"></div>
+
+          </div>
 				</div>
 
-        <div class="ui dropdown item">
-          <input type="hidden" name="year">
-          <i class="history icon"></i>
-          <div class="text">Year</div>
+        <div class="ui disabled dropdown item" id="year-dropdown">
+          <input type="hidden" name="year" id="year-input">
+          <i class="history left icon"></i>
+          <span class="text">Year</span>
           <i class="dropdown icon"></i>
+
           <div class="menu">
+            <div class="header">Select Year</div>
             <div class="ui icon search input">
-              <input type="text" placeholder="Enter Year&hellip;">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search years&hellip;">
             </div>
 
-            <div class="item">2016</div>
-            <div class="item">2015</div>
-            <div class="item">2014</div>
-            <div class="item">2013</div>
+            <div class="scrolling menu" id="year-menu"></div>
+
           </div>
         </div>
 
-        <div class="ui dropdown item">
-          <input type="hidden" name="doc">
-          <div class="text"><i class="file icon"></i>Document</div>
+        <div class="ui disabled dropdown item" id="doc-dropdown">
+          <input type="hidden" name="doc" id="doc-input">
+          <i class="file pdf outline left icon"></i>
+          <span class="text overflow">Document</span>
           <i class="dropdown icon"></i>
+
           <div class="menu">
-            <div class="item"><i class="folder open outline icon"></i>Exam Pack</div>
-            <div class="item"><i class="file pdf outline icon"></i>Paper</div>
-            <div class="item"><i class="file pdf outline icon"></i>Marking Guidlines</div>
-            <div class="item"><i class="file pdf outline icon"></i>Notes</div>
+            <div class="header">Select Document</div>
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search documents&hellip;">
+            </div>
+
+            <div class="scrolling menu" id="doc-menu"></div>
+
           </div>
         </div>
 
-      </form>
+      <div class="item loader-item">
+        <div class="ui small inverted loader" id="iframe-loader"></div>
+      </div>
 
       <div class="right menu">
-        <div class="compact ui buttons">
-          <button class="ui basic button" id="newtab">
-            <i class="add icon"></i>New tab
-          </button>
-          <button class="ui basic button" id="download">
-            <i class="download icon"></i>Download PDF
-          </button>
-        </div>
+        <button class="item link disabled" disabled id="link">
+          <i class="copy icon"></i>Copy link
+        </button>
+        <a class="item disabled" download target="_blank" id="download">
+          <i class="download icon"></i>Download
+        </a>
+        <a class="item disabled" target="_blank" id="exampack">
+          <i class="external icon"></i>Exam pack
+        </a>
+        <a href class="item" target="_blank">
+          <i class="add icon"></i>New tab
+        </a>
+        <button class="item link" id="about">
+          <i class="info icon"></i>About
+        </button>
       </div>
 
 		</div>
-    <iframe src="placeholder.html"></iframe>
 
+    <iframe src="placeholder.html" id="iframe"></iframe>
+
+    <div class="ui tiny modal" id="about-modal">
+      <i class="close icon"></i>
+      <div class="header">HSC Past Papers</div>
+      <div class="scrolling content">??</div>
+    </div>
 
 		<script
 		  src="https://code.jquery.com/jquery-3.1.1.min.js"
