@@ -32,8 +32,11 @@ button {
   white-space: nowrap;
 }
 
-.ui.menu .item.loader-item {
-	padding: 0 2em;
+#more-dropdown > .icon {
+	margin-right: 0;
+}
+#more-dropdown button {
+	width: 100%;
 }
 
 .ui.inverted.menu button.link.item.disabled:hover {
@@ -55,17 +58,46 @@ iframe {
 }
 
 /* Placeholder.html */
-.vertical.align.container {
+.vertical.align.container.placeholder {
 	align-items: center;
 	display: flex;
 	height: 100%;
 	justify-content: center;
 }
 
-.ui.message {
+.ui.placeholder.message {
 	background: 0 0;
-	box-shadow: none;
-	color: rgba(255,255,255,.9);
 	cursor: default;
+	text-align: center;
 	user-select: none;
+}
+
+.ui.placeholder .section.divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.ui.placeholder.message .student.icon {
+	margin: 0 .3em 0 .1em;
+}
+
+/* Mobile nav */
+@media (min-width: 1080px) {
+	#more-dropdown { display: none; }
+	/* Also: extend width of dropdown text for larger screens */
+	.ui.dropdown .text.overflow {
+		max-width: calc(120px + (100vw - 1084px - 40px) / 2);
+	}
+}
+@media (max-width: 1079px) {
+	#desktop-menu { display: none; }
+	/* Also: flexible width for dropdown text for larger screens */
+	.ui.dropdown .text.overflow {
+		max-width: calc(120px + (100vw - 584px - 10px) / 2);
+	}
+}
+/* Just hide the dropdown text */
+@media (max-width: 400px) {
+	.ui.dropdown .text { display: none;	}
 }
