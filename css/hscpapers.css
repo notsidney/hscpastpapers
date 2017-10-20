@@ -2,12 +2,14 @@ body {
 	background-color: #262626;
 }
 
-body,
-.ui.menu,
-.ui.input input,
-.ui.modal>.header {
+button {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#reload {
+	padding-bottom: 0;
+	padding-top: 0;
 }
 
 .ui.loading.dropdown .text,

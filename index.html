@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/icon48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon64.png">
 
     <title>HSC Past Papers</title>
 
-    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/hscpapers.css">
 	</head>
 
 	<body>
 		<div class="ui top borderless inverted fixed menu">
-			<button class="header item link" id="reload">HSC Past Papers</button>
+
+			<button class="header item link" id="reload">
+        <div class="ui right spaced image">
+          <img src="img/icon.svg" width="16" height="16">
+        </div>
+        HSC Past Papers
+      </button>
 
 				<div class="ui loading dropdown item" id="course-dropdown">
 					<input type="hidden" name="course" id="course-input">
@@ -97,15 +107,75 @@
 
     <div class="ui tiny modal" id="about-modal">
       <i class="close icon"></i>
-      <div class="header">HSC Past Papers</div>
-      <div class="scrolling content">??</div>
+      <h2 class="ui header">
+        <img src="img/icon.svg" width="48" height="48" class="ui image">
+        <div class="content">HSC Past Papers</div>
+      </h2>
+      <div class="scrolling content">
+        <p>
+          &copy; 2017 Sidney Alcantara.<br>
+          This website and its source code are freely available under the MIT Licence.
+        </p>
+        <p>
+          <a class="ui small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/blob/master/LICENSE">
+            <i class="external icon"></i>
+            View licence
+          </a>
+          <a class="ui small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/">
+            <i class="github icon"></i>
+            View source code
+          </a>
+        </p>
+        <div class="ui horizontal section divider">Built with</div>
+        <p>
+          <a href="https://semantic-ui.com/"
+            class="ui small compact button" target="_blank">
+            <i class="external icon"></i>
+            Semantic UI 2.2.13
+          </a>
+          <a href="http://jquery.com/"
+            class="ui small compact button" target="_blank">
+            <i class="external icon"></i>
+            jQuery 3.1.1
+          </a>
+          <a href="https://github.com/notseenee/nesappscraper"
+            class="ui small compact button" target="_blank">
+            <i class="external icon"></i>
+            NESA PP Scraper
+          </a>
+        </p>
+        <div class="ui horizontal section divider">Disclaimer</div>
+        <p>
+          This web app is not at all affiliated or associated with the NSW
+          Education Standards Authority (NESA). All documents are owned by the
+          State of New South Wales, provided by NESA. This web app was built for
+          informational purposes only.
+        </p>
+        <div class="ui horizontal section divider">Report an issue</div>
+        <p>Report an issue if a link is broken or send a feature request:</p>
+        <p>
+          <a class="ui small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/issues/new">
+            <i class="github icon"></i>
+            Report on GitHub
+          </a>
+          <a class="ui small compact button" target="_blank"
+            href="https://gitreports.com/issue/notseenee/hscpastpapers">
+            <i class="external icon"></i>
+            Report anonymously
+          </a>
+        </p>
+
+      </div>
     </div>
 
 		<script
 		  src="https://code.jquery.com/jquery-3.1.1.min.js"
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		  crossorigin="anonymous"></script>
-		<script src="js/semantic.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
 		<script src="js/hscpapers.js"></script>
 	</body>
 </html>
