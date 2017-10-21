@@ -106,6 +106,8 @@ $('#doc-input').change( function(){
 		if (jsonData[courseIndex].packs[yearIndex].docs[m]['doc_name'].toLowerCase()
 			== $('#doc-input')[0].value) {
 			docLink = jsonData[courseIndex].packs[yearIndex].docs[m]['doc_link'];
+			// force https
+			docLink = docLink.replace('http', 'https');
 			break;
 		}
 	}
