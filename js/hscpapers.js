@@ -34,11 +34,7 @@ function populateDropdown(searchIn, searchFor, pushTo, reverse) {
 	var items = [];
 	// loop through each item and push to array
 	for (i = 0; i < searchIn.length; i++) {
-		// format each
-		var formatted = searchIn[i][searchFor]
-			.replace('Hsc', 'HSC')
-			.replace('hsc', 'HSC');
-		items.push(formatted);
+		items.push(searchIn[i][searchFor]);
 	}
 	// sort array
 	items.sort();
