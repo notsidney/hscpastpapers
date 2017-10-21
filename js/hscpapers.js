@@ -18,6 +18,14 @@ $(document).ready(function(){
 				.dropdown({ selectOnKeydown: false });
 		}
 	);
+	// Update timestamp
+	$.getJSON(
+		'https://raw.githubusercontent.com/notseenee/nesappscraper/master/meta.json',
+		function(data) {
+			console.log(data.timestamp);
+			$('#timestamp').html( data.timestamp.replace('T',' ').substring(0,19) );
+		}
+	);
 });
 
 // parses JSON to populate dropdowns
