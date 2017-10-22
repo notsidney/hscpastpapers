@@ -40,14 +40,14 @@
     <!-- top menu -->
 		<div class="ui top borderless inverted fixed menu">
 
-			<button id="logo" class="header item link popup" data-content="Reload">
+			<a id="logo" class="item" href="?">
         <img src="img/icon.svg" width="16" height="16" class="ui image">
         <div class="ui active loader" id="iframe-loader"></div>
-      </button>
+      </a>
 
 			<div id="course-dropdown" class="ui loading dropdown item">
 				<input type="hidden" name="course" id="course-input">
-        <i class="student left icon"></i>
+        <i class="student left icon compact"></i>
 				<span class="text overflow">Course</span>
         <i class="dropdown icon"></i>
 
@@ -64,7 +64,7 @@
 
       <div id="year-dropdown" class="ui disabled dropdown item">
         <input type="hidden" name="year" id="year-input">
-        <i class="history left icon"></i>
+        <i class="history left icon compact"></i>
         <span class="text">Year</span>
         <i class="dropdown icon"></i>
 
@@ -81,7 +81,7 @@
 
       <div id="doc-dropdown" class="ui disabled dropdown item">
         <input type="hidden" name="doc" id="doc-input">
-        <i class="file pdf outline left icon"></i>
+        <i class="file pdf outline left icon compact"></i>
         <span class="text overflow">Document</span>
         <i class="dropdown icon"></i>
 
@@ -97,38 +97,52 @@
       </div>
 
       <!-- mobile menu -->
-      <div id="more-dropdown" class="ui dropdown item right">
-        <i class="ellipsis vertical icon"></i>
-        <div class="ui menu">
+      <div id="mobile-menu" class="right menu">
 
-          <button class="item link disabled button-link" disabled>
-            <i class="copy icon"></i>Copy link
-          </button>
-          <a class="item disabled button-download" download target="_blank">
-            <i class="download icon"></i>Download
-          </a>
-          <a class="item disabled button-exampack popup" target="_blank"
-            data-content="View the official NESA page for this set of documents"
-            data-position="left center">
-            <i class="external icon"></i>Exam pack
-          </a>
-          <a href class="item popup" target="_blank"
-            data-content="Create a new HSC Past Papers tab"
-            data-position="left center">
-            <i class="add icon"></i>New tab
-          </a>
-          <button class="item link button-about">
-            <i class="info icon"></i>About
-          </button>
+        <a class="item link button-reset" href="?">
+          <i class="undo icon compact"></i>
+          <span class="text">Reset</span>
+        </a>
 
+        <div id="more-dropdown" class="ui dropdown item">
+          <i class="ellipsis vertical icon"></i>
+          <div class="ui menu">
+
+            <button class="item link disabled button-link" disabled>
+              <i class="copy icon"></i>Copy link
+            </button>
+            <a class="item disabled button-download" download target="_blank">
+              <i class="download icon"></i>Download
+            </a>
+            <a class="item disabled button-exampack popup" target="_blank"
+              data-content="View the official NESA page for this set of documents"
+              data-position="left center">
+              <i class="external icon"></i>Exam pack
+            </a>
+            <a href class="item popup" target="_blank"
+              data-content="Create a blank new HSC Past Papers tab"
+              data-position="left center">
+              <i class="add icon"></i>New tab
+            </a>
+            <button class="item link button-about">
+              <i class="info icon"></i>About
+            </button>
+
+          </div>
         </div>
+
       </div>
 
       <!-- desktop menu -->
       <div id="desktop-menu" class="right menu">
 
+        <a class="item link button-reset" href="?">
+          <i class="undo icon"></i>
+          <span class="text">Reset</span>
+        </a>
+
         <button class="item link disabled button-link" disabled>
-          <i class="copy icon"></i>Copy link
+          <i class="linkify icon"></i>Copy link
         </button>
         <a class="item disabled button-download" download target="_blank">
           <i class="download icon"></i>Download
@@ -138,8 +152,8 @@
           data-position="bottom center">
           <i class="external icon"></i>Exam pack
         </a>
-        <a href class="item popup" target="_blank"
-          data-content="Create a new HSC Past Papers tab"
+        <a href="?" class="item popup" target="_blank"
+          data-content="Create a blank new HSC Past Papers tab"
           data-position="bottom center">
           <i class="add icon"></i>New tab
         </a>
@@ -164,7 +178,7 @@
         <div class="content">
           HSC Past Papers
           <div class="sub header">
-            Version 1.2.6 <br>
+            Version 1.3.0 <br>
             Data last updated <span id="timestamp"></span>
           </div>
         </div>
