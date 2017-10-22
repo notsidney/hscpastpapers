@@ -26,6 +26,10 @@ $(document).ready(function(){
 			$('#timestamp').html( data.timestamp.replace('T',' ').substring(0,19) );
 		}
 	);
+	// Add logo/reload popup
+	$('.popup').popup();
+	// Set about modal transition duration
+	$('#about-modal').modal({ duration: 200 });
 });
 
 // parses JSON to populate dropdowns

@@ -40,7 +40,7 @@
     <!-- top menu -->
 		<div class="ui top borderless inverted fixed menu">
 
-			<button id="logo" class="header item link">
+			<button id="logo" class="header item link popup" data-content="Reload">
         <img src="img/icon.svg" width="16" height="16" class="ui image">
         <div class="ui active loader" id="iframe-loader"></div>
       </button>
@@ -107,10 +107,14 @@
           <a class="item disabled button-download" download target="_blank">
             <i class="download icon"></i>Download
           </a>
-          <a class="item disabled button-exampack" target="_blank">
+          <a class="item disabled button-exampack popup" target="_blank"
+            data-content="View the official NESA page for this set of documents"
+            data-position="left center">
             <i class="external icon"></i>Exam pack
           </a>
-          <a href class="item" target="_blank">
+          <a href class="item popup" target="_blank"
+            data-content="Create a new HSC Past Papers tab"
+            data-position="left center">
             <i class="add icon"></i>New tab
           </a>
           <button class="item link button-about">
@@ -129,10 +133,14 @@
         <a class="item disabled button-download" download target="_blank">
           <i class="download icon"></i>Download
         </a>
-        <a class="item disabled button-exampack" target="_blank">
+        <a class="item disabled button-exampack popup" target="_blank"
+          data-content="View the official NESA page for this set of documents"
+          data-position="bottom center">
           <i class="external icon"></i>Exam pack
         </a>
-        <a href class="item" target="_blank">
+        <a href class="item popup" target="_blank"
+          data-content="Create a new HSC Past Papers tab"
+          data-position="bottom center">
           <i class="add icon"></i>New tab
         </a>
         <button class="item link button-about">
@@ -156,7 +164,7 @@
         <div class="content">
           HSC Past Papers
           <div class="sub header">
-            Version 1.2.5 <br>
+            Version 1.2.6 <br>
             Data last updated <span id="timestamp"></span>
           </div>
         </div>
