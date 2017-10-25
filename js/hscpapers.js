@@ -5,9 +5,58 @@ selectedCourse, selectedYear, selectedDoc,
 params;
 
 // get url parameters
-function urlParam(name){
+function urlParam(name) {
 	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 	return results === null ? '' : decodeURIComponent(results[1]);
+}
+// if not found
+function urlNotFound(type) {
+	var table = $('#not-found-modal-table'),
+	modalType = $('#not-found-modal-type');
+	// clear
+	table.html('');
+	modalType.html('');
+	// add modal title
+	modalType.html(type);
+
+	// writer function
+	function write(typeToWrite, val, error) {
+		if (error) {
+			table.append('<tr class="error"><td>' + typeToWrite +
+				'</td><td>' + val + '</td></tr>');
+		} else {
+			table.append('<tr><td>' + typeToWrite + '</td><td>' + val + '</td></tr>');
+		}
+	}
+
+	// show url params
+	if (type == 'Course') { write('Course', urlCourse, true) }
+	else if (type == 'Year') {
+		write('Course', urlCourse, false);
+		write('Year', urlYear, true);
+	}
+	else if (type == 'Doc') {
+		write('Course', urlCourse, false);
+		write('Year', urlYear, false);
+		write('Doc', urlDoc, true);
+	}
+
+	// show the modal
+	$('#not-found-modal')
+		.modal({
+			duration: 200,
+			onApprove: function() {
+				// clear urlParams variables
+				urlCourse = '';
+				urlYear = '';
+				urlDoc = '';
+				// show dropdown
+				setTimeout(function(){
+					$('#' + type.toLowerCase() + '-dropdown').dropdown('show')
+				}, 200);
+			}
+		})
+		.modal('show');
 }
 
 $(document).ready(function(){
@@ -39,6 +88,8 @@ $(document).ready(function(){
 				$('#course-dropdown')
 					.dropdown('set selected', urlCourse)
 					.dropdown('hide');
+				// if not found
+				if ( !$('#course-dropdown').dropdown('get value') ) urlNotFound('Course');
 			}
 		}
 	);
@@ -104,6 +155,8 @@ $('#course-input').change( function() {
 		$('#year-dropdown')
 			.dropdown('set selected', urlYear)
 			.dropdown('hide');
+		// if not found
+		if ( !$('#year-dropdown').dropdown('get value') ) urlNotFound('Year');
 	}
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
@@ -139,6 +192,8 @@ $('#year-input').change( function() {
 		$('#doc-dropdown')
 			.dropdown('set selected', urlDoc)
 			.dropdown('hide');
+		// if not found
+		if ( !$('#doc-dropdown').dropdown('get value') ) urlNotFound('Doc');
 	}
 	// activate exam pack buttons and adds link
 	$('.button-exampack')
