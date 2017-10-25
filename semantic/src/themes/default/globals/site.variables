@@ -134,7 +134,7 @@
 --------------------*/
 
 @linkColor           : #4183C4;
-@linkUnderline       : none;
+@linkUnderline       : underline;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
 
@@ -142,7 +142,7 @@
     Scroll Bars
 --------------------*/
 
-@useCustomScrollbars: true;
+@useCustomScrollbars: false;
 
 @customScrollbarWidth: 10px;
 
