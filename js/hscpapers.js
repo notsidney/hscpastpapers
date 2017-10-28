@@ -2,7 +2,7 @@ var jsonData,
 courseIndex, yearIndex, docLink,
 urlCourse, urlYear, urlDoc,
 selectedCourse, selectedYear, selectedDoc,
-params;
+params, version, timestamp;
 
 // get url parameters
 function urlParam(name) {
@@ -98,12 +98,37 @@ $(document).ready(function(){
 			}
 		}
 	);
+	// Get version
+	// $.getJSON(
+	// 	'version.json',
+	// 	function(data) {
+	// 		version = data.version;
+	// 		// show in about modal
+	// 		$('#version').html(data.version);
+	// 		// show in about popup
+	// 		$('.button-about')
+	// 			.popup({
+	// 				title: 'Version ' + data.version
+	// 			});
+	// 	}
+	// );
 	// Update timestamp
 	$.getJSON(
 		'https://raw.githubusercontent.com/notseenee/nesappscraper/master/meta.json',
 		function(data) {
-			console.log(data.timestamp);
-			$('#timestamp').html( data.timestamp.replace('T',' ').substring(0,19) );
+			// create new date object so it can be formatted
+			timestamp = new Date(data.timestamp);
+			// show in about modal
+			$('#timestamp')
+				.html( timestamp.toLocaleDateString() )
+				.popup({
+					html: timestamp.toLocaleTimeString() + '<br>Sydney time'
+				});
+			// add to about popup
+			$('.button-about').popup({
+				title: 'Version ' + version,
+				content: 'Data updated ' + timestamp.toLocaleDateString()
+			});
 		}
 	);
 	// Add logo/reload popup
@@ -245,5 +270,9 @@ $('#doc-input').change( function(){
 $('.button-link').click( function(){ prompt('Copy link below:', docLink); });
 // when about button is clicked, show modal
 $('.button-about').click( function(){ $('#about-modal').modal('show'); });
+// if from /about, remove ?open=about from url
+$('#close-modal').click( function(){
+	if (urlParam('open') == 'about') history.pushState(null, '', '?');
+});
 // when iframe finishes loading, remove loading indicator on logo
 $('#iframe').on('load', function(){	$('#loader').removeClass('active'); });

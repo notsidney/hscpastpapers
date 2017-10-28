@@ -52,6 +52,30 @@ iframe {
 	width: 100%;
 }
 
+.ui.popup>.header+.content {
+	padding-top: .2em;
+}
+
+.modals.dimmer .ui.scrolling.modal {
+	margin: 1rem auto !important;
+}
+.ui.modal .ui.header .sub.header {
+	color: rgba(0,0,0,.75);
+	font-size: 1rem;
+}
+.ui.modal>.close {
+	font-size: 1rem;
+	top: 1.5rem;
+  right: 1.25rem;
+}
+.ui.modal .ui.button {
+	color: rgba(0,0,0,.8);
+	margin-bottom: .5em;
+}
+.ui.modal .ui.button>.icon {
+	opacity: 1;
+}
+
 /* Placeholder.html */
 .vertical.align.container.placeholder {
 	align-items: center;

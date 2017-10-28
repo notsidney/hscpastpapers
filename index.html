@@ -152,7 +152,8 @@
               <i class="folder open outline icon"></i>Open another doc
             </a>
             <div class="ui divider"></div>
-            <button class="item link button-about">
+            <button class="item link button-about popup"
+              data-position="left center">
               <i class="info icon"></i>About
             </button>
 
@@ -190,7 +191,7 @@
           data-position="bottom center">
           <i class="folder open outline icon"></i>Open another doc
         </a>
-        <button class="item link button-about">
+        <button class="item link button-about popup">
           <i class="info icon"></i>About
         </button>
 
@@ -204,20 +205,21 @@
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal">
 
-      <i class="close icon"></i>
+      <i id="close-modal" class="circular inverted close icon"></i>
 
       <h2 class="ui header">
         <img src="img/icon.svg" width="48" height="48" class="ui image">
         <div class="content">
           HSC Past Papers
           <div class="sub header">
-            Version 1.4.0 <br>
-            Data last updated <span id="timestamp"></span> Sydney time
+            Version <span id="version"></span><br>
+            Data updated 
+            <span id="timestamp" data-position="bottom center"></span>
           </div>
         </div>
       </h2>
 
-      <div class="scrolling content">
+      <div class="content">
 
         <p>
           <b>&copy; 2017 Sidney Alcantara</b><br>
@@ -226,18 +228,18 @@
         <p>
           <a class="ui small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/blob/master/LICENSE">
-            <i class="external icon"></i>
-            View licence
+            <i class="law icon"></i>
+            Licence
           </a>
           <a class="ui small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/">
             <i class="github icon"></i>
-            View source code
+            Source code
           </a>
           <a class="ui small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/commits">
             <i class="list icon"></i>
-            View changelog
+            Changelog
           </a>
         </p>
 
@@ -261,16 +263,23 @@
           </a>
         </p>
 
-        <div class="ui horizontal section divider">Disclaimer</div>
+        <div class="ui horizontal section divider">
+          Disclaimer and Copyright Notice
+        </div>
 
         <p>
-          This web app is not at all affiliated or associated with the NSW
-          Education Standards Authority (NESA). All documents linked to by this
-          web app are owned by the State of New South Wales, provided by NESA.
+          This web app is not affiliated with the NSW Education Standards
+          Authority (NESA). All documents linked to by this web app are owned by
+          the State of New South Wales, provided by NESA.
         </p>
-        <p>This web app was built for informational purposes only.</p>
-        <div class="ui horizontal section divider">Report an issue</div>
-        <p>Report an issue if a link is broken or send a feature request:</p>
+        <p>
+          This web app does not store copies of any NESA documents. No ownership
+          is claimed over them. This web app was built for informational
+          purposes only.
+        </p>
+        <div class="ui horizontal section divider">
+          Report issue or send feature request
+        </div>
         <p>
           <a class="ui small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/issues/new">
@@ -279,7 +288,7 @@
           </a>
           <a class="ui small compact button" target="_blank"
             href="https://gitreports.com/issue/notseenee/hscpastpapers">
-            <i class="external icon"></i>
+            <i class="send icon"></i>
             Report anonymously
           </a>
         </p>
