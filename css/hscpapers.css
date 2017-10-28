@@ -12,14 +12,8 @@ button {
 	padding-top: 0;
 }
 
-.ui.loading.dropdown .text,
-.ui.loading.dropdown .left.icon {
-	display: none;
-}
-.ui.loading.dropdown i.dropdown.icon {
-	margin-left: 0;
-	padding-bottom: 0 !important;
-	padding-top: 0 !important;
+.ui.disabled.dropdown {
+	opacity: 1;
 }
 
 .ui.dropdown .text.overflow {
@@ -35,7 +29,8 @@ button {
 #more-dropdown > .icon {
 	margin-right: 0;
 }
-#more-dropdown button {
+#more-dropdown button,
+#pdf-dropdown button {
 	width: 100%;
 }
 
@@ -87,18 +82,18 @@ iframe {
 	#mobile-menu { display: none; }
 	/* Also: extend width of dropdown text for larger screens */
 	.ui.dropdown .text.overflow {
-		max-width: calc(120px + (100vw - 1084px - 87px - 40px) / 2);
+		max-width: calc((100vw - 856px - 40px) / 2);
 	}
 }
 @media (max-width: 1079px) {
 	#desktop-menu { display: none; }
 	/* Also: flexible width for dropdown text for larger screens */
 	.ui.dropdown .text.overflow {
-		max-width: calc(120px + (100vw - 584px - 87px - 10px) / 2);
+		max-width: calc((100vw - 464px - 10px) / 2);
 	}
 }
 /* Just hide the dropdown text */
 @media (max-width: 540px) {
-	.ui.menu .text, .ui.menu .dropdown.icon { display: none; }
+	.ui.menu span.text, .ui.menu .dropdown.icon { display: none; }
 	.ui.menu .item>i.icon.compact { margin: 0; }
 }

@@ -28,7 +28,7 @@
     <meta property="og:url" content="https://hscpastpapers.com/">
     <meta property="og:title" content="HSC Past Papers">
     <meta property="og:description" content="Quickly browse HSC past papers. Not affiliated with NESA.">
-    <meta property="og:image" content="https://hscpastpapers.com/img/screenshot_fb_1.3.png">
+    <meta property="og:image" content="https://hscpastpapers.com/img/screenshot_fb_1.4.png">
     <!-- Google search -->
     <meta name="Description" content="Quickly browse HSC past papers. Not affiliated with NESA.">
 
@@ -44,10 +44,29 @@
 
 			<a id="logo" class="item" href="?">
         <img src="img/icon.svg" width="16" height="16" class="ui image">
-        <div class="ui active loader" id="iframe-loader"></div>
+        <div class="ui active loader" id="loader"></div>
       </a>
 
-			<div id="course-dropdown" class="ui loading dropdown item">
+      <noscript id="nojs" class="item">
+        <a class="ui red button" href="https://www.enable-javascript.com/">
+          <i class="warning sign icon"></i>
+          JavaScript is disabled. Click here to enable.
+        </a>
+      </noscript>
+
+      <div id="nojquery" class="item" style="display:none">
+        <a class="ui red button"
+        href="https://code.jquery.com/jquery-3.1.1.min.js">
+          <i class="warning sign icon"></i>
+          Unable to load jQuery. Click here to test.
+        </a>
+      </div>
+
+      <div id="loadingmsg" class="loading item">
+        Loading data&hellip;
+      </div>
+
+			<div id="course-dropdown" class="ui disabled dropdown item">
 				<input type="hidden" name="course" id="course-input">
         <i class="student left icon compact"></i>
 				<span class="text overflow">Course</span>
@@ -83,7 +102,7 @@
 
       <div id="doc-dropdown" class="ui disabled dropdown item">
         <input type="hidden" name="doc" id="doc-input">
-        <i class="file pdf outline left icon compact"></i>
+        <i class="file text left icon compact"></i>
         <span class="text overflow">Document</span>
         <i class="dropdown icon"></i>
 
@@ -98,34 +117,41 @@
         </div>
       </div>
 
+      <a class="item link button-reset" href="?">
+        <i class="undo icon compact"></i>
+        <span class="text">Reset</span>
+      </a>
+
       <!-- mobile menu -->
       <div id="mobile-menu" class="right menu">
 
-        <a class="item link button-reset" href="?">
-          <i class="undo icon compact"></i>
-          <span class="text">Reset</span>
-        </a>
-
         <div id="more-dropdown" class="ui dropdown item">
+          <span class="text">More</span>
           <i class="ellipsis vertical icon"></i>
           <div class="ui menu">
-
+            <div class="header">PDF</div>
+            <a class="item disabled button-download" target="_blank">
+              <i class="external icon"></i>Open in new tab
+            </a>
             <button class="item link disabled button-link" disabled>
-              <i class="copy icon"></i>Copy link
+              <i class="linkify icon"></i>Copy link
             </button>
             <a class="item disabled button-download" download target="_blank">
               <i class="download icon"></i>Download
             </a>
+            <div class="ui divider"></div>
             <a class="item disabled button-exampack popup" target="_blank"
               data-content="View the official NESA page for this set of documents"
               data-position="left center">
               <i class="external icon"></i>Exam pack
             </a>
-            <a href class="item popup" target="_blank"
+            <div class="ui divider"></div>
+            <a href="?" class="item popup" target="_blank"
               data-content="Create a blank new HSC Past Papers tab"
               data-position="left center">
-              <i class="add icon"></i>New tab
+              <i class="folder open outline icon"></i>Open another doc
             </a>
+            <div class="ui divider"></div>
             <button class="item link button-about">
               <i class="info icon"></i>About
             </button>
@@ -138,26 +164,31 @@
       <!-- desktop menu -->
       <div id="desktop-menu" class="right menu">
 
-        <a class="item link button-reset" href="?">
-          <i class="undo icon"></i>
-          <span class="text">Reset</span>
-        </a>
+        <div id="pdf-dropdown" class="ui dropdown disabled item">
+          <i class="file pdf outline left icon"></i>PDF
+          <i class="dropdown icon"></i>
 
-        <button class="item link disabled button-link" disabled>
-          <i class="linkify icon"></i>Copy link
-        </button>
-        <a class="item disabled button-download" download target="_blank">
-          <i class="download icon"></i>Download
-        </a>
+          <div class="menu">
+            <a class="item disabled button-download" target="_blank">
+              <i class="external icon"></i>Open in new tab
+            </a>
+            <button class="item link disabled button-link" disabled>
+              <i class="linkify icon"></i>Copy link
+            </button>
+            <a class="item disabled button-download" download target="_blank">
+              <i class="download icon"></i>Download
+            </a>
+          </div>
+        </div>
         <a class="item disabled button-exampack popup" target="_blank"
           data-content="View the official NESA page for this set of documents"
           data-position="bottom center">
           <i class="external icon"></i>Exam pack
         </a>
         <a href="?" class="item popup" target="_blank"
-          data-content="Create a blank new HSC Past Papers tab"
+          data-content="Creates a blank HSC Past Papers tab"
           data-position="bottom center">
-          <i class="add icon"></i>New tab
+          <i class="folder open outline icon"></i>Open another doc
         </a>
         <button class="item link button-about">
           <i class="info icon"></i>About
@@ -180,7 +211,7 @@
         <div class="content">
           HSC Past Papers
           <div class="sub header">
-            Version 1.3.3 <br>
+            Version 1.4.0 <br>
             Data last updated <span id="timestamp"></span> Sydney time
           </div>
         </div>
@@ -266,6 +297,18 @@
       <div class="actions"><button class="ui primary ok button">OK</button></div>
     </div>
 
+    <script>
+      // if JS is enabled but jQuery isn't loading, show warning
+      window.onload = function() {
+          if (window.jQuery) {  
+              // jQuery is loaded  
+              console.log('jQuery loaded');
+          } else {
+              // jQuery is not loaded
+              document.getElementById('nojquery').style.display = "block";
+          }
+      }
+    </script>
 		<script
 		  src="https://code.jquery.com/jquery-3.1.1.min.js"
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="

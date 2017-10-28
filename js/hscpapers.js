@@ -60,6 +60,8 @@ function urlNotFound(type) {
 }
 
 $(document).ready(function(){
+	// when jQuery loads, hide warning
+	$('#nojquery').hide();
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
@@ -78,9 +80,12 @@ $(document).ready(function(){
 			jsonData = data;
 			// populate course dropdown
 			populateDropdown(jsonData, 'course_name', '#course-menu', false);
+			// remove loading indicator
+			$('#loader').removeClass('active');
+			$('#loadingmsg').hide();
 			// activate course dropdown
 			$('#course-dropdown')
-				.removeClass('loading')
+				.removeClass('disabled')
 				.dropdown('show')
 				.dropdown({ selectOnKeydown: false });
 			// Select course from URL parameter
@@ -224,10 +229,11 @@ $('#doc-input').change( function(){
 	// open in iframe
 	$('#iframe').attr('src', docLink);
 	// add loading indicator on logo
-	$('#iframe-loader').addClass('active');
+	$('#loader').addClass('active');
 	// activate download & link buttons
 	$('.button-download').removeClass('disabled').attr('href', docLink);
 	$('.button-link').removeClass('disabled').removeAttr('disabled');
+	$('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
@@ -240,4 +246,4 @@ $('.button-link').click( function(){ prompt('Copy link below:', docLink); });
 // when about button is clicked, show modal
 $('.button-about').click( function(){ $('#about-modal').modal('show'); });
 // when iframe finishes loading, remove loading indicator on logo
-$('#iframe').on('load', function(){	$('#iframe-loader').removeClass('active'); });
+$('#iframe').on('load', function(){	$('#loader').removeClass('active'); });
