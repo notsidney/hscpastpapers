@@ -99,19 +99,19 @@ $(document).ready(function(){
 		}
 	);
 	// Get version
-	// $.getJSON(
-	// 	'version.json',
-	// 	function(data) {
-	// 		version = data.version;
-	// 		// show in about modal
-	// 		$('#version').html(data.version);
-	// 		// show in about popup
-	// 		$('.button-about')
-	// 			.popup({
-	// 				title: 'Version ' + data.version
-	// 			});
-	// 	}
-	// );
+	$.getJSON(
+		'version.json',
+		function(data) {
+			version = data.version;
+			// show in about modal
+			$('#version').html(data.version);
+			// show in about popup
+			$('.button-about')
+				.popup({
+					title: 'Version ' + data.version
+				});
+		}
+	);
 	// Update timestamp
 	$.getJSON(
 		'https://raw.githubusercontent.com/notseenee/nesappscraper/master/meta.json',
