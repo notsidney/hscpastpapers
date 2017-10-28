@@ -238,7 +238,7 @@ $('#doc-input').change( function(){
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	document.title = $('#year-dropdown .text').html() + ' ' +
-		$('#doc-dropdown .text').html() + ' - ' +
+		$('#doc-dropdown .text.overflow').html() + ' - ' +
 		$('#course-dropdown .text').html();
 });
 // when link button is clicked, show prompt
