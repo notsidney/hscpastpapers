@@ -265,6 +265,8 @@ $('#doc-input').change( function(){
 	document.title = $('#year-dropdown .text').html() + ' ' +
 		$('#doc-dropdown .text.overflow').html() + ' - ' +
 		$('#course-dropdown .text').html();
+	// enable dim function
+	dimmable = true;
 });
 // when link button is clicked, show prompt
 $('.button-link').click( function(){ prompt('Copy link below:', docLink); });
@@ -275,4 +277,27 @@ $('#close-modal').click( function(){
 	if (urlParam('open') == 'about') history.pushState(null, '', '?');
 });
 // when iframe finishes loading, remove loading indicator on logo
-$('#iframe').on('load', function(){	$('#loader').removeClass('active'); });
+$('#iframe').on('load', function(){ $('#loader').removeClass('active'); });
+
+// dims ui elements when idle
+var idleTime = 0,
+		dimmable = false;
+$(document).ready(function () {
+  // Increment the idle time counter every minute.
+  var idleInterval = setInterval(timerIncrement, 5000); // 5 sec
+  // Reset on mouse movement or key press
+  $(this).mousemove( function (e) { resetTimer(); } );
+  $(this).keypress( function (e) { resetTimer(); } );
+});
+// dim
+function timerIncrement() {
+  idleTime = idleTime + 5;
+  if (idleTime >= 30 && dimmable === true) { // 30 sec
+      $('body').addClass('idle');
+  }
+}
+// reset
+function resetTimer() {
+	idleTime = -5;
+	$('body').removeClass('idle');
+}

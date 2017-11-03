@@ -12,6 +12,13 @@ button {
 	padding-top: 0;
 }
 
+.ui.top.menu .item {
+	transition: opacity .2s;
+}
+.idle .ui.top.menu .item {
+	opacity: .5;
+}
+
 .ui.disabled.dropdown {
 	opacity: 1;
 }
