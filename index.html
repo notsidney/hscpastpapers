@@ -48,7 +48,7 @@
     <!-- top menu -->
 		<div class="ui top borderless inverted fixed menu">
 
-			<a id="logo" class="item" href="?">
+			<a id="logo" class="vertically fitted item" href="?">
         <img src="img/icon.svg" width="16" height="16" class="ui image">
         <div class="ui active loader" id="loader"></div>
       </a>
@@ -72,7 +72,7 @@
         Loading data&hellip;
       </div>
 
-			<div id="course-dropdown" class="ui disabled dropdown item split-hide">
+			<div id="course-dropdown" class="ui disabled dropdown item">
 				<input type="hidden" name="course" id="course-input">
         <i class="student left icon compact"></i>
 				<span class="text overflow">Course</span>
@@ -89,7 +89,7 @@
         </div>
 			</div>
 
-      <div id="year-dropdown" class="ui disabled dropdown item split-hide">
+      <div id="year-dropdown" class="ui disabled dropdown item">
         <input type="hidden" name="year" id="year-input">
         <i class="history left icon compact"></i>
         <span class="text">Year</span>
@@ -106,7 +106,7 @@
         </div>
       </div>
 
-      <div id="doc-dropdown" class="ui disabled dropdown item split-hide">
+      <div id="doc-dropdown" class="ui disabled dropdown item">
         <input type="hidden" name="doc" id="doc-input">
         <i class="file text left icon compact"></i>
         <span class="text overflow">Document</span>
@@ -123,10 +123,65 @@
         </div>
       </div>
 
-      <a class="item link button-reset" href="?">
+      <a class="item link button-reset split-hide" href="?">
         <i class="undo icon compact"></i>
         <span class="text">Reset</span>
       </a>
+
+      <div id="menu-split-right" class="menu split-show">
+
+        <div id="course-dropdown2" class="ui disabled dropdown item">
+          <input type="hidden" name="course" id="course-input2">
+          <i class="student left icon compact"></i>
+          <span class="text overflow">Course</span>
+          <i class="dropdown icon"></i>
+
+          <div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search courses&hellip;">
+            </div>
+
+            <div class="scrolling menu" id="course-menu2"></div>
+
+          </div>
+        </div>
+
+        <div id="year-dropdown2" class="ui disabled dropdown item">
+          <input type="hidden" name="year" id="year-input2">
+          <i class="history left icon compact"></i>
+          <span class="text">Year</span>
+          <i class="dropdown icon"></i>
+
+          <div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search years&hellip;">
+            </div>
+
+            <div class="scrolling menu" id="year-menu2"></div>
+
+          </div>
+        </div>
+
+        <div id="doc-dropdown2" class="ui disabled dropdown item">
+          <input type="hidden" name="doc" id="doc-input2">
+          <i class="file text left icon compact"></i>
+          <span class="text overflow">Document</span>
+          <i class="dropdown icon"></i>
+
+          <div class="menu">
+            <div class="ui icon search input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search documents&hellip;">
+            </div>
+
+            <div class="scrolling menu" id="doc-menu2"></div>
+
+          </div>
+        </div>
+
+      </div>
 
       <!-- mobile menu -->
       <div id="mobile-menu" class="right menu">
@@ -152,6 +207,9 @@
               <i class="external icon"></i>Exam pack
             </a>
             <div class="ui divider split-hide"></div>
+            <a class="item link button-reset split-show" href="?">
+              <i class="undo icon compact"></i>Reset
+            </a>
             <button class="item link button-split split-hide">
               <i class="columns icon"></i>Split view
             </button>
@@ -193,6 +251,10 @@
           data-position="bottom center">
           <i class="external icon"></i>Exam pack
         </a>
+        <a class="item link button-reset split-show" href="?">
+          <i class="undo icon compact"></i>
+          <span class="text">Reset</span>
+        </a>
         <button class="item link button-split split-hide">
           <i class="columns icon"></i>Split view
         </button>
@@ -209,7 +271,8 @@
 
     <!-- iframe that displays doc -->
     <iframe src="placeholder.html" id="iframe"></iframe>
-    <iframe src="https://educationstandards.nsw.edu.au/wps/wcm/connect/515c48d4-366b-41f3-b916-d2266f8ce560/2016-hsc-mg-aboriginal-studies.pdf?MOD=AJPERES" id="iframe-split-right" class="split-show"></iframe>
+    <iframe src="placeholder.html" id="iframe-split-right"
+      class="split-show"></iframe>
 
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal about">
@@ -230,45 +293,71 @@
 
       <div class="content">
 
+        <div class="ui horizontal section divider">About</div>
+
         <p>
-          <b>&copy; 2017 Sidney Alcantara</b><br>
-          This website and its source code are freely available under the MIT Licence.
+          <b>&copy; 2017 Sidney Alcantara</b>&nbsp;
+          <a class="ui basic small compact button" target="_blank"
+            href="mailto:theisidney@gmail.com">
+            <i class="mail outline icon"></i>
+            theisidney@gmail.com
+          </a>
         </p>
+
         <p>
-          <a class="ui small compact button" target="_blank"
+          This web app and its source code are freely available under the MIT Licence.
+          <br>
+          <a class="ui basic small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/blob/master/LICENSE">
             <i class="law icon"></i>
             Licence
           </a>
-          <a class="ui small compact button" target="_blank"
+          <a class="ui basic small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/">
             <i class="github icon"></i>
             Source code
           </a>
-          <a class="ui small compact button" target="_blank"
+          <a class="ui basic small compact button" target="_blank"
             href="https://github.com/notseenee/hscpastpapers/commits">
             <i class="list icon"></i>
             Changelog
           </a>
         </p>
 
-        <div class="ui horizontal section divider">Built with</div>
-
         <p>
+          This web app was built with
+          <br>
           <a href="https://semantic-ui.com/"
-            class="ui small compact button" target="_blank">
+            class="ui basic small compact button" target="_blank">
             <i class="external icon"></i>
             Semantic UI 2.2.13
           </a>
           <a href="http://jquery.com/"
-            class="ui small compact button" target="_blank">
+            class="ui basic small compact button" target="_blank">
             <i class="external icon"></i>
             jQuery 3.1.1
           </a>
           <a href="https://github.com/notseenee/nesappscraper"
-            class="ui small compact button" target="_blank">
+            class="ui basic small compact button" target="_blank">
             <i class="external icon"></i>
             NESA PP Scraper
+          </a>
+        </p>
+
+        <div class="ui horizontal section divider">
+          Report issue or send feature request
+        </div>
+
+        <p>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/issues/new">
+            <i class="github icon"></i>
+            Report on GitHub
+          </a>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://gitreports.com/issue/notseenee/hscpastpapers">
+            <i class="send icon"></i>
+            Report anonymously
           </a>
         </p>
 
@@ -285,21 +374,6 @@
           This web app does not store copies of any NESA documents. No ownership
           is claimed over them. This web app was built for informational
           purposes only.
-        </p>
-        <div class="ui horizontal section divider">
-          Report issue or send feature request
-        </div>
-        <p>
-          <a class="ui small compact button" target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/issues/new">
-            <i class="github icon"></i>
-            Report on GitHub
-          </a>
-          <a class="ui small compact button" target="_blank"
-            href="https://gitreports.com/issue/notseenee/hscpastpapers">
-            <i class="send icon"></i>
-            Report anonymously
-          </a>
         </p>
 
       </div>
@@ -333,7 +407,7 @@
 		  crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
 		<script src="js/hscpapers.min.js"></script>
-    <script src="js/split.js"></script>
+    <script src="js/split.min.js"></script>
 
 	</body>
 </html>
