@@ -7,6 +7,10 @@ button {
 		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.ui.top.menu {
+	z-index: 999;
+}
+
 #logo {
 	padding-bottom: 0;
 	padding-top: 0;
@@ -54,9 +58,14 @@ iframe {
 	border: none;
 	height: 100%;
 	height: calc(100% - 41px);
+	left: 0;
 	position: absolute;
 	top: 40px;
+	transition: opacity .2s, width .5s;
 	width: 100%;
+}
+#iframe {
+	z-index: 199;
 }
 
 .ui.popup>.header+.content {
@@ -132,4 +141,16 @@ iframe {
 /* Split view */
 .split .split-hide {
 	display: none !important;
+}
+body:not(.split) .split-show {
+	display: none !important;
+}
+
+.split iframe {
+	width: 50%;
+}
+#iframe-split-right {
+	left: auto;
+	right: 0;
+	z-index: 99;
 }

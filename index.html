@@ -145,15 +145,18 @@
             <a class="item disabled button-download split-hide" download target="_blank">
               <i class="download icon"></i>Download
             </a>
-            <div class="ui divider"></div>
+            <div class="ui divider split-hide"></div>
             <a class="item disabled button-exampack popup split-hide" target="_blank"
               data-content="View the official NESA page for this set of documents"
               data-position="left center">
               <i class="external icon"></i>Exam pack
             </a>
-            <div class="ui divider"></div>
+            <div class="ui divider split-hide"></div>
             <button class="item link button-split split-hide">
               <i class="columns icon"></i>Split view
+            </button>
+            <button class="item link button-splitexit split-show">
+              <i class="window close icon"></i>Exit split view
             </button>
             <div class="ui divider"></div>
             <button class="item link button-about popup"
@@ -193,6 +196,9 @@
         <button class="item link button-split split-hide">
           <i class="columns icon"></i>Split view
         </button>
+        <button class="item link button-splitexit split-show">
+          <i class="window close icon"></i>Exit split view
+        </button>
         <button class="item link button-about popup">
           <i class="info icon"></i>About
         </button>
@@ -202,12 +208,8 @@
 		</div>
 
     <!-- iframe that displays doc -->
-    <iframe src="placeholder.html" id="iframe" class="split-hide"></iframe>
-
-    <div id="split-left" class="split-container">
-    </div>
-    <div id="split-right" class="split-container">
-    </div>
+    <iframe src="placeholder.html" id="iframe"></iframe>
+    <iframe src="https://educationstandards.nsw.edu.au/wps/wcm/connect/515c48d4-366b-41f3-b916-d2266f8ce560/2016-hsc-mg-aboriginal-studies.pdf?MOD=AJPERES" id="iframe-split-right" class="split-show"></iframe>
 
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal about">
