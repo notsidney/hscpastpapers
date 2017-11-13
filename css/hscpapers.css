@@ -128,3 +128,8 @@ iframe {
 	.ui.menu span.text, .ui.menu .dropdown.icon { display: none; }
 	.ui.menu .item>i.icon.compact { margin: 0; }
 }
+
+/* Split view */
+.split .split-hide {
+	display: none !important;
+}

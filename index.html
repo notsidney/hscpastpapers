@@ -41,7 +41,7 @@
     <title>HSC Past Papers</title>
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/hscpapers.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hscpapers.css">
 	</head>
 
 	<body>
@@ -72,7 +72,7 @@
         Loading data&hellip;
       </div>
 
-			<div id="course-dropdown" class="ui disabled dropdown item">
+			<div id="course-dropdown" class="ui disabled dropdown item split-hide">
 				<input type="hidden" name="course" id="course-input">
         <i class="student left icon compact"></i>
 				<span class="text overflow">Course</span>
@@ -89,7 +89,7 @@
         </div>
 			</div>
 
-      <div id="year-dropdown" class="ui disabled dropdown item">
+      <div id="year-dropdown" class="ui disabled dropdown item split-hide">
         <input type="hidden" name="year" id="year-input">
         <i class="history left icon compact"></i>
         <span class="text">Year</span>
@@ -106,7 +106,7 @@
         </div>
       </div>
 
-      <div id="doc-dropdown" class="ui disabled dropdown item">
+      <div id="doc-dropdown" class="ui disabled dropdown item split-hide">
         <input type="hidden" name="doc" id="doc-input">
         <i class="file text left icon compact"></i>
         <span class="text overflow">Document</span>
@@ -135,24 +135,24 @@
           <span class="text">More</span>
           <i class="ellipsis vertical icon"></i>
           <div class="ui menu">
-            <div class="header">PDF</div>
-            <a class="item disabled button-download" target="_blank">
+            <div class="header split-hide">PDF</div>
+            <a class="item disabled button-download split-hide" target="_blank">
               <i class="external icon"></i>Open in new tab
             </a>
-            <button class="item link disabled button-link" disabled>
+            <button class="item link disabled button-link split-hide" disabled>
               <i class="linkify icon"></i>Copy link
             </button>
-            <a class="item disabled button-download" download target="_blank">
+            <a class="item disabled button-download split-hide" download target="_blank">
               <i class="download icon"></i>Download
             </a>
             <div class="ui divider"></div>
-            <a class="item disabled button-exampack popup" target="_blank"
+            <a class="item disabled button-exampack popup split-hide" target="_blank"
               data-content="View the official NESA page for this set of documents"
               data-position="left center">
               <i class="external icon"></i>Exam pack
             </a>
             <div class="ui divider"></div>
-            <button class="item link button-splitview">
+            <button class="item link button-split split-hide">
               <i class="columns icon"></i>Split view
             </button>
             <div class="ui divider"></div>
@@ -169,7 +169,7 @@
       <!-- desktop menu -->
       <div id="desktop-menu" class="right menu">
 
-        <div id="pdf-dropdown" class="ui dropdown disabled item">
+        <div id="pdf-dropdown" class="ui dropdown disabled item split-hide">
           <i class="file pdf outline left icon"></i>PDF
           <i class="dropdown icon"></i>
 
@@ -185,12 +185,12 @@
             </a>
           </div>
         </div>
-        <a class="item disabled button-exampack popup" target="_blank"
+        <a class="item disabled button-exampack popup split-hide" target="_blank"
           data-content="View the official NESA page for this set of documents"
           data-position="bottom center">
           <i class="external icon"></i>Exam pack
         </a>
-        <button class="item link button-splitview">
+        <button class="item link button-split split-hide">
           <i class="columns icon"></i>Split view
         </button>
         <button class="item link button-about popup">
@@ -202,7 +202,12 @@
 		</div>
 
     <!-- iframe that displays doc -->
-    <iframe src="placeholder.html" id="iframe"></iframe>
+    <iframe src="placeholder.html" id="iframe" class="split-hide"></iframe>
+
+    <div id="split-left" class="split-container">
+    </div>
+    <div id="split-right" class="split-container">
+    </div>
 
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal about">
@@ -326,6 +331,7 @@
 		  crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
 		<script src="js/hscpapers.min.js"></script>
+    <script src="js/split.js"></script>
 
 	</body>
 </html>
