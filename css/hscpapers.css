@@ -7,9 +7,8 @@ button {
 		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-#logo {
-	padding-bottom: 0;
-	padding-top: 0;
+.ui.top.menu {
+	z-index: 999;
 }
 
 .ui.top.menu .item {
@@ -33,6 +32,24 @@ button {
   white-space: nowrap;
 }
 
+.ui.dropdown .menu>.input {
+	margin: 0;
+}
+.ui.dropdown .menu>.input:not(.transparent) input {
+	border: 0;
+  border-radius: 0;
+  padding: .7em 1.2em;
+  transition: box-shadow .2s;
+	z-index: 9;
+}
+.ui.dropdown .menu>.input:not(.transparent) input:focus {
+	box-shadow: 0 0 5px 2px #6435c9;
+}
+.ui.dropdown .menu>.input:not(.transparent) .icon {
+	z-index: 19;
+}
+
+
 #more-dropdown > .icon {
 	margin-right: 0;
 }
@@ -54,15 +71,21 @@ iframe {
 	border: none;
 	height: 100%;
 	height: calc(100% - 41px);
+	left: 0;
 	position: absolute;
 	top: 40px;
+	transition: opacity .2s, width .5s;
 	width: 100%;
+}
+#iframe {
+	z-index: 199;
 }
 
 .ui.popup>.header+.content {
 	padding-top: .2em;
 }
 
+/* about modal */
 .modals.dimmer .ui.scrolling.modal.about {
 	margin: 1rem auto !important;
 }
@@ -75,12 +98,23 @@ iframe {
 	top: 1.5rem;
   right: 1.25rem;
 }
+.ui.modal.about>.header {
+	border-bottom: none;
+}
+.ui.modal.about .ui.section.divider:first-of-type {
+	margin-top: -.5rem;
+}
 .ui.modal.about .ui.button {
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.87) !important;
 	margin-bottom: .5em;
+	margin-top: .2em;
 }
 .ui.modal.about .ui.button>.icon {
 	opacity: 1;
+}
+.ui.modal.about .ui.section.divider {
+	margin-bottom: 1rem;
+	margin-top: 2.5rem;
 }
 
 /* Placeholder.html */
@@ -127,4 +161,30 @@ iframe {
 @media (max-width: 540px) {
 	.ui.menu span.text, .ui.menu .dropdown.icon { display: none; }
 	.ui.menu .item>i.icon.compact { margin: 0; }
+}
+
+/* Split view */
+.split .split-hide {
+	display: none !important;
+}
+body:not(.split) .split-show {
+	display: none !important;
+}
+
+.split .ui.dropdown span.text {
+	display: none;
+}
+
+#menu-split-right {
+	left: 50%;
+	position: absolute;
+}
+
+.split iframe {
+	width: 50%;
+}
+#iframe-split-right {
+	left: auto;
+	right: 0;
+	z-index: 99;
 }

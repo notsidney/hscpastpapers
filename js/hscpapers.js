@@ -1,6 +1,7 @@
 var jsonData,
 courseIndex, yearIndex, docLink,
 urlCourse, urlYear, urlDoc,
+urlCourse2, urlYear2, urlDoc2,
 selectedCourse, selectedYear, selectedDoc,
 params, version, timestamp;
 
@@ -30,15 +31,29 @@ function urlNotFound(type) {
 	}
 
 	// show url params
-	if (type == 'Course') { write('Course', urlCourse, true) }
-	else if (type == 'Year') {
-		write('Course', urlCourse, false);
-		write('Year', urlYear, true);
-	}
-	else if (type == 'Doc') {
-		write('Course', urlCourse, false);
-		write('Year', urlYear, false);
-		write('Doc', urlDoc, true);
+	switch(type) {
+		case 'Course':
+			write('Course', urlCourse, true);
+			break;
+		case 'Year':
+			write('Course', urlCourse, false);
+			write('Year', urlYear, true);
+			break;
+		case 'Doc':
+			write('Course', urlCourse, false);
+			write('Year', urlYear, false);
+			write('Doc', urlDoc, true);
+		case 'Course2':
+			write('Course2', urlCourse2, true);
+			break;
+		case 'Year2':
+			write('Course2', urlCourse2, false);
+			write('Year2', urlYear2, true);
+			break;
+		case 'Doc2':
+			write('Course2', urlCourse2, false);
+			write('Year2', urlYear2, false);
+			write('Doc2', urlDoc2, true);
 	}
 
 	// show the modal
@@ -66,6 +81,10 @@ $(document).ready(function(){
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
 	urlDoc = urlParam('doc');
+	// store url params2
+	urlCourse2 = urlParam('course2');
+	urlYear2 = urlParam('year2');
+	urlDoc2 = urlParam('doc2');
 	// open about window
 	if (urlParam('open') == 'about') $('#about-modal').modal('show');
 	// initialise new params
@@ -80,6 +99,8 @@ $(document).ready(function(){
 			jsonData = data;
 			// populate course dropdown
 			populateDropdown(jsonData, 'course_name', '#course-menu', false);
+			// also populate dropdown for split view
+			populateDropdown(jsonData, 'course_name', '#course-menu2', false);
 			// remove loading indicator
 			$('#loader').removeClass('active');
 			$('#loadingmsg').hide();
@@ -88,6 +109,10 @@ $(document).ready(function(){
 				.removeClass('disabled')
 				.dropdown('show')
 				.dropdown({ selectOnKeydown: false });
+			// also activate course dropdown for split view
+			$('#course-dropdown2')
+				.removeClass('disabled')
+				.dropdown({ selectOnKeydown: false });
 			// Select course from URL parameter
 			if (urlCourse) {
 				$('#course-dropdown')
@@ -95,6 +120,14 @@ $(document).ready(function(){
 					.dropdown('hide');
 				// if not found
 				if ( !$('#course-dropdown').dropdown('get value') ) urlNotFound('Course');
+			}
+			// Select course2 from URL parameter
+			if (urlCourse2) {
+				$('#course-dropdown2')
+					.dropdown('set selected', urlCourse2)
+					.dropdown('hide');
+				// if not found
+				if ( !$('#course-dropdown2').dropdown('get value') ) urlNotFound('Course2');
 			}
 		}
 	);
@@ -262,9 +295,7 @@ $('#doc-input').change( function(){
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
-	document.title = $('#year-dropdown .text').html() + ' ' +
-		$('#doc-dropdown .text.overflow').html() + ' - ' +
-		$('#course-dropdown .text').html();
+	updateTabTitle();
 	// enable dim function
 	dimmable = true;
 });
@@ -285,14 +316,16 @@ var idleTime = 0,
 $(document).ready(function () {
   // Increment the idle time counter every minute.
   var idleInterval = setInterval(timerIncrement, 5000); // 5 sec
-  // Reset on mouse movement or key press
+  // Reset on mouse movement, click or key press
   $(this).mousemove( function (e) { resetTimer(); } );
+  $(this).mousedown( function (e) { resetTimer(); } );
+  $(this).mouseup( function (e) { resetTimer(); } );
   $(this).keypress( function (e) { resetTimer(); } );
 });
 // dim
 function timerIncrement() {
   idleTime = idleTime + 5;
-  if (idleTime >= 5 && dimmable === true) { // 30 sec
+  if (idleTime >= 5 && dimmable === true) { // 5 sec then dim
       $('body').addClass('idle');
   }
 }
@@ -300,4 +333,17 @@ function timerIncrement() {
 function resetTimer() {
 	idleTime = -5;
 	$('body').removeClass('idle');
+}
+
+// updates tab title
+function updateTabTitle() {
+	document.title = $('#year-dropdown .text').html() + ' ' +
+		$('#course-dropdown .text').html() + ' ' +
+		$('#doc-dropdown .text.overflow').html();
+
+	if ( $('body').hasClass('split') ) {
+		document.title += ' | ' + $('#year-dropdown2 .text').html() + ' ' +
+		$('#course-dropdown2 .text').html() + ' ' +
+		$('#doc-dropdown2 .text.overflow').html();
+	}
 }
