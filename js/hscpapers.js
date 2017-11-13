@@ -292,7 +292,7 @@ $(document).ready(function () {
 // dim
 function timerIncrement() {
   idleTime = idleTime + 5;
-  if (idleTime >= 30 && dimmable === true) { // 30 sec
+  if (idleTime >= 5 && dimmable === true) { // 30 sec
       $('body').addClass('idle');
   }
 }
