@@ -93,7 +93,7 @@ $(document).ready(function(){
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
 	$.getJSON(
-		'https://raw.githubusercontent.com/notseenee/nesappscraper/master/data.json',
+		'data/data.json',
 		function(data) {
 			// write to jsonData
 			jsonData = data;
@@ -147,7 +147,7 @@ $(document).ready(function(){
 	);
 	// Update timestamp
 	$.getJSON(
-		'https://raw.githubusercontent.com/notseenee/nesappscraper/master/meta.json',
+		'data/meta.json',
 		function(data) {
 			// create new date object so it can be formatted
 			timestamp = new Date(data.timestamp);
