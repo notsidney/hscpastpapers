@@ -5,9 +5,13 @@ params;
 // if url has ?mode=split, open split view immediately
 $(document).ready(function(){
 	// open split view
-	if (urlParam('mode') == 'split') $('body').addClass('split');
-	// show course2 dropdown
-	$('#course-dropdown2').dropdown('show');
+	if (urlParam('mode') == 'split') {
+		$('body').addClass('split');
+		// show course2 dropdown
+		$('#course-dropdown2').dropdown('show');
+		// add mode to params
+		params.mode = 'split';
+	}
 });
 
 // activate split view
@@ -19,7 +23,8 @@ $('.button-split').click(function(){
 		$('#course-dropdown2').dropdown('show');
 	}
 	// change url
-	history.pushState(null, '', '?mode=split&' + $.param(params) );
+	params.mode = 'split';
+	history.pushState(null, '', '?' + $.param(params) );
 	// update tab title
 	updateTabTitle();
 });
@@ -29,6 +34,7 @@ $('.button-splitexit').click(function(){
 	// remove split class from body
 	$('body').removeClass('split');
 	// change url
+	params.mode = 'normal';
 	history.pushState(null, '', '?' + $.param(params) );
 	// update tab title
 	updateTabTitle();
@@ -39,7 +45,7 @@ $('#course-input2').change( function() {
 	// get selected value
 	selectedCourse2 = $('#course-input2')[0].value;
 	// add to new params
-	params.course2 = selectedCourse2
+	params.course2 = selectedCourse2;
 	// add loading spinner to year dropdown
 	$('#year-dropdown2').addClass('loading').removeClass('disabled');
 	// loops through each element in json object to find index
@@ -66,7 +72,7 @@ $('#course-input2').change( function() {
 		if ( !$('#year-dropdown2').dropdown('get value') ) urlNotFound('Year2');
 	}
 	// change url to new params
-	history.pushState(null, '', '?mode=split&' + $.param(params) );
+	history.pushState(null, '', '?' + $.param(params) );
 });
 
 // when a year is selected, populate docs dropdown
@@ -107,7 +113,7 @@ $('#year-input2').change( function() {
 	// 	.removeClass('disabled')
 	// 	.attr('href', jsonData[courseIndex].packs[yearIndex]['link']);
 	// change url to new params
-	history.pushState(null, '', '?mode=split&' + $.param(params) );
+	history.pushState(null, '', '?' + $.param(params) );
 });
 
 // when a doc is selected, open it
@@ -137,7 +143,7 @@ $('#doc-input2').change( function(){
 	// $('.button-link').removeClass('disabled').removeAttr('disabled');
 	// $('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
-	history.pushState(null, '', '?mode=split&' + $.param(params) );
+	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	updateTabTitle();
 	// enable dim function

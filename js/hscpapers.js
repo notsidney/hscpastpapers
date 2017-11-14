@@ -87,8 +87,8 @@ $(document).ready(function(){
 	urlDoc2 = urlParam('doc2');
 	// open about window
 	if (urlParam('open') == 'about') $('#about-modal').modal('show');
-	// initialise new params
-	params = { course:'',year:'',doc:'' }
+	// initialise new params object
+	params = { mode: 'normal' };
 	// activate mobile more-dropdown
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
@@ -337,13 +337,20 @@ function resetTimer() {
 
 // updates tab title
 function updateTabTitle() {
+	// but only if a doc is actually selected
+	if ( $('#doc-dropdown .text.overflow').html() != 'Document' ) {
 	document.title = $('#year-dropdown .text').html() + ' ' +
 		$('#course-dropdown .text').html() + ' ' +
 		$('#doc-dropdown .text.overflow').html();
 
-	if ( $('body').hasClass('split') ) {
-		document.title += ' | ' + $('#year-dropdown2 .text').html() + ' ' +
-		$('#course-dropdown2 .text').html() + ' ' +
-		$('#doc-dropdown2 .text.overflow').html();
+		if ( $('body').hasClass('split') &&
+			$('#doc-dropdown2 .text.overflow').html() != 'Document' ) {
+			document.title += ' | ' + $('#year-dropdown2 .text').html() + ' ' +
+			$('#course-dropdown2 .text').html() + ' ' +
+			$('#doc-dropdown2 .text.overflow').html();
+		}
+	}
+	else {
+		document.title = 'HSC Past Papers';
 	}
 }
