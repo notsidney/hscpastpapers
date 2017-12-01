@@ -78,7 +78,7 @@ $('#course-input2').change( function() {
 // when a year is selected, populate docs dropdown
 $('#year-input2').change( function() {
 	// if year is blank for some reason, ignore
-	if ($(this)[0].value == '') return;
+	if ($(this)[0].value === '') return;
 	// get selected year
 	selectedYear2 = $('#year-input2')[0].value;
 	// add to new params
@@ -119,7 +119,7 @@ $('#year-input2').change( function() {
 // when a doc is selected, open it
 $('#doc-input2').change( function(){
 	// if selected doc is blank, ignore
-	if ($(this)[0].value == '') return;
+	if ($(this)[0].value === '') return;
 	// get selected doc
 	selectedDoc2 = $('#doc-input2')[0].value;
 	// add to new params

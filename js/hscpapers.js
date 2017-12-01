@@ -43,6 +43,7 @@ function urlNotFound(type) {
 			write('Course', urlCourse, false);
 			write('Year', urlYear, false);
 			write('Doc', urlDoc, true);
+			break;
 		case 'Course2':
 			write('Course2', urlCourse2, true);
 			break;
@@ -195,7 +196,7 @@ $('#course-input').change( function() {
 	// get selected value
 	selectedCourse = $('#course-input')[0].value;
 	// add to new params
-	params.course = selectedCourse
+	params.course = selectedCourse;
 	// add loading spinner to year dropdown
 	$('#year-dropdown').addClass('loading').removeClass('disabled');
 	// loops through each element in json object to find index
@@ -228,7 +229,7 @@ $('#course-input').change( function() {
 // when a year is selected, populate docs dropdown
 $('#year-input').change( function() {
 	// if year is blank for some reason, ignore
-	if ($(this)[0].value == '') return;
+	if ($(this)[0].value === '') return;
 	// get selected year
 	selectedYear = $('#year-input')[0].value;
 	// add to new params
