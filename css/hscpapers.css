@@ -81,10 +81,6 @@ iframe {
 	z-index: 199;
 }
 
-.ui.popup>.header+.content {
-	padding-top: .2em;
-}
-
 /* about modal */
 .modals.dimmer .ui.scrolling.modal.about {
 	margin: 1rem auto !important;

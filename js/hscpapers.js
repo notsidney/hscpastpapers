@@ -146,8 +146,6 @@ $(document).ready(function(){
 	// Get version
 	// show in about modal
 	$('#version').html(version);
-	// show in about popup
-	$('.button-about').popup({ title: 'Version ' + version });
 	// Update timestamp
 	$.getJSON(
 		'data/meta.json',
@@ -155,20 +153,9 @@ $(document).ready(function(){
 			// create new date object so it can be formatted
 			timestamp = new Date(data.timestamp);
 			// show in about modal
-			$('#timestamp')
-				.html( timestamp.toLocaleDateString() )
-				.popup({
-					html: timestamp.toLocaleTimeString() + '<br>Sydney time'
-				});
-			// add to about popup
-			$('.button-about').popup({
-				title: 'Version ' + version,
-				content: 'Data updated ' + timestamp.toLocaleDateString()
-			});
+			$('#timestamp').html( timestamp.toLocaleDateString() );
 		}
 	);
-	// Add logo/reload popup
-	$('.popup').popup();
 	// Set about modal transition duration
 	$('#about-modal').modal({ duration: 200 });
 });

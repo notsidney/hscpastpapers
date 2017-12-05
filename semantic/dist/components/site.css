@@ -13,6 +13,7 @@
              Page
 *******************************/
 
+/*.loadFonts();*/
 html,
 body {
   height: 100%;
@@ -102,11 +103,11 @@ p:last-child {
 
 a {
   color: #4183C4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #1e70bf;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -122,35 +123,37 @@ a:hover {
 
 
 /* Site */
-::-webkit-selection {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+/*::-webkit-selection {
+  background-color: @highlightBackground;
+  color: @highlightColor;
 }
 ::-moz-selection {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: @highlightBackground;
+  color: @highlightColor;
 }
 ::selection {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
-}
+  background-color: @highlightBackground;
+  color: @highlightColor;
+}*/
 
 /* Form */
-textarea::-webkit-selection,
+/*textarea::-webkit-selection,
 input::-webkit-selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
 textarea::-moz-selection,
 input::-moz-selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
 textarea::selection,
 input::selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
+
+.addScrollbars();*/
 
 
 /*******************************
