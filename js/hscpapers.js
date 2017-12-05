@@ -1,9 +1,10 @@
+var version = '1.6.0-dev';
 var jsonData,
 courseIndex, yearIndex, docLink,
 urlCourse, urlYear, urlDoc,
 urlCourse2, urlYear2, urlDoc2,
 selectedCourse, selectedYear, selectedDoc,
-params, version, timestamp;
+params, timestamp;
 
 // get url parameters
 function urlParam(name) {
@@ -78,6 +79,16 @@ function urlNotFound(type) {
 $(document).ready(function(){
 	// when jQuery loads, hide warning
 	$('#nojquery').hide();
+	// show placeholder in iframe
+	$('iframe').contents().find('body').append(
+		'<div style="align-items:center;display:flex;height:100%;' +
+			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
+			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
+			'text-align:center;user-select:none;font-size:1.5em;' +
+			'color:rgba(255,255,255,.5)">' +
+        'Select a Course, Year, and Document above' +
+      '</div>'
+		);
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
@@ -133,19 +144,10 @@ $(document).ready(function(){
 		}
 	);
 	// Get version
-	$.getJSON(
-		'version.json',
-		function(data) {
-			version = data.version;
-			// show in about modal
-			$('#version').html(data.version);
-			// show in about popup
-			$('.button-about')
-				.popup({
-					title: 'Version ' + data.version
-				});
-		}
-	);
+	// show in about modal
+	$('#version').html(version);
+	// show in about popup
+	$('.button-about').popup({ title: 'Version ' + version });
 	// Update timestamp
 	$.getJSON(
 		'data/meta.json',
