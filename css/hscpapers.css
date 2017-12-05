@@ -67,6 +67,22 @@ button.item.link {
 	border: 0;
 }
 
+.disabled,
+.ui.menu .item.disabled,
+.ui.menu .item.disabled:hover {
+	color: rgba(225,225,225,.3) !important;
+	cursor: not-allowed;
+	pointer-events: auto;
+}
+
+.ui.disabled.dropdown,
+.ui.dropdown .menu>.disabled.item,
+.ui.menu .ui.dropdown .menu>.disabled.item:hover {
+	background: 0 0 !important!important;
+	cursor: not-allowed;
+	pointer-events: auto;
+}
+
 iframe {
 	border: none;
 	height: 100%;
