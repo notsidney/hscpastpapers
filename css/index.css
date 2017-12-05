@@ -105,6 +105,8 @@ iframe {
 	transition: opacity .2s, width .5s;
 	width: 100%;
 }
+
+/* Left iframe */
 #iframe {
 	z-index: 199;
 }
@@ -116,29 +118,36 @@ about.css
 .modals.dimmer .ui.scrolling.modal.about {
 	margin: 1rem auto !important;
 }
+
 .ui.modal.about .ui.header .sub.header {
 	color: rgba(0,0,0,.75);
 	font-size: 1rem;
 }
+
 .ui.modal.about>.close {
 	font-size: 1rem;
 	top: 1.5rem;
   right: 1.25rem;
 }
+
 .ui.modal.about>.header {
 	border-bottom: none;
 }
+
 .ui.modal.about .ui.section.divider:first-of-type {
 	margin-top: -.5rem;
 }
+
 .ui.modal.about .ui.button {
 	color: rgba(0,0,0,.87) !important;
 	margin-bottom: .5em;
 	margin-top: .2em;
 }
+
 .ui.modal.about .ui.button>.icon {
 	opacity: 1;
 }
+
 .ui.modal.about .ui.section.divider {
 	margin-bottom: 1rem;
 	margin-top: 2.5rem;
@@ -150,23 +159,35 @@ mobile.css
 
 /* Mobile nav */
 @media (min-width: 1080px) {
-	#mobile-menu { display: none; }
+	#mobile-menu {
+		display: none;
+	}
+
 	/* Also: extend width of dropdown text for larger screens */
 	.ui.dropdown .text.overflow {
 		max-width: calc((100vw - 856px - 40px) / 2);
 	}
 }
+
 @media (max-width: 1079px) {
-	#desktop-menu { display: none; }
+	#desktop-menu {
+		display: none;
+	}
 	/* Also: flexible width for dropdown text for larger screens */
 	.ui.dropdown .text.overflow {
 		max-width: calc((100vw - 464px - 10px) / 2);
 	}
 }
+
 /* Just hide the dropdown text */
 @media (max-width: 540px) {
-	.ui.menu span.text, .ui.menu .dropdown.icon { display: none; }
-	.ui.menu .item>i.icon.compact { margin: 0; }
+	.ui.menu span.text, .ui.menu .dropdown.icon {
+		display: none;
+	}
+
+	.ui.menu .item>i.icon.compact {
+		margin: 0;
+	}
 }
 
 /*------------------------------------------------------------------------------
