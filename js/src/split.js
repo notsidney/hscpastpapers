@@ -1,3 +1,7 @@
+/*------------------------------------------------------------------------------
+split.js
+------------------------------------------------------------------------------*/
+
 var courseIndex2, yearIndex2, docLink2,
 selectedCourse2, selectedYear2, selectedDoc2,
 params;
@@ -50,7 +54,7 @@ $('#course-input2').change( function() {
 	$('#year-dropdown2').addClass('loading').removeClass('disabled');
 	// loops through each element in json object to find index
 	for (k = 0; k < jsonData.length; k++) {
-		if (jsonData[k]['course_name'].toLowerCase() == selectedCourse2) {
+		if (jsonData[k].course_name.toLowerCase() == selectedCourse2) {
 			courseIndex2 = k;
 			break;
 		}
@@ -87,7 +91,7 @@ $('#year-input2').change( function() {
 	$('#doc-dropdown2').addClass('loading').removeClass('disabled');
 	// loops through each element in json object to find year index
 	for (l = 0; l < jsonData[courseIndex2].packs.length; l++) {
-		if (jsonData[courseIndex2].packs[l]['year'] == selectedYear2) {
+		if (jsonData[courseIndex2].packs[l].year == selectedYear2) {
 			yearIndex2 = l;
 			break;
 		}
@@ -126,9 +130,9 @@ $('#doc-input2').change( function(){
 	params.doc2 = selectedDoc2;
 	// loops thorugh each doc to find doc index
 	for (m = 0; m < jsonData[courseIndex2].packs[yearIndex2].docs.length; m++) {
-		if (jsonData[courseIndex2].packs[yearIndex2].docs[m]['doc_name'].toLowerCase()
-			== selectedDoc2) {
-			docLink2 = jsonData[courseIndex2].packs[yearIndex2].docs[m]['doc_link'];
+		if (jsonData[courseIndex2].packs[yearIndex2].docs[m].doc_name.toLowerCase() ==
+			selectedDoc2) {
+			docLink2 = jsonData[courseIndex2].packs[yearIndex2].docs[m].doc_link;
 			// force https
 			docLink2 = docLink2.replace('http', 'https');
 			break;

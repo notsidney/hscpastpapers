@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------------------
+split.css
+------------------------------------------------------------------------------*/
+
+.split .split-hide {
+	display: none !important;
+}
+body:not(.split) .split-show {
+	display: none !important;
+}
+
+.split .ui.dropdown span.text {
+	display: none;
+}
+
+#menu-split-right {
+	left: 50%;
+	position: absolute;
+}
+
+.split iframe {
+	width: 50%;
+}
+#iframe-split-right {
+	left: auto;
+	right: 0;
+	z-index: 99;
+}
