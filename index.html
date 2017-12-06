@@ -46,13 +46,13 @@
     <link rel="stylesheet" type="text/css" href="css/index.min.css">
 	</head>
 
-	<body>
+	<body class="loading">
     <!-- top menu -->
-		<div class="ui top borderless inverted fixed menu">
+		<div class="ui top borderless inverted fixed menu segment">
 
 			<a id="logo" class="vertically fitted item" href="?">
         <img src="img/icon.svg" width="16" height="16" class="ui image">
-        <div class="ui active loader" id="loader"></div>
+        <div class="ui loader" id="loader"></div>
       </a>
 
       <noscript id="nojs" class="item">
@@ -70,11 +70,17 @@
         </a>
       </div>
 
-      <div id="loadingmsg" class="loading item">
+      <div id="loadingmsg" class="ui vertically fitted item loading-show">
         Loading data&hellip;
+        <span id="loadingpercent">0%</span>
       </div>
 
-			<div id="course-dropdown" class="ui disabled dropdown item">
+      <div class="ui violet bottom attached progress"
+        data-percent="0" id="loadingbar">
+        <div class="bar"></div>
+      </div>
+
+			<div id="course-dropdown" class="ui loading-hide disabled dropdown item">
 				<input type="hidden" name="course" id="course-input">
         <i class="student left icon compact"></i>
 				<span class="text overflow">Course</span>
@@ -91,7 +97,7 @@
         </div>
 			</div>
 
-      <div id="year-dropdown" class="ui disabled dropdown item">
+      <div id="year-dropdown" class="ui loading-hide disabled dropdown item">
         <input type="hidden" name="year" id="year-input">
         <i class="history left icon compact"></i>
         <span class="text">Year</span>
@@ -108,7 +114,7 @@
         </div>
       </div>
 
-      <div id="doc-dropdown" class="ui disabled dropdown item">
+      <div id="doc-dropdown" class="ui loading-hide disabled dropdown item">
         <input type="hidden" name="doc" id="doc-input">
         <i class="file text left icon compact"></i>
         <span class="text overflow">Document</span>
@@ -125,12 +131,12 @@
         </div>
       </div>
 
-      <a class="item link button-reset split-hide" href="?">
+      <a class="item link button-reset split-hide loading-hide" href="?">
         <i class="undo icon compact"></i>
         <span class="text">Reset</span>
       </a>
 
-      <div id="menu-split-right" class="menu split-show">
+      <div id="menu-split-right" class="menu loading-hide split-show">
 
         <div id="course-dropdown2" class="ui disabled dropdown item">
           <input type="hidden" name="course" id="course-input2">
@@ -192,28 +198,28 @@
           More
           <i class="ellipsis vertical icon"></i>
           <div class="ui menu">
-            <div class="header split-hide">PDF</div>
+            <div class="header split-hide loading-hide">PDF</div>
             <a class="item disabled button-download split-hide" target="_blank">
               <i class="external icon"></i>Open in new tab
             </a>
-            <button class="item link disabled button-link split-hide" disabled>
+            <button class="item link disabled button-link split-hide loading-hide" disabled>
               <i class="linkify icon"></i>Copy link
             </button>
-            <a class="item disabled button-download split-hide" download target="_blank">
+            <a class="item disabled button-download split-hide loading-hide" download target="_blank">
               <i class="download icon"></i>Download
             </a>
-            <div class="ui divider split-hide"></div>
-            <a class="item disabled button-exampack split-hide" target="_blank">
+            <div class="ui divider split-hide loading-hide"></div>
+            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
               <i class="external icon"></i>Exam pack
             </a>
-            <div class="ui divider split-hide"></div>
+            <div class="ui divider split-hide loading-hide"></div>
             <a class="item link button-reset split-show" href="?">
               <i class="undo icon compact"></i>Reset
             </a>
-            <button class="item link button-split split-hide">
+            <button class="item link button-split split-hide loading-hide">
               <i class="columns icon"></i>Split view
             </button>
-            <button class="item link button-splitexit split-show">
+            <button class="item link button-splitexit split-show loading-hide">
               <i class="window close icon"></i>Exit split view
             </button>
             <div class="ui divider"></div>
@@ -229,7 +235,7 @@
       <!-- desktop menu -->
       <div id="desktop-menu" class="right menu">
 
-        <div id="pdf-dropdown" class="ui dropdown disabled item split-hide">
+        <div id="pdf-dropdown" class="ui dropdown disabled item split-hide loading-hide">
           <i class="file pdf outline left icon"></i>PDF
           <i class="dropdown icon"></i>
 
@@ -245,17 +251,17 @@
             </a>
           </div>
         </div>
-        <a class="item disabled button-exampack split-hide" target="_blank">
+        <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
           <i class="external icon"></i>Exam pack
         </a>
         <a class="item link button-reset split-show" href="?">
           <i class="undo icon compact"></i>
           <span class="text">Reset</span>
         </a>
-        <button class="item link button-split split-hide">
+        <button class="item link button-split split-hide loading-hide">
           <i class="columns icon"></i>Split view
         </button>
-        <button class="item link button-splitexit split-show">
+        <button class="item link button-splitexit split-show loading-hide">
           <i class="window close icon"></i>Exit split view
         </button>
         <button class="item link button-about">

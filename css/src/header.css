@@ -13,6 +13,20 @@ header.css
 	opacity: .5;
 }
 
+body.loading .loading-hide,
+body:not(.loading) .loading-show {
+	display: none !important;
+}
+
+#loadingpercent {
+	font-weight: bold;
+	margin-left: 2.5em;
+}
+
+.ui.progress.attached, .ui.progress.attached .bar {
+	border-radius: 0;
+}
+
 .ui.disabled.dropdown {
 	opacity: 1;
 }
