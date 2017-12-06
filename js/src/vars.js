@@ -2,8 +2,6 @@
 vars.js
 ------------------------------------------------------------------------------*/
 
-var version = '1.6.0-dev';
-
 var jsonData,
 courseIndex, yearIndex, docLink,
 urlCourse, urlYear, urlDoc,

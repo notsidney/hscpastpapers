@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 
 var paths = {
 	scripts: [
+    'version.js',
     'js/src/vars.js',
     'js/src/helpers.js',
     'js/src/dropdown.js',
