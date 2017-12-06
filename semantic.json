@@ -36,6 +36,7 @@
     "dimmer",
     "dropdown",
     "modal",
-    "transition"
+    "transition",
+    "progress"
   ]
 }
