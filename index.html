@@ -43,7 +43,7 @@
     <title>HSC Past Papers</title>
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/hscpapers.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
 	</head>
 
 	<body>
@@ -189,7 +189,7 @@
       <div id="mobile-menu" class="right menu">
 
         <div id="more-dropdown" class="ui dropdown item">
-          <span class="text">More</span>
+          More
           <i class="ellipsis vertical icon"></i>
           <div class="ui menu">
             <div class="header split-hide">PDF</div>
@@ -203,9 +203,7 @@
               <i class="download icon"></i>Download
             </a>
             <div class="ui divider split-hide"></div>
-            <a class="item disabled button-exampack popup split-hide" target="_blank"
-              data-content="View the official NESA page for this set of documents"
-              data-position="left center">
+            <a class="item disabled button-exampack split-hide" target="_blank">
               <i class="external icon"></i>Exam pack
             </a>
             <div class="ui divider split-hide"></div>
@@ -219,8 +217,7 @@
               <i class="window close icon"></i>Exit split view
             </button>
             <div class="ui divider"></div>
-            <button class="item link button-about popup"
-              data-position="left center">
+            <button class="item link button-about">
               <i class="info icon"></i>About
             </button>
 
@@ -248,9 +245,7 @@
             </a>
           </div>
         </div>
-        <a class="item disabled button-exampack popup split-hide" target="_blank"
-          data-content="View the official NESA page for this set of documents"
-          data-position="bottom center">
+        <a class="item disabled button-exampack split-hide" target="_blank">
           <i class="external icon"></i>Exam pack
         </a>
         <a class="item link button-reset split-show" href="?">
@@ -263,7 +258,7 @@
         <button class="item link button-splitexit split-show">
           <i class="window close icon"></i>Exit split view
         </button>
-        <button class="item link button-about popup">
+        <button class="item link button-about">
           <i class="info icon"></i>About
         </button>
 
@@ -272,9 +267,8 @@
 		</div>
 
     <!-- iframe that displays doc -->
-    <iframe src="placeholder.html" id="iframe"></iframe>
-    <iframe src="placeholder.html" id="iframe-split-right"
-      class="split-show"></iframe>
+    <iframe id="iframe"></iframe>
+    <iframe id="iframe-split-right" class="split-show"></iframe>
 
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal about">
@@ -288,7 +282,7 @@
           <div class="sub header">
             Version <span id="version"></span><br>
             Data updated 
-            <span id="timestamp" data-position="bottom center"></span>
+            <span id="timestamp"></span>
           </div>
         </div>
       </h2>
@@ -323,26 +317,6 @@
             href="https://github.com/notseenee/hscpastpapers/commits">
             <i class="list icon"></i>
             Changelog
-          </a>
-        </p>
-
-        <p>
-          This web app was built with
-          <br>
-          <a href="https://semantic-ui.com/"
-            class="ui basic small compact button" target="_blank">
-            <i class="external icon"></i>
-            Semantic UI 2.2.13
-          </a>
-          <a href="http://jquery.com/"
-            class="ui basic small compact button" target="_blank">
-            <i class="external icon"></i>
-            jQuery 3.1.1
-          </a>
-          <a href="https://github.com/notseenee/nesappscraper"
-            class="ui basic small compact button" target="_blank">
-            <i class="external icon"></i>
-            NESA PP Scraper
           </a>
         </p>
 
@@ -408,8 +382,7 @@
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		  crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
-		<script src="js/hscpapers.min.js"></script>
-    <script src="js/split.min.js"></script>
+		<script src="js/index.min.js"></script>
 
 	</body>
 </html>

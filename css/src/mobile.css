@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+mobile.css
+------------------------------------------------------------------------------*/
+
+/* Mobile nav */
+@media (min-width: 1080px) {
+	#mobile-menu {
+		display: none;
+	}
+
+	/* Also: extend width of dropdown text for larger screens */
+	.ui.dropdown .text.overflow {
+		max-width: calc((100vw - 856px - 40px) / 2);
+	}
+}
+
+@media (max-width: 1079px) {
+	#desktop-menu {
+		display: none;
+	}
+	/* Also: flexible width for dropdown text for larger screens */
+	.ui.dropdown .text.overflow {
+		max-width: calc((100vw - 464px - 10px) / 2);
+	}
+}
+
+/* Just hide the dropdown text */
+@media (max-width: 540px) {
+	.ui.menu span.text, .ui.menu .dropdown.icon {
+		display: none;
+	}
+
+	.ui.menu .item>i.icon.compact {
+		margin: 0;
+	}
+}

@@ -1,3 +1,7 @@
+# node and semantic
+node_modules/
+semantic-old/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

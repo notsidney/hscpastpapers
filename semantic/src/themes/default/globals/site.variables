@@ -6,18 +6,10 @@
        Fonts
 --------------------*/
 
-@headerFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-@pageFont  : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-@fontName          : 'Lato';
 @fontSmoothing     : antialiased;
 
-@googleFontName    : @fontName;
-@importGoogleFonts : false;
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+@headerFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@pageFont  : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 /*-------------------
       Base Sizes
@@ -46,10 +38,10 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @violet;
+@primaryColor        : @blue;
 @secondaryColor      : @black;
 
-@lightPrimaryColor   : @lightViolet;
+@lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
 
 /*--------------
@@ -134,7 +126,7 @@
 --------------------*/
 
 @linkColor           : #4183C4;
-@linkUnderline       : underline;
+@linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
 
