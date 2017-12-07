@@ -1,35 +1,53 @@
+/*------------------------------------------------------------------------------
+loadjson.js
+------------------------------------------------------------------------------*/
+
 function loadJSON(url, name, xhr, callback) {
 	// Check if local storage is supported
 	if (typeof(Storage) !== 'undefined') {
+		// Check if expired
+		var expired = true;
+		var cacheTimestamp = localStorage.getItem('timestamp');
+		if (cacheTimestamp !== null) {
+			// Calculate time difference
+			var currentTime = new Date();
+			var diff = currentTime.getTime() - new Date(cacheTimestamp).getTime();
+			// If under a week old, use local storage
+			if (diff < 1000*60*60*24*7) expired = false;
+		} else {
+			var newTimestamp = new Date();
+			localStorage.setItem('timestamp', newTimestamp);
+			console.log('Local storage - set new expiration date: ' + newTimestamp);
+		}
 
+		// Check if already in local storage and not expired
 		var check = localStorage.getItem(name);
-		if (check !== null) {
-			console.log('available');
+		if (check !== null && expired === false) {
+			// Serve from local storage
+			console.log('Serving from LocalStorage: ' + name);
 			callback(JSON.parse(check));
 		} else {
-			console.log('downloading');
-			$.ajax({
-				dataType: 'json',
-				url: url,
-				xhr: xhr,
-				success: function(data) {
-					console.log('success' + data);
-					localStorage.setItem(name, JSON.stringify(data));
-					callback(data);
-				}
+			// Else, download and cache
+			console.log('Downloading: ' + name);
+			ajaxJSON(url, name, xhr, function(data){
+				console.log('Downloaded and cached: ' + name);
+				localStorage.setItem(name, JSON.stringify(data));
+				callback(data);
 			});
 		}
 
 	} else {
-console.log('failed');
-		$.ajax({
-			dataType: 'json',
-			url: url,
-			xhr: xhr,
-			success: function(data) {
-				callback(data);
-			}
-		});
+		// No local storage available - download using ajax
+		console.log('LocalStorage not available: ' + name);
+		ajaxJSON(url, name, xhr, function(data){ callback(data); });
+	}
+}
 
+function ajaxJSON(url, name, xhr, success) {
+	// If there's an xhr progress function submitted
+	if (xhr !== null) {
+		$.ajax({ dataType: 'json', url: url, xhr: xhr, success: success });
+	} else {
+		$.ajax({ dataType: 'json', url: url, success: success });
 	}
 }

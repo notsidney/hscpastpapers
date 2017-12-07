@@ -4,7 +4,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
     <script>
-      if (window.location.host != 'localhost' && window.location.host) {
+      if (window.location.host !== 'localhost' && window.location.host) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -286,10 +286,9 @@
         <div class="content">
           HSCPastPapers.com
           <div class="sub header">
-            Version <span id="version"></span><br>
-            Data updated 
-            <span id="timestamp"></span>
-            <a id="cached-clear" href="#">
+            Version&nbsp;<span id="version"></span><br>
+            Data updated&nbsp;<span id="timestamp"></span>
+            <a id="cached-clear" href="#" onclick="localStorage.clear();location.reload()">
               <i class="trash outline icon"></i>Clear cache
             </a>
           </div>

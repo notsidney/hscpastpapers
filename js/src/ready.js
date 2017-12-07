@@ -5,6 +5,10 @@ ready.js
 $(document).ready(function(){
 	// when jQuery loads, hide warning
 	$('#nojquery').hide();
+	// Set about modal transition duration
+	$('#about-modal').modal({ duration: 200 });
+	// show in about modal
+	$('#version').html(version);
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
@@ -21,25 +25,12 @@ $(document).ready(function(){
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
 	loadJSON('data/data.json', 'data', dataProgress, dataReceived);
-	// Get version
-	// show in about modal
-	$('#version').html(version);
 	// Update timestamp
-	$.getJSON(
-		'data/meta.json',
-		function(data) {
-			// create new date object so it can be formatted
-			timestamp = new Date(data.timestamp);
-			// show in about modal
-			$('#timestamp').html( timestamp.toLocaleDateString() );
-		}
-	);
-	// Set about modal transition duration
-	$('#about-modal').modal({ duration: 200 });
+	loadJSON('data/meta.json', 'meta', null, showTimestamp);
 });
 
 function dataProgress() {
-	console.log('progress');
+	console.log('Downloading data...');
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
 		var percent = Math.floor(e.loaded / 1269870 * 100);
@@ -50,7 +41,7 @@ function dataProgress() {
 }
 
 function dataReceived(data) {
-	console.log('received');
+	console.log('Received data');
 	// write to jsonData variable
 	jsonData = data;
 	// populate course dropdown
@@ -96,4 +87,12 @@ function dataReceived(data) {
 		// if not found
 		if ( !$('#course-dropdown2').dropdown('get value') ) urlNotFound('Course2');
 	}
+}
+
+function showTimestamp(data) {
+	console.log('Received meta');
+	// create new date object so it can be formatted
+	timestamp = new Date(data.timestamp);
+	// show in about modal
+	$('#timestamp').html( timestamp.toLocaleDateString() );
 }
