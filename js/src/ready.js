@@ -20,12 +20,7 @@ $(document).ready(function(){
 	// activate mobile more-dropdown
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
-	$.ajax({
-		dataType: 'json',
-		url: 'data/data.json',
-		success: dataReceived,
-		xhr: dataProgress
-	});
+	loadJSON('data/data.json', 'data', dataProgress, dataReceived);
 	// Get version
 	// show in about modal
 	$('#version').html(version);
@@ -44,6 +39,7 @@ $(document).ready(function(){
 });
 
 function dataProgress() {
+	console.log('progress');
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
 		var percent = Math.floor(e.loaded / 1269870 * 100);

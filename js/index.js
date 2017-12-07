@@ -220,6 +220,42 @@ $('#doc-input').change( function(){
 	dimmable = true;
 });
 
+function loadJSON(url, name, xhr, callback) {
+	// Check if local storage is supported
+	if (typeof(Storage) !== 'undefined') {
+
+		var check = localStorage.getItem(name);
+		if (check !== null) {
+			console.log('available');
+			callback(JSON.parse(check));
+		} else {
+			console.log('downloading');
+			$.ajax({
+				dataType: 'json',
+				url: url,
+				xhr: xhr,
+				success: function(data) {
+					console.log('success' + data);
+					localStorage.setItem(name, JSON.stringify(data));
+					callback(data);
+				}
+			});
+		}
+
+	} else {
+console.log('failed');
+		$.ajax({
+			dataType: 'json',
+			url: url,
+			xhr: xhr,
+			success: function(data) {
+				callback(data);
+			}
+		});
+
+	}
+}
+
 /*------------------------------------------------------------------------------
 ready.js
 ------------------------------------------------------------------------------*/
@@ -242,12 +278,7 @@ $(document).ready(function(){
 	// activate mobile more-dropdown
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
-	$.ajax({
-		dataType: 'json',
-		url: 'data/data.json',
-		success: dataReceived,
-		xhr: dataProgress
-	});
+	loadJSON('data/data.json', 'data', dataProgress, dataReceived);
 	// Get version
 	// show in about modal
 	$('#version').html(version);
@@ -266,6 +297,7 @@ $(document).ready(function(){
 });
 
 function dataProgress() {
+	console.log('progress');
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
 		var percent = Math.floor(e.loaded / 1269870 * 100);
@@ -388,7 +420,7 @@ function updateTabTitle() {
 		}
 	}
 	else {
-		document.title = 'HSC Past Papers';
+		document.title = 'HSCPastPapers.com';
 	}
 }
 
