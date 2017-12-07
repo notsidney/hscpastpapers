@@ -17,6 +17,10 @@ about.css
 	border-bottom: none;
 }
 
+.ui.modal.about .ui.header .icon:only-child {
+	margin: 0 .25rem 0 .75rem;
+}
+
 .ui.modal.about .ui.section.divider:first-of-type {
 	margin-top: -.5rem;
 }
