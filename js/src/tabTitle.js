@@ -18,6 +18,6 @@ function updateTabTitle() {
 		}
 	}
 	else {
-		document.title = 'HSC Past Papers';
+		document.title = 'HSCPastPapers.com';
 	}
 }
