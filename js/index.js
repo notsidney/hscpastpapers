@@ -247,12 +247,14 @@ function loadJSON(url, name, xhr, callback) {
 		if (check !== null && expired === false) {
 			// Serve from local storage
 			console.log('Serving from LocalStorage: ' + name);
+			// Make sure to parse the JSON from string format
 			callback(JSON.parse(check));
 		} else {
 			// Else, download and cache
 			console.log('Downloading: ' + name);
 			ajaxJSON(url, name, xhr, function(data){
 				console.log('Downloaded and cached: ' + name);
+				// Make sure to stringify the data
 				localStorage.setItem(name, JSON.stringify(data));
 				callback(data);
 			});
