@@ -26,7 +26,18 @@ function loadJSON(url, name, xhr, callback) {
 			// Serve from local storage
 			console.log('Serving from LocalStorage: ' + name);
 			// Make sure to parse the JSON from string format
-			callback(JSON.parse(check));
+			try { callback(JSON.parse(check)); }
+			catch (err) {
+				// Write error message
+				var msg = 'Failed to parse ' + name + ' JSON from cache.\n' + err;
+				// Display in console and alert
+				console.error(msg);
+				alert(msg + '\n\nPress OK to reload.');
+				// Remove from local storage
+				localStorage.removeItem(name);
+				// Reload
+				location.reload();
+			}
 		} else {
 			// Else, download and cache
 			console.log('Downloading: ' + name);

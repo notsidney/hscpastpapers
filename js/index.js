@@ -91,22 +91,27 @@ dropdown.js
 ------------------------------------------------------------------------------*/
 
 // parses JSON to populate dropdowns
-function populateDropdown(searchIn, searchFor, pushTo, reverse) {
-	// get all items into an array
-	var items = [];
-	// loop through each item and push to array
-	for (i = 0; i < searchIn.length; i++) {
-		items.push(searchIn[i][searchFor]);
-	}
-	// sort array
-	items.sort();
-	// optionally reverses array (for year dropdown)
-	if (reverse) items.reverse();
-	// clears dropdown
-	$(pushTo).empty();
-	// loops through items in array and adds to the dropdown
-	for (j = 0; j < items.length; j++) {
-		$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
+function populateDropdown(json, searchFor, pushTo, reverse) {
+	if (typeof(json) == 'object') {
+		// get all items into an array
+		var items = [];
+		// loop through each item and push to array
+		for (i = 0; i < json.length; i++) {
+			items.push(json[i][searchFor]);
+		}
+		// sort array
+		items.sort();
+		// optionally reverses array (for year dropdown)
+		if (reverse) items.reverse();
+		// clears dropdown
+		$(pushTo).empty();
+		// loops through items in array and adds to the dropdown
+		for (j = 0; j < items.length; j++) {
+			$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
+		}
+	} else {
+		console.error('Input JSON not an object: ' + json);
+		alert('Error:\n\nInput JSON not an object: ' + json);
 	}
 }
 
@@ -248,7 +253,18 @@ function loadJSON(url, name, xhr, callback) {
 			// Serve from local storage
 			console.log('Serving from LocalStorage: ' + name);
 			// Make sure to parse the JSON from string format
-			callback(JSON.parse(check));
+			try { callback(JSON.parse(check)); }
+			catch (err) {
+				// Write error message
+				var msg = 'Failed to parse ' + name + ' JSON from cache.\n' + err;
+				// Display in console and alert
+				console.error(msg);
+				alert(msg + '\n\nPress OK to reload.');
+				// Remove from local storage
+				localStorage.removeItem(name);
+				// Reload
+				location.reload();
+			}
 		} else {
 			// Else, download and cache
 			console.log('Downloading: ' + name);
