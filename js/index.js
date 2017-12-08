@@ -1,4 +1,4 @@
-var version = '1.6.1';
+var version = '1.7.0';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -91,22 +91,27 @@ dropdown.js
 ------------------------------------------------------------------------------*/
 
 // parses JSON to populate dropdowns
-function populateDropdown(searchIn, searchFor, pushTo, reverse) {
-	// get all items into an array
-	var items = [];
-	// loop through each item and push to array
-	for (i = 0; i < searchIn.length; i++) {
-		items.push(searchIn[i][searchFor]);
-	}
-	// sort array
-	items.sort();
-	// optionally reverses array (for year dropdown)
-	if (reverse) items.reverse();
-	// clears dropdown
-	$(pushTo).empty();
-	// loops through items in array and adds to the dropdown
-	for (j = 0; j < items.length; j++) {
-		$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
+function populateDropdown(json, searchFor, pushTo, reverse) {
+	if (typeof(json) == 'object') {
+		// get all items into an array
+		var items = [];
+		// loop through each item and push to array
+		for (i = 0; i < json.length; i++) {
+			items.push(json[i][searchFor]);
+		}
+		// sort array
+		items.sort();
+		// optionally reverses array (for year dropdown)
+		if (reverse) items.reverse();
+		// clears dropdown
+		$(pushTo).empty();
+		// loops through items in array and adds to the dropdown
+		for (j = 0; j < items.length; j++) {
+			$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
+		}
+	} else {
+		console.error('Input JSON not an object: ' + json);
+		alert('Error:\n\nInput JSON not an object: ' + json);
 	}
 }
 
@@ -221,22 +226,83 @@ $('#doc-input').change( function(){
 });
 
 /*------------------------------------------------------------------------------
+loadjson.js
+------------------------------------------------------------------------------*/
+
+function loadJSON(url, name, xhr, callback) {
+	// Check if local storage is supported
+	if (typeof(Storage) !== 'undefined') {
+		// Check if expired
+		var expired = true;
+		var cacheTimestamp = localStorage.getItem('timestamp');
+		if (cacheTimestamp !== null) {
+			// Calculate time difference
+			var currentTime = new Date();
+			var diff = currentTime.getTime() - new Date(cacheTimestamp).getTime();
+			// If under a week old, use local storage
+			if (diff < 1000*60*60*24*7) expired = false;
+		} else {
+			var newTimestamp = new Date();
+			localStorage.setItem('timestamp', newTimestamp);
+			console.log('Local storage - set new expiration date: ' + newTimestamp);
+		}
+
+		// Check if already in local storage and not expired
+		var check = localStorage.getItem(name);
+		if (check !== null && expired === false) {
+			// Serve from local storage
+			console.log('Serving from LocalStorage: ' + name);
+			// Make sure to parse the JSON from string format
+			try { callback(JSON.parse(check)); }
+			catch (err) {
+				// Write error message
+				var msg = 'Failed to parse ' + name + ' JSON from cache.\n' + err;
+				// Display in console and alert
+				console.error(msg);
+				alert(msg + '\n\nPress OK to reload.');
+				// Remove from local storage
+				localStorage.removeItem(name);
+				// Reload
+				location.reload();
+			}
+		} else {
+			// Else, download and cache
+			console.log('Downloading: ' + name);
+			ajaxJSON(url, name, xhr, function(data){
+				console.log('Downloaded and cached: ' + name);
+				// Make sure to stringify the data
+				localStorage.setItem(name, JSON.stringify(data));
+				callback(data);
+			});
+		}
+
+	} else {
+		// No local storage available - download using ajax
+		console.log('LocalStorage not available: ' + name);
+		ajaxJSON(url, name, xhr, function(data){ callback(data); });
+	}
+}
+
+function ajaxJSON(url, name, xhr, success) {
+	// If there's an xhr progress function submitted
+	if (xhr !== null) {
+		$.ajax({ dataType: 'json', url: url, xhr: xhr, success: success });
+	} else {
+		$.ajax({ dataType: 'json', url: url, success: success });
+	}
+}
+
+/*------------------------------------------------------------------------------
 ready.js
 ------------------------------------------------------------------------------*/
 
 $(document).ready(function(){
 	// when jQuery loads, hide warning
 	$('#nojquery').hide();
-	// show placeholder in iframe
-	$('iframe').contents().find('body').append(
-		'<div style="align-items:center;display:flex;height:100%;' +
-			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
-			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
-			'text-align:center;user-select:none;font-size:1.5em;' +
-			'color:rgba(255,255,255,.5)">' +
-        'Select a Course, Year, and Document above' +
-      '</div>'
-		);
+	// Set about modal transition duration
+	$('#about-modal').modal({ duration: 200 });
+	// show in about modal
+	$('#version').html(version);
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
@@ -252,31 +318,13 @@ $(document).ready(function(){
 	// activate mobile more-dropdown
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
-	// $.getJSON('data/data.json', dataReceived)
-	$.ajax({
-		dataType: 'json',
-		url: 'data/data.json',
-		success: dataReceived,
-		xhr: dataProgress
-	});
-	// Get version
-	// show in about modal
-	$('#version').html(version);
+	loadJSON('data/data.json', 'data', dataProgress, dataReceived);
 	// Update timestamp
-	$.getJSON(
-		'data/meta.json',
-		function(data) {
-			// create new date object so it can be formatted
-			timestamp = new Date(data.timestamp);
-			// show in about modal
-			$('#timestamp').html( timestamp.toLocaleDateString() );
-		}
-	);
-	// Set about modal transition duration
-	$('#about-modal').modal({ duration: 200 });
+	loadJSON('data/meta.json', 'meta', null, showTimestamp);
 });
 
 function dataProgress() {
+	console.log('Downloading data...');
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
 		var percent = Math.floor(e.loaded / 1269870 * 100);
@@ -287,7 +335,7 @@ function dataProgress() {
 }
 
 function dataReceived(data) {
-	console.log('received');
+	console.log('Received data');
 	// write to jsonData variable
 	jsonData = data;
 	// populate course dropdown
@@ -298,6 +346,16 @@ function dataReceived(data) {
 	$('#loadingpercent').html('100%');
 	$('#loadingbar').progress({ percent: 100 }).delay(500).fadeOut(200);
 	$('body').removeClass('loading');
+	// show placeholder in iframe
+	$('iframe').contents().find('body').append(
+		'<div style="align-items:center;display:flex;height:100%;' +
+			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
+			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
+			'text-align:center;user-select:none;font-size:1.5em;' +
+			'color:rgba(255,255,255,.5)">' +
+        'Select a Course, Year, and Document above' +
+      '</div>'
+		);
 	// activate course dropdown
 	$('#course-dropdown')
 		.removeClass('disabled')
@@ -323,6 +381,14 @@ function dataReceived(data) {
 		// if not found
 		if ( !$('#course-dropdown2').dropdown('get value') ) urlNotFound('Course2');
 	}
+}
+
+function showTimestamp(data) {
+	console.log('Received meta');
+	// create new date object so it can be formatted
+	timestamp = new Date(data.timestamp);
+	// show in about modal
+	$('#timestamp').html( timestamp.toLocaleDateString() );
 }
 
 /*------------------------------------------------------------------------------
@@ -389,7 +455,7 @@ function updateTabTitle() {
 		}
 	}
 	else {
-		document.title = 'HSC Past Papers';
+		document.title = 'HSCPastPapers.com';
 	}
 }
 

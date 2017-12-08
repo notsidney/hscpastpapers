@@ -4,7 +4,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
     <script>
-      if (window.location.host != 'localhost' && window.location.host) {
+      if (window.location.host !== 'localhost' && window.location.host) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#1b1c1d">
     <!-- Facebook Open Graph stuff (for sharing on FB) -->
     <meta property="og:url" content="https://hscpastpapers.com/">
-    <meta property="og:title" content="HSC Past Papers">
+    <meta property="og:title" content="HSCPastPapers.com">
     <meta property="og:description" content="
       Quickly browse and download NSW HSC past exam papers, marking guidelines,
       notes from the marking centre, and more for free. Not affiliated with NESA.
@@ -40,7 +40,7 @@
       notes from the marking centre, and more for free. Not affiliated with NESA.
     ">
 
-    <title>HSC Past Papers</title>
+    <title>HSCPastPapers.com</title>
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.min.css">
@@ -284,11 +284,13 @@
       <h2 class="ui header">
         <img src="img/icon.svg" width="48" height="48" class="ui image">
         <div class="content">
-          HSC Past Papers
+          HSCPastPapers.com
           <div class="sub header">
-            Version <span id="version"></span><br>
-            Data updated 
-            <span id="timestamp"></span>
+            Version&nbsp;<span id="version"></span><br>
+            Data updated&nbsp;<span id="timestamp"></span>
+            <a id="cached-clear" href="#" onclick="localStorage.clear();location.reload()">
+              <i class="trash outline icon"></i>Clear cache
+            </a>
           </div>
         </div>
       </h2>

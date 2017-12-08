@@ -5,16 +5,10 @@ ready.js
 $(document).ready(function(){
 	// when jQuery loads, hide warning
 	$('#nojquery').hide();
-	// show placeholder in iframe
-	$('iframe').contents().find('body').append(
-		'<div style="align-items:center;display:flex;height:100%;' +
-			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
-			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
-			'text-align:center;user-select:none;font-size:1.5em;' +
-			'color:rgba(255,255,255,.5)">' +
-        'Select a Course, Year, and Document above' +
-      '</div>'
-		);
+	// Set about modal transition duration
+	$('#about-modal').modal({ duration: 200 });
+	// show in about modal
+	$('#version').html(version);
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
@@ -30,31 +24,13 @@ $(document).ready(function(){
 	// activate mobile more-dropdown
 	$('#more-dropdown').dropdown({action:'nothing'});
 	// gets JSON from nesappscraper
-	// $.getJSON('data/data.json', dataReceived)
-	$.ajax({
-		dataType: 'json',
-		url: 'data/data.json',
-		success: dataReceived,
-		xhr: dataProgress
-	});
-	// Get version
-	// show in about modal
-	$('#version').html(version);
+	loadJSON('data/data.json', 'data', dataProgress, dataReceived);
 	// Update timestamp
-	$.getJSON(
-		'data/meta.json',
-		function(data) {
-			// create new date object so it can be formatted
-			timestamp = new Date(data.timestamp);
-			// show in about modal
-			$('#timestamp').html( timestamp.toLocaleDateString() );
-		}
-	);
-	// Set about modal transition duration
-	$('#about-modal').modal({ duration: 200 });
+	loadJSON('data/meta.json', 'meta', null, showTimestamp);
 });
 
 function dataProgress() {
+	console.log('Downloading data...');
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
 		var percent = Math.floor(e.loaded / 1269870 * 100);
@@ -65,7 +41,7 @@ function dataProgress() {
 }
 
 function dataReceived(data) {
-	console.log('received');
+	console.log('Received data');
 	// write to jsonData variable
 	jsonData = data;
 	// populate course dropdown
@@ -76,6 +52,16 @@ function dataReceived(data) {
 	$('#loadingpercent').html('100%');
 	$('#loadingbar').progress({ percent: 100 }).delay(500).fadeOut(200);
 	$('body').removeClass('loading');
+	// show placeholder in iframe
+	$('iframe').contents().find('body').append(
+		'<div style="align-items:center;display:flex;height:100%;' +
+			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
+			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
+			'text-align:center;user-select:none;font-size:1.5em;' +
+			'color:rgba(255,255,255,.5)">' +
+        'Select a Course, Year, and Document above' +
+      '</div>'
+		);
 	// activate course dropdown
 	$('#course-dropdown')
 		.removeClass('disabled')
@@ -101,4 +87,12 @@ function dataReceived(data) {
 		// if not found
 		if ( !$('#course-dropdown2').dropdown('get value') ) urlNotFound('Course2');
 	}
+}
+
+function showTimestamp(data) {
+	console.log('Received meta');
+	// create new date object so it can be formatted
+	timestamp = new Date(data.timestamp);
+	// show in about modal
+	$('#timestamp').html( timestamp.toLocaleDateString() );
 }

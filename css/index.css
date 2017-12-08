@@ -112,7 +112,7 @@ iframe.css
 iframe {
 	border: none;
 	height: 100%;
-	height: calc(100% - 41px);
+	height: calc(100% - 40px);
 	left: 0;
 	position: absolute;
 	top: 40px;
@@ -142,6 +142,10 @@ about.css
 
 .ui.modal.about>.header {
 	border-bottom: none;
+}
+
+.ui.modal.about .ui.header .icon:only-child {
+	margin: 0 .25rem 0 .75rem;
 }
 
 .ui.modal.about .ui.section.divider:first-of-type {

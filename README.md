@@ -1,4 +1,4 @@
-# HSC Past Papers https://hscpastpapers.com
+# [HSCPastPapers.com](https://hscpastpapers.com)
 Web app to quickly browse past HSC papers.
 
 ![Screenshot](https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/screenshot_fb_1.5.png)

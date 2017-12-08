@@ -11,6 +11,7 @@ var paths = {
     'js/src/vars.js',
     'js/src/helpers.js',
     'js/src/dropdown.js',
+    'js/src/loadjson.js',
     'js/src/ready.js',
     'js/src/ui.js',
     'js/src/dim.js',
