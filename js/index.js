@@ -1,4 +1,4 @@
-var version = '1.7.0';
+var version = '1.7.1';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -244,7 +244,7 @@ function loadJSON(url, name, xhr, callback) {
 		} else {
 			var newTimestamp = new Date();
 			localStorage.setItem('timestamp', newTimestamp);
-			console.log('Local storage - set new expiration date: ' + newTimestamp);
+			console.log('Local storage - set new download date: ' + newTimestamp);
 		}
 
 		// Check if already in local storage and not expired
@@ -291,6 +291,12 @@ function ajaxJSON(url, name, xhr, success) {
 		$.ajax({ dataType: 'json', url: url, success: success });
 	}
 }
+
+// Clear cache button
+$('#clear-cache').click(function(){
+	localStorage.clear();
+	location.reload();
+});
 
 /*------------------------------------------------------------------------------
 ready.js
