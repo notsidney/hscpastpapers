@@ -110,7 +110,6 @@ iframe.css
 ------------------------------------------------------------------------------*/
 
 iframe {
-	background-color: #fff;
 	border: none;
 	height: 100%;
 	height: calc(100% - 40px);
