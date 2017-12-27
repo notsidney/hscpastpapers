@@ -53,7 +53,11 @@ function dataReceived(data) {
 	$('#loadingbar').progress({ percent: 100 }).delay(500).fadeOut(200);
 	$('body').removeClass('loading');
 	// show placeholder in iframe
-	$('iframe').contents().find('body').append(
+	$('iframe').contents().find('body')
+		.css('background-color', '#262626')
+		.css('margin', '50px 0')
+		.css('padding', '0 20px')
+		.append(
 		'<div style="align-items:center;display:flex;height:100%;' +
 			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
 			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
@@ -62,6 +66,11 @@ function dataReceived(data) {
         'Select a Course, Year, and Document above' +
       '</div>'
 		);
+	// add left border to right iframe placeholder
+	$('#iframe-split-right').contents().find('body')
+		.css('border-left', '1px solid rgba(255,255,255,.2)');
+	// change page background
+	$('body').css('background-color', '#fff');
 	// activate course dropdown
 	$('#course-dropdown')
 		.removeClass('disabled')

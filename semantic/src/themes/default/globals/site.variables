@@ -38,10 +38,10 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+@primaryColor        : @violet;
 @secondaryColor      : @black;
 
-@lightPrimaryColor   : @lightBlue;
+@lightPrimaryColor   : @lightViolet;
 @lightSecondaryColor : @lightBlack;
 
 /*--------------
@@ -125,7 +125,7 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
+@linkColor           : @violet;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;

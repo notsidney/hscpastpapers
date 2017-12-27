@@ -121,10 +121,10 @@ $('#doc-input').change( function(){
 			break;
 		}
 	}
-	// open in iframe
-	$('#iframe').attr('src', docLink);
 	// add loading indicator on logo
 	$('#loader').addClass('active');
+	// open in iframe
+	openPDF(docLink, 'left');
 	// activate download & link buttons
 	$('.button-download').removeClass('disabled').attr('href', docLink);
 	$('.button-link').removeClass('disabled').removeAttr('disabled');
