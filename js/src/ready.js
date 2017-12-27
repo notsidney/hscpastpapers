@@ -56,22 +56,20 @@ function dataReceived(data) {
 	$('#loadingbar').progress({ percent: 100 }).delay(500).fadeOut(200);
 	$('body').removeClass('loading');
 	// show placeholder in iframe
-	$('iframe').contents().find('body')
-		.css('background-color', '#262626')
-		.css('margin', '50px 0')
-		.css('padding', '0 20px')
-		.append(
-		'<div style="align-items:center;display:flex;height:100%;' +
-			'justify-content:center;font-family:-apple-system,BlinkMacSystemFont' +
-			',\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;cursor:default;' +
-			'text-align:center;user-select:none;font-size:1.5em;' +
-			'color:rgba(255,255,255,.5)">' +
-        'Select a Course, Year, and Document above' +
-      '</div>'
-		);
-	// add left border to right iframe placeholder
-	$('#iframe-split-right').contents().find('body')
-		.css('border-left', '1px solid rgba(255,255,255,.2)');
+	iframeMsg('left',
+		'<p>' +
+      'Select a' +
+      '<i class="student icon left spaced"></i>Course,' +
+      '<i class="history icon left spaced"></i>Year, and' +
+      '<i class="file text icon left spaced"></i>Document above' +
+    '</p>');
+	iframeMsg('right',
+		'<p>' +
+      'Select a' +
+      '<i class="student icon left spaced"></i>Course,' +
+      '<i class="history icon left spaced"></i>Year, and' +
+      '<i class="file text icon left spaced"></i>Document above' +
+    '</p>');
 	// change page background
 	$('body').css('background-color', '#fff');
 	// activate course dropdown

@@ -10,7 +10,6 @@ var paths = {
     'version.js',
     'js/src/vars.js',
     'js/src/helpers.js',
-    'js/src/openpdf.js',
     'js/src/dropdown.js',
     'js/src/loadjson.js',
     'js/src/ready.js',
