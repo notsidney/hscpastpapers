@@ -31,9 +31,12 @@ $(document).ready(function(){
 
 function dataProgress() {
 	console.log('Downloading data...');
+	// access xhr
 	var xhr = new window.XMLHttpRequest();
 	xhr.addEventListener('progress', function(e) {
-		var percent = Math.floor(e.loaded / 1269870 * 100);
+		// data.json is approx 1217736 bytes
+		var percent = Math.floor(e.loaded / 1217736 * 100);
+		// update ui loading bar
 		$('#loadingbar').progress({ percent: percent });
 		$('#loadingpercent').html(percent + '%');
 	}, false);
