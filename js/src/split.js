@@ -139,7 +139,7 @@ $('#doc-input2').change( function(){
 		}
 	}
 	// open in iframe
-	$('#iframe-split-right').attr('src', docLink2);
+	openPDF(docLink2, 'right');
 	// add loading indicator on logo
 	$('#loader').addClass('active');
 	// activate download & link buttons

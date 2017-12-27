@@ -13,6 +13,9 @@ $(document).ready(function () {
   $(this).mousedown( function (e) { resetTimer(); } );
   $(this).mouseup( function (e) { resetTimer(); } );
   $(this).keypress( function (e) { resetTimer(); } );
+  this.addEventListener('touchstart', function (e) { resetTimer(); }, false);
+  this.addEventListener('touchmove', function (e) { resetTimer(); }, false);
+  this.addEventListener('touchend', function (e) { resetTimer(); }, false);
 });
 // dim
 function timerIncrement() {
