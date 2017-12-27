@@ -4,8 +4,9 @@ Web app to quickly browse past HSC papers.
 ![Screenshot](https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/screenshot_fb_1.5.png)
 
 # Acknowledgements
-Built with [Semantic UI 2.2.13](http://semantic-ui.com) and
-[jQuery 3.1.1](http://jquery.com).
+Built with [Semantic UI 2.2.13](http://semantic-ui.com),
+[jQuery 3.1.1](http://jquery.com), and
+[PDFObject 2.0.201604172](https://pdfobject.com).
 
 ## NESA PP Scraper
 Note this web app only parses through a JSON file already containing links to
