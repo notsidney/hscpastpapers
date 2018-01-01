@@ -7,8 +7,10 @@ $(document).ready(function(){
 	$('#nojquery').hide();
 	// Set about modal transition duration
 	$('#about-modal').modal({ duration: 200 });
-	// show in about modal
+	// show version in about modal
 	$('#version').html(version);
+	// show current year in about modal
+	$('#currentYear').html(new Date().getFullYear().toString().substr(-2));
 	// store url params
 	urlCourse = urlParam('course');
 	urlYear = urlParam('year');
