@@ -1,4 +1,4 @@
-var version = '1.8.2';
+var version = '1.8.3';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -121,7 +121,7 @@ function iframeMsg(side, msg) {
   target.contents().find('head').html(
     '<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">' +
     '<style>' +
-      'body {' +
+      '.msg-body {' +
         'background-color: #262626;' +
         'min-width: auto;' +
         'padding: 20px' +
@@ -162,7 +162,7 @@ function iframeMsg(side, msg) {
       '}' +
     '</style>'
   );
-  target.contents().find('body').html(
+  target.contents().find('body').addClass('msg-body').html(
     '<div class="container">' +
       '<div class="message">' +
         msg +
