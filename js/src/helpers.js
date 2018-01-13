@@ -78,9 +78,11 @@ function openPDF(link, side) {
   // get target iframe
   var target = $('#iframe');
   if (side === 'right') target = $('#iframe-split-right');
-  // add fix for firefox
+  // show PDF in iframe - also includes fix for firefox
   if (PDFObject.supportsPDFs || navigator.userAgent.indexOf("Firefox") > -1) {
     target.attr('src', link);
+    // dim
+    dimmable = true;
   } else {
     // hide loader
     $('#loader').removeClass('active');

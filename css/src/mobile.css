@@ -24,7 +24,7 @@ mobile.css
 	}
 }
 
-/* Just hide the dropdown text */
+/* Hide the dropdown text */
 @media (max-width: 540px) {
 	.ui.menu span.text, .ui.menu .dropdown.icon {
 		display: none;
@@ -33,4 +33,8 @@ mobile.css
 	.ui.menu .item>i.icon.compact {
 		margin: 0;
 	}
+
+  .ui.dropdown .scrolling.menu>.item {
+    white-space: normal;
+  }
 }

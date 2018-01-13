@@ -133,6 +133,4 @@ $('#doc-input').change( function(){
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	updateTabTitle();
-	// enable dim function
-	dimmable = true;
 });

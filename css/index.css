@@ -56,6 +56,7 @@ body:not(.loading) .loading-show {
 
 .ui.dropdown .menu>.input {
   margin: 0;
+  z-index: 22;
 }
 .ui.dropdown .menu>.input:not(.transparent) input {
   border: 0;
@@ -72,7 +73,13 @@ body:not(.loading) .loading-show {
 }
 
 .ui.dropdown .scrolling.menu {
+  -webkit-overflow-scrolling: touch;
   max-height: calc(100vh - 156px);
+}
+.ui.dropdown .menu .left.menu,
+.ui.dropdown>.left.menu .menu {
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 
@@ -197,7 +204,7 @@ mobile.css
 	}
 }
 
-/* Just hide the dropdown text */
+/* Hide the dropdown text */
 @media (max-width: 540px) {
 	.ui.menu span.text, .ui.menu .dropdown.icon {
 		display: none;
@@ -206,6 +213,10 @@ mobile.css
 	.ui.menu .item>i.icon.compact {
 		margin: 0;
 	}
+
+  .ui.dropdown .scrolling.menu>.item {
+    white-space: normal;
+  }
 }
 
 /*------------------------------------------------------------------------------

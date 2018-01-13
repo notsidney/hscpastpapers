@@ -150,8 +150,6 @@ $('#doc-input2').change( function(){
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	updateTabTitle();
-	// enable dim function
-	dimmable = true;
 });
 
 // when iframe finishes loading, remove loading indicator on logo

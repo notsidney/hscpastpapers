@@ -5,6 +5,7 @@ dim.js
 // dims ui elements when idle
 var idleTime = 0,
 		dimmable = false;
+
 $(document).ready(function () {
   // Increment the idle time counter every minute.
   var idleInterval = setInterval(timerIncrement, 5000); // 5 sec
@@ -17,6 +18,7 @@ $(document).ready(function () {
   this.addEventListener('touchmove', function (e) { resetTimer(); }, false);
   this.addEventListener('touchend', function (e) { resetTimer(); }, false);
 });
+
 // dim
 function timerIncrement() {
   idleTime = idleTime + 5;

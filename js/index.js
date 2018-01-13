@@ -1,4 +1,4 @@
-var version = '1.8.4';
+var version = '1.8.5';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -91,9 +91,11 @@ function openPDF(link, side) {
   // get target iframe
   var target = $('#iframe');
   if (side === 'right') target = $('#iframe-split-right');
-  // add fix for firefox
+  // show PDF in iframe - also includes fix for firefox
   if (PDFObject.supportsPDFs || navigator.userAgent.indexOf("Firefox") > -1) {
     target.attr('src', link);
+    // dim
+    dimmable = true;
   } else {
     // hide loader
     $('#loader').removeClass('active');
@@ -310,8 +312,6 @@ $('#doc-input').change( function(){
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	updateTabTitle();
-	// enable dim function
-	dimmable = true;
 });
 
 /*------------------------------------------------------------------------------
@@ -520,6 +520,7 @@ dim.js
 // dims ui elements when idle
 var idleTime = 0,
 		dimmable = false;
+
 $(document).ready(function () {
   // Increment the idle time counter every minute.
   var idleInterval = setInterval(timerIncrement, 5000); // 5 sec
@@ -532,6 +533,7 @@ $(document).ready(function () {
   this.addEventListener('touchmove', function (e) { resetTimer(); }, false);
   this.addEventListener('touchend', function (e) { resetTimer(); }, false);
 });
+
 // dim
 function timerIncrement() {
   idleTime = idleTime + 5;
@@ -721,8 +723,6 @@ $('#doc-input2').change( function(){
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
 	updateTabTitle();
-	// enable dim function
-	dimmable = true;
 });
 
 // when iframe finishes loading, remove loading indicator on logo

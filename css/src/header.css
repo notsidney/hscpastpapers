@@ -43,6 +43,7 @@ body:not(.loading) .loading-show {
 
 .ui.dropdown .menu>.input {
   margin: 0;
+  z-index: 22;
 }
 .ui.dropdown .menu>.input:not(.transparent) input {
   border: 0;
@@ -59,7 +60,13 @@ body:not(.loading) .loading-show {
 }
 
 .ui.dropdown .scrolling.menu {
+  -webkit-overflow-scrolling: touch;
   max-height: calc(100vh - 156px);
+}
+.ui.dropdown .menu .left.menu,
+.ui.dropdown>.left.menu .menu {
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 
