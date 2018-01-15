@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
-import styles from '../../css/Buttons.css';
+import styles from '../../css/LinkButton.css';
 
 const LinkButton = (props) => {
 	if (props.download) {

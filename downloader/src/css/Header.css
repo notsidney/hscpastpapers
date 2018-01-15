@@ -32,6 +32,7 @@ header > .button {
   border-radius: 0;
 
   color: rgba(0,0,0,.87);
+  border: none;
 
   font-weight: normal;
   line-height: 2.5rem;

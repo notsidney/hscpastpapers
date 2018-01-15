@@ -1,5 +1,5 @@
 .listContainer {
-  height: calc(100% - 41px);
+  height: calc(100% - 40px - 2px);
   margin-top: 1px;
 
   display: flex;
@@ -27,7 +27,7 @@ section > .title {
 }
 
 ol {
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 4.5rem - 1px);
   margin: 0;
   padding: 0;
 

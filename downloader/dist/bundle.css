@@ -1,13 +1,24 @@
 .button {
-  padding: .75rem 1.25rem;
+  padding: .5rem 1rem;
   border-radius: .5rem;
+  box-sizing: border-box;
+
+  border: 1px solid #6435c9;
+  background-color: #fff;
+  color: #6435c9;
 
   transition: background-color .2s, opacity .2s;
 
   font-weight: bold;
+  font-size: .875rem;
   line-height: 1rem;
   text-decoration: none;
   text-align: center;
+
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(100,53,201,.1);
 }
 .button:active {
   transition: none;
@@ -15,11 +26,14 @@
 }
 
 .button.primary {
+  padding: .75rem 1.25rem;
   width: 100%;
   display: block;
 
   background-color: #6435c9;
   color: #fff;
+
+  font-size: 1.25rem;
 }
 .button.primary:hover {
   background-color: #5829bb;
@@ -58,6 +72,7 @@ header > .button {
   border-radius: 0;
 
   color: rgba(0,0,0,.87);
+  border: none;
 
   font-weight: normal;
   line-height: 2.5rem;
@@ -152,7 +167,7 @@ li.active {
   line-height: 1rem;
 }
 .listContainer {
-  height: calc(100% - 41px);
+  height: calc(100% - 40px - 2px);
   margin-top: 1px;
 
   display: flex;
@@ -180,7 +195,7 @@ section > .title {
 }
 
 ol {
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 4.5rem - 1px);
   margin: 0;
   padding: 0;
 
@@ -199,6 +214,41 @@ ol {
 
   border-right: none;
 }
+
+.linkContainer {
+  margin-top: 2rem;
+
+  display: flex;
+}
+.linkContainer>.fa {
+  margin-right: .7rem;
+
+  color: rgba(0,0,0,.87);
+
+  line-height: 2rem;
+}
+.linkContainer input {
+  height: 2rem;
+  min-width: 0;
+  padding: .5rem 0 .5rem .75rem;
+  margin: 0;
+
+  border-radius: .5rem 0 0 .5rem;
+  border: 1px solid rgba(0,0,0,.25);
+  border-right-width: 0;
+  -webkit-appearance: none;
+
+  flex: 1;
+
+  font-size: .875rem;
+  line-height: 1rem;
+}
+.linkContainer button {
+  height: 2rem;
+  margin: 0;
+
+  border-radius: 0 .5rem .5rem 0;
+}
 html,
 body {
   margin: 0;
@@ -211,7 +261,8 @@ body {
 }
 
 body,
-input {
+input,
+button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

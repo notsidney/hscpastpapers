@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
-import LinkButton from './Buttons.jsx';
+import LinkButton from './LinkButton.jsx';
 
 import styles from '../../css/Header.css';
 

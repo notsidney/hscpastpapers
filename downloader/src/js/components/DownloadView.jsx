@@ -1,9 +1,17 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
-import LinkButton from './Buttons.jsx';
+import LinkButton from './LinkButton.jsx';
 
 import styles from '../../css/DownloadView.css';
+
+const selectOnClick = () => {
+	document.getElementById('linkBox').select();
+}
+
+const copyLink = () => {
+	console.log('copied');
+}
 
 const DownloadView = (props) => {
   return(
@@ -15,6 +23,21 @@ const DownloadView = (props) => {
       	download="true"
       	className="primary"
       />
+      <div className="linkContainer">
+      	<FontAwesome name="link" />
+	      <input
+	      	type="text"
+	      	className="linkBox"
+	      	id="linkBox"
+	      	value={props.url}
+	      	readOnly
+	      	onClick={selectOnClick}
+	      />
+				<button className="button" onClick={copyLink}>
+					<FontAwesome name="clipboard" />
+					Copy link
+				</button>
+			</div>
     </section>
   )
 }

@@ -1,13 +1,24 @@
 .button {
-  padding: .75rem 1.25rem;
+  padding: .5rem 1rem;
   border-radius: .5rem;
+  box-sizing: border-box;
+
+  border: 1px solid #6435c9;
+  background-color: #fff;
+  color: #6435c9;
 
   transition: background-color .2s, opacity .2s;
 
   font-weight: bold;
+  font-size: .875rem;
   line-height: 1rem;
   text-decoration: none;
   text-align: center;
+
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(100,53,201,.1);
 }
 .button:active {
   transition: none;
@@ -15,11 +26,14 @@
 }
 
 .button.primary {
+  padding: .75rem 1.25rem;
   width: 100%;
   display: block;
 
   background-color: #6435c9;
   color: #fff;
+
+  font-size: 1.25rem;
 }
 .button.primary:hover {
   background-color: #5829bb;
