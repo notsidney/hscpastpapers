@@ -1,6 +1,7 @@
 # node and semantic
 node_modules/
 semantic-old/
+package-lock.json
 
 # Windows image file caches
 Thumbs.db
