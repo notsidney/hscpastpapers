@@ -1,0 +1,8 @@
+.button {
+  transition: background-color .2s;
+
+  text-decoration: none;
+}
+.button:active {
+  transition: none;
+}

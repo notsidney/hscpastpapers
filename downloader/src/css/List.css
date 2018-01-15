@@ -1,0 +1,15 @@
+.listContainer {
+  height: calc(100% - 41px);
+
+  display: flex;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  border-right: 1px solid rgba(0,0,0,.1);
+
+  list-style: none;
+}
