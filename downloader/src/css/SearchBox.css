@@ -1,0 +1,39 @@
+.searchBoxContainer {
+  position: relative;
+}
+
+.searchBox {
+  width: calc(100% - 2rem);
+  margin: 0 1rem .5rem;
+  padding: .5rem 2rem .5rem .75rem;
+
+  background-color: rgba(0,0,0,.1);
+  border: none;
+  border-radius: .5rem;
+  -webkit-appearance: none;
+
+  transition: background-color .2s, box-shadow .2s;
+
+  font-size: .875rem;
+  line-height: 1rem;
+}
+.searchBox:focus {
+  background-color: #fff;
+  box-shadow: 0 0 .25rem .125rem #6435c9;
+  outline: none;
+
+  transition: background-color 0s, box-shadow 0s;
+}
+
+.searchBox+.fa-search {
+  margin: 0 1rem 0 0;
+  padding: .5rem .75rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: rgba(0,0,0,.35);
+
+  line-height: 1rem;
+}

@@ -1,8 +1,26 @@
 .button {
-  transition: background-color .2s;
+  padding: .75rem 1.25rem;
+  border-radius: .5rem;
 
+  transition: background-color .2s, opacity .2s;
+
+  font-weight: bold;
+  line-height: 1rem;
   text-decoration: none;
+  text-align: center;
 }
 .button:active {
   transition: none;
+  opacity: .5;
+}
+
+.button.primary {
+  width: 100%;
+  display: block;
+
+  background-color: #6435c9;
+  color: #fff;
+}
+.button.primary:hover {
+  background-color: #5829bb;
 }

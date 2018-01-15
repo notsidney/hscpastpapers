@@ -1,6 +1,8 @@
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
 
 import ListItem from './ListItem.jsx';
+import SearchBox from './SearchBox.jsx';
 
 import styles from '../../css/List.css';
 
@@ -34,6 +36,11 @@ class List extends React.Component {
 
     return(
       <section>
+      	<div className="title">
+      		<FontAwesome name={this.props.icon} />
+      		{this.props.title}
+      	</div>
+      	<SearchBox title={this.props.title + 's'} />
         <ol>{listItems}</ol>
       </section>
     )
