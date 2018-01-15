@@ -216,6 +216,9 @@
             <a class="item link button-reset split-show" href="?">
               <i class="undo icon compact"></i>Reset
             </a>
+            <a class="item link split-hide" href="/downloader">
+              <i class="cloud download icon compact"></i>Downloader
+            </a>
             <button class="item link button-split split-hide loading-hide">
               <i class="columns icon"></i>Split view
             </button>
@@ -235,11 +238,12 @@
       <!-- desktop menu -->
       <div id="desktop-menu" class="right menu">
 
-        <div id="pdf-dropdown" class="ui dropdown disabled item split-hide loading-hide">
-          <i class="file pdf outline left icon"></i>PDF
+        <div id="actions-dropdown" class="ui dropdown right disabled item split-hide loading-hide">
+          <i class="lightning left icon"></i>Actions
           <i class="dropdown icon"></i>
 
           <div class="menu">
+            <div class="header">PDF</div>
             <a class="item disabled button-download" target="_blank">
               <i class="external icon"></i>Open in new tab
             </a>
@@ -249,14 +253,19 @@
             <a class="item disabled button-download" download target="_blank">
               <i class="download icon"></i>Download
             </a>
+            <div class="ui divider"></div>
+            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
+              <i class="external icon"></i>Exam pack
+            </a>
           </div>
         </div>
-        <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
-          <i class="external icon"></i>Exam pack
-        </a>
+
         <a class="item link button-reset split-show" href="?">
           <i class="undo icon compact"></i>
           <span class="text">Reset</span>
+        </a>
+        <a class="item link split-hide" href="/downloader">
+          <i class="cloud download icon compact"></i>Downloader
         </a>
         <button class="item link button-split split-hide loading-hide">
           <i class="columns icon"></i>Split view

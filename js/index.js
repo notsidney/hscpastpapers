@@ -275,6 +275,7 @@ $('#year-input').change( function() {
 		if ( !$('#doc-dropdown').dropdown('get value') ) urlNotFound('Doc');
 	}
 	// activate exam pack buttons and adds link
+  $('#actions-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	$('.button-exampack')
 		.removeClass('disabled')
 		.attr('href', jsonData[courseIndex].packs[yearIndex].link);
@@ -307,7 +308,6 @@ $('#doc-input').change( function(){
 	// activate download & link buttons
 	$('.button-download').removeClass('disabled').attr('href', docLink);
 	$('.button-link').removeClass('disabled').removeAttr('disabled');
-	$('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
@@ -718,7 +718,7 @@ $('#doc-input2').change( function(){
 	// activate download & link buttons
 	// $('.button-download').removeClass('disabled').attr('href', docLink);
 	// $('.button-link').removeClass('disabled').removeAttr('disabled');
-	// $('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
+	// $('#actions-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title

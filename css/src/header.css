@@ -74,7 +74,7 @@ body:not(.loading) .loading-show {
   margin-right: 0;
 }
 #more-dropdown button,
-#pdf-dropdown button {
+#actions-dropdown button {
   width: 100%;
 }
 
