@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header.jsx';
 import List from './components/List.jsx';
 import DownloadView from './components/DownloadView.jsx';
+import LoadingIndicator from './components/LoadingIndicator.jsx';
 
 import styles from '../css/base.css';
 
@@ -18,6 +19,8 @@ class App extends React.Component {
 		this.selectItem = this.selectItem.bind(this);
 
 		this.state = {
+			downloading: true,
+			downloadProgress: 25,
 			course: -1,
 			year: -1,
 			doc: -1
@@ -32,15 +35,21 @@ class App extends React.Component {
 	}
 
   render() {
-    return(
-    	<div className="container">
-	      <Header />
-	      <div className="listContainer">
+  	const bodyElements = (this.state.downloading) ?
+				<LoadingIndicator progress={this.state.downloadProgress} />
+  		:
+  			<div className="listContainer">
 		      <List title="Course" icon="graduation-cap" selected={this.state.course} selectItem={this.selectItem} items={courses} />
 		      <List title="Year" icon="history" items={[]} />
 		      <List title="Doc" icon="file-text" items={[]} />
 		      <DownloadView disabled="true" docName="really-long-doc-name-doc.pdf" url="example.com/doc.pdf" />
 		    </div>
+		;
+
+    return(
+    	<div className="container">
+	      <Header />
+	      {bodyElements}
 	    </div>
     )
   }

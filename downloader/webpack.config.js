@@ -14,6 +14,7 @@ module.exports = {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
+    // filename: 'bundle.min.js'
   },
   module: {
     loaders: [
@@ -34,7 +35,7 @@ module.exports = {
     //   'process.env.NODE_ENV': JSON.stringify('production')
     // }),
     // new webpack.optimize.UglifyJsPlugin({
-    //   sourceMap: true
+    //   sourceMap: true,
     //   output: {
     //     comments: false
     //   }
