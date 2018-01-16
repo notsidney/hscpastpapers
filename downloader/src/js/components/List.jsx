@@ -11,12 +11,10 @@ class List extends React.Component {
     super(props);
 
     this.activateItem = this.activateItem.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {selected: -1};
   }
 
   activateItem(index) {
-    this.setState({selected: index});
+    this.props.selectItem(this.props.title, index);
   }
 
   handleClick() {
@@ -26,7 +24,7 @@ class List extends React.Component {
   render() {
   	if (this.props.items.length > 0) {
 	    const listItems = this.props.items.map((item, index) =>
-	    	(index === this.state.selected) ?
+	    	(index === this.props.selected) ?
 	    		<ListItem
 	    			key={item}
 	    			index={item}
