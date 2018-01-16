@@ -28,9 +28,9 @@ class App extends React.Component {
 	      <Header />
 	      <div className="listContainer">
 		      <List title="Course" icon="graduation-cap" items={courses} />
-		      <List title="Year" icon="history" items={years} />
-		      <List title="Doc" icon="file-text" items={docs} />
-		      <DownloadView docName="doc.pdf" url="example.com/doc.pdf" />
+		      <List title="Year" icon="history" items={[]} />
+		      <List title="Doc" icon="file-text" items={[]} />
+		      <DownloadView disabled="true" docName="really-long-doc-name-doc.pdf" url="example.com/doc.pdf" />
 		    </div>
 	    </div>
     )

@@ -1,19 +1,20 @@
 .button {
-  padding: .5rem 1rem;
+  padding: 0 1rem;
   border-radius: .5rem;
   box-sizing: border-box;
 
   border: 1px solid #6435c9;
-  background-color: #fff;
+  background-color: transparent;
   color: #6435c9;
 
   transition: background-color .2s, opacity .2s;
 
   font-weight: bold;
   font-size: .875rem;
-  line-height: 1rem;
+  line-height: 2rem;
   text-decoration: none;
   text-align: center;
+  user-select: none;
 
   cursor: pointer;
 }
@@ -32,8 +33,10 @@
 
   background-color: #6435c9;
   color: #fff;
+  border-radius: .625rem;
 
   font-size: 1.25rem;
+  line-height: 1.2;
 }
 .button.primary:hover {
   background-color: #5829bb;

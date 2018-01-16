@@ -9,13 +9,13 @@ const Header = () => {
   return(
     <header>
       <img className="item" src="../img/icon.svg" width="16" height="16" />
-      <div className="item title">
+      <div className="item headerTitle">
       	<FontAwesome name="cloud-download" />
       	Downloader
       </div>
       <LinkButton
       	url="../"
-      	text="Exit Downloader"
+      	text="Exit"
       	icon="window-close"
       	className="item right"
       />

@@ -12,6 +12,15 @@ const LinkButton = (props) => {
 			</a>
 		)
 	}
+	else if (props.newTab) {
+		return(
+			<a className={props.className + ' button'} href={props.url}
+				target="_blank">
+				<FontAwesome name={props.icon} />
+				{props.text}
+			</a>
+		)
+	}
 	else {
 		return(
 			<a className={props.className + ' button'} href={props.url}>

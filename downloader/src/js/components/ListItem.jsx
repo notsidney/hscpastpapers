@@ -7,7 +7,10 @@ const ListItem = (props) => {
 	const className = (props.active) ? 'active' : '';
 
 	return(
-		<li className={className}>
+		<li
+			className={className}
+			onClick={() => { props.activateItem(props.index) }}
+		>
 			<span className="listItemText">{props.text}</span>
 			<FontAwesome name="chevron-right" />
 		</li>

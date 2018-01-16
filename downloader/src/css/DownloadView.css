@@ -1,42 +1,77 @@
 .downloadView {
-  padding: 1rem;
+  padding: 4.5rem 1rem;
 
-  flex: 1.5;
+  flex: 1.5 0 12.5rem;
+
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   border-right: none;
+}
+
+.downloadView h1 {
+  margin: 0 0 2rem;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+
+  cursor: default;
+}
+.downloadView h1 .fa {
+  margin: 0 0 .5rem;
+  display: block;
+
+  font-size: 2rem;
 }
 
 .linkContainer {
   margin-top: 2rem;
 
-  display: flex;
+  position: relative;
 }
 .linkContainer>.fa {
-  margin-right: .7rem;
+  margin: 0 0 0 .5rem;
+  padding: .55rem 0;
 
-  color: rgba(0,0,0,.87);
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  line-height: 2rem;
+  color: rgba(0,0,0,.67);
 }
 .linkContainer input {
   height: 2rem;
-  min-width: 0;
-  padding: .5rem 0 .5rem .75rem;
-  margin: 0;
+  width: 100%;
+  padding: 0 0 0 1.75rem;
+  margin: 0 0 .5rem;
 
-  border-radius: .5rem 0 0 .5rem;
+  border-radius: .5rem;
   border: 1px solid rgba(0,0,0,.25);
-  border-right-width: 0;
   -webkit-appearance: none;
 
-  flex: 1;
-
   font-size: .875rem;
-  line-height: 1rem;
+  line-height: 2rem;
 }
-.linkContainer button {
+.linkContainer .button {
   height: 2rem;
-  margin: 0;
+  width: 100%;
+  margin: 0 0 .5rem 0;
 
-  border-radius: 0 .5rem .5rem 0;
+  display: inline-block;
+}
+
+@media (min-width: 80rem) {
+  .linkContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .linkContainer .button {
+    margin: 0;
+    flex: 1;
+  }
+  .linkContainer button.button {
+    margin: 0 .5rem 0 0;
+  }
 }

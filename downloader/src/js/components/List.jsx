@@ -16,8 +16,7 @@ class List extends React.Component {
   }
 
   activateItem(index) {
-    // this.setState({selected: index});
-    console.log('activateItem: ' + index);
+    this.setState({selected: index});
   }
 
   handleClick() {
@@ -25,25 +24,41 @@ class List extends React.Component {
   }
 
   render() {
-    const listItems = this.props.items.map((item, index) => 
-      <ListItem
-        key={item}
-        index={index}
-        text={item}
-        onClick={this.handleClick()}
-      />
-    );
+  	if (this.props.items.length > 0) {
+	    const listItems = this.props.items.map((item, index) =>
+	    	(index === this.state.selected) ?
+	    		<ListItem
+	    			key={item}
+	    			index={item}
+	    			text={item}
+	    			activateItem={this.activateItem}
+	    			active="true"
+	    		/>
+	    	:
+		      <ListItem
+		        key={item}
+		        index={index}
+		        text={item}
+		        activateItem={this.activateItem}
+		      />
+	    );
 
-    return(
-      <section>
-      	<div className="title">
-      		<FontAwesome name={this.props.icon} />
-      		{this.props.title}
-      	</div>
-      	<SearchBox title={this.props.title + 's'} />
-        <ol>{listItems}</ol>
-      </section>
-    )
+	    return(
+	      <section>
+	      	<div className="title">
+	      		<FontAwesome name={this.props.icon} />
+	      		{this.props.title}
+	      	</div>
+	      	<SearchBox title={this.props.title + 's'} />
+	        <ol>{listItems}</ol>
+	      </section>
+	    )
+	  }
+	  else {
+	  	return(
+	  		<section className="disabled"></section>
+	  	)
+	  }
   }
 }
 
