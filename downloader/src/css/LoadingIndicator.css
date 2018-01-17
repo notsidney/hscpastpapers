@@ -13,8 +13,29 @@ progress {
   width: 15rem;
   height: .5rem;
 
-  border-radius: 50%;
+  border: none;
+  border-radius: 50em;
+  background-color: rgba(0,0,0,.1);
+
+  color: #6435c9;
 
   -webkit-appearance: none;
   appearance: none;
+}
+progress::-webkit-progress-bar,
+progress {
+  border-radius: 50em;
+  background-color: rgba(0,0,0,.1);
+}
+progress::-webkit-progress-value {
+  border-radius: 50em;
+  background-color: #6435c9;
+}
+progress::-moz-progress-bar {
+  border-radius: 50em;
+  background-color: #6435c9;
+}
+progress::-ms-fill {
+  border: none;
+  border-radius: 50em;
 }
