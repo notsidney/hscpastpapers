@@ -59,7 +59,7 @@ section:last-of-type {
   text-transform: uppercase;
   user-select: none;
 }
-.title .fa {
+.title .svg-inline--fa {
   margin-right: .3rem;
 }
 

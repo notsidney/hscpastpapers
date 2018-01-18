@@ -40,7 +40,8 @@
   width: 100%;
   display: block;
 
-  background-color: #6435c9;
+  background-color: hsl(260, 100%, 40%);
+  border-color: hsl(260, 100%, 40%);
   color: #fff;
   border-radius: .625rem;
 
@@ -53,4 +54,7 @@
 .button.primary:focus {
   box-shadow: 0 0 1px 1px #fff,
     0 0 .375rem .25rem #6435c9;
+}
+.button.primary .svg-inline--fa {
+  margin-right: .625rem;
 }

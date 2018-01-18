@@ -7,12 +7,11 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import faCloudDownloadAlt from '@fortawesome/fontawesome-free-solid/faCloudDownloadAlt';
 import faWindowClose from '@fortawesome/fontawesome-free-solid/faWindowClose';
-import faGraduationCap from '@fortawesome/fontawesome-free-solid/faGraduationCap';
+import faBook from '@fortawesome/fontawesome-free-solid/faBook';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
-import faFile from '@fortawesome/fontawesome-free-solid/faFile';
+import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
-import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 import faDownload from '@fortawesome/fontawesome-free-solid/faDownload';
 import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
@@ -20,12 +19,11 @@ import faExternalLinkAlt from '@fortawesome/fontawesome-free-solid/faExternalLin
 fontawesome.library.add(
   faCloudDownloadAlt,
   faWindowClose,
-  faGraduationCap,
+  faBook,
   faHistory,
-  faFile,
+  faFilePdf,
   faSearch,
   faChevronRight,
-  faFilePdf,
   faDownload,
   faLink,
   faCopy,
@@ -136,7 +134,7 @@ class App extends React.Component {
         <div id="listContainer">
           <List
             title="Course"
-            icon="graduation-cap"
+            icon="book"
             items={this.state.courseArray}
             selected={this.state.course}
             selectItem={this.selectItem}
@@ -149,8 +147,8 @@ class App extends React.Component {
             selectItem={this.selectItem}
           />
           <List
-            title="Doc"
-            icon="file"
+            title="Document"
+            icon="file-pdf"
             items={this.state.docArray}
             selected={this.state.doc}
             selectItem={this.selectItem}

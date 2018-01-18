@@ -40,7 +40,8 @@
   width: 100%;
   display: block;
 
-  background-color: #6435c9;
+  background-color: hsl(260, 100%, 40%);
+  border-color: hsl(260, 100%, 40%);
   color: #fff;
   border-radius: .625rem;
 
@@ -53,6 +54,9 @@
 .button.primary:focus {
   box-shadow: 0 0 1px 1px #fff,
     0 0 .375rem .25rem #6435c9;
+}
+.button.primary .svg-inline--fa {
+  margin-right: .625rem;
 }
 header {
   height: 2.5rem;
@@ -67,6 +71,7 @@ header {
   background-color: #f5f5f5;
   border-bottom: 1px solid rgba(0,0,0,.2);
   box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  box-sizing: content-box;
 
   line-height: 1rem;
 
@@ -75,6 +80,9 @@ header {
 
 header > .item {
   padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
 }
 
 header > img {
@@ -101,8 +109,6 @@ header > .button {
 
   color: rgba(0,0,0,.87);
   border: none;
-
-  line-height: 2.25rem;
 }
 header > .button:hover {
   background-color: rgba(0,0,0,.1);
@@ -258,7 +264,7 @@ section:last-of-type {
   text-transform: uppercase;
   user-select: none;
 }
-.title .fa {
+.title .svg-inline--fa {
   margin-right: .3rem;
 }
 
