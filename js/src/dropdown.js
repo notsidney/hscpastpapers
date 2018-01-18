@@ -109,7 +109,7 @@ $('#doc-input').change( function(){
 	// if selected doc is blank, ignore
 	if ($(this)[0].value == '') return;
 	// get selected doc
-	selectedDoc = $('#doc-input')[0].value;
+	selectedDoc = $('#doc-input')[0].value.replace('&amp;', '&');
 	// add to new params
 	params.doc = selectedDoc;
 	// loops thorugh each doc to find doc index
