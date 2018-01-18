@@ -294,6 +294,9 @@ ol {
 
   flex: 1.5 0 12.5rem;
 
+  display: flex;
+  flex-direction: column;
+
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   overflow-y: auto;
@@ -303,6 +306,8 @@ ol {
 
 .downloadView h1 {
   margin: 0 0 2rem;
+
+  flex: 1;
 
   font-weight: 600;
   font-size: 1.5rem;
@@ -315,6 +320,12 @@ ol {
   display: block;
 
   font-size: 2rem;
+}
+
+.controlsContainer {
+  margin-bottom: 2rem;
+
+  flex: 1.5;
 }
 
 .linkContainer {

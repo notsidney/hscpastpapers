@@ -23,11 +23,11 @@ const DownloadView = (props) => {
 
     return(
       <section className="downloadView">
-        <div className="downloadViewFlexContainer">
-          <h1>
-            <FontAwesomeIcon icon="file-pdf" />
-            {fileName}
-          </h1>
+        <h1>
+          <FontAwesomeIcon icon="file-pdf" />
+          {fileName}
+        </h1>
+        <div className="controlsContainer">
           <LinkButton
             url={props.url}
             download="true"
