@@ -7,14 +7,17 @@
   background-color: transparent;
   color: #6435c9;
 
-  transition: background-color .2s, opacity .2s, box-shadow .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-size: .875rem;
   font-weight: 600;
-  line-height: 1.875rem;
   text-decoration: none;
   text-align: center;
   user-select: none;
+
+  transition: background-color .2s, opacity .2s, box-shadow .2s;
 
   cursor: pointer;
 }
@@ -33,6 +36,8 @@
 .button .svg-inline--fa {
   min-width: 1rem;
   min-height: 1rem;
+
+  opacity: .87;
 }
 
 .button.primary {

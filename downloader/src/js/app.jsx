@@ -15,7 +15,7 @@ import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
 import faDownload from '@fortawesome/fontawesome-free-solid/faDownload';
 import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
-import faExternalLinkAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkAlt';
+import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
 fontawesome.library.add(
   faCloudDownloadAlt,
   faWindowClose,
@@ -27,7 +27,7 @@ fontawesome.library.add(
   faDownload,
   faLink,
   faCopy,
-  faExternalLinkAlt
+  faExternalLinkSquareAlt
 );
 
 import Header from './components/Header.jsx';

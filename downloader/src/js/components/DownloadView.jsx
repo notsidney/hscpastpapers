@@ -50,7 +50,7 @@ const DownloadView = (props) => {
             <LinkButton
               url={props.url}
               text="Open in new tab"
-              icon="external-link-alt"
+              icon="external-link-square-alt"
               newTab="true"
             />
           </div>
