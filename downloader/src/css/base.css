@@ -37,6 +37,7 @@ button {
   margin-right: .4rem;
 }
 
-.active {
-  color: red;
+body.dark {
+  background-color: #000;
+  color: #fff;
 }

@@ -25,7 +25,7 @@ const LinkButton = (props) => {
     return(
       <a className={props.className + ' button'} href={props.url}>
         <FontAwesomeIcon icon={props.icon} />
-        {props.text}
+        <span className="text">{props.text}</span>
       </a>
     )
   }

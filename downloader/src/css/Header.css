@@ -49,10 +49,21 @@ header > .button {
 
   color: rgba(0,0,0,.87);
   border: none;
+
+  line-height: 1rem;
 }
 header > .button:hover {
   background-color: rgba(0,0,0,.1);
 }
 header > .button .svg-inline--fa {
   vertical-align: sub;
+}
+
+@media (max-width: 25rem) {
+  header > .button .svg-inline--fa {
+    margin-right: 0;
+  }
+  header > .button .text {
+    display: none;
+  }
 }

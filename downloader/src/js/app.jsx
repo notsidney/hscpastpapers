@@ -6,6 +6,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import faCloudDownloadAlt from '@fortawesome/fontawesome-free-solid/faCloudDownloadAlt';
+import faMoon from '@fortawesome/fontawesome-free-solid/faMoon';
 import faWindowClose from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import faBook from '@fortawesome/fontawesome-free-solid/faBook';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
@@ -18,6 +19,7 @@ import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
 import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
 fontawesome.library.add(
   faCloudDownloadAlt,
+  faMoon,
   faWindowClose,
   faBook,
   faHistory,
@@ -84,17 +86,22 @@ class App extends React.Component {
     switch(type) {
 
       case 'Course':
+        // Reset
         this.setState({
-          course: index,
-          yearArray: this.state.data[index]
-            .packs.map(elem => elem.year),
-          // reset
+          yearArray: [],
+          docArray: [],
+          course: -1,
           year: -1,
           doc: -1,
-          docArray: [],
           showDownloadView: false,
           docName: '',
           docLink: ''
+        });
+        // Show actual data
+        this.setState({
+          course: index,
+          yearArray: this.state.data[index]
+            .packs.map(elem => elem.year)
         });
         break;
 
