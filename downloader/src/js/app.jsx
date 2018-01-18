@@ -112,7 +112,7 @@ class App extends React.Component {
         });
         break;
 
-      case 'Doc':
+      case 'Document':
         let dataEntry = this.state.data[this.state.course]
           .packs[this.state.year]
           .docs[index];
