@@ -1,41 +1,79 @@
-.loadingIndicatorContainer {
+.loadingIndicatorFlexContainer {
   width: 100%;
   height: 100%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  text-align: center;
   user-select: none;
 }
 
-progress {
+.loadingIndicatorContainer {
+  width: 15rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  font-weight: 500;
+}
+.left.text {
+  flex: 1;
+}
+
+#progressContainer {
   width: 15rem;
   height: .5rem;
 
-  border: none;
-  border-radius: 50em;
-  background-color: rgba(0,0,0,.1);
+  margin-top: .5rem;
 
-  color: #6435c9;
-
-  -webkit-appearance: none;
-  appearance: none;
-}
-progress::-webkit-progress-bar,
-progress {
   border-radius: 50em;
-  background-color: rgba(0,0,0,.1);
+  background-color: #ccc;
 }
-progress::-webkit-progress-value {
+
+#progressBar {
+  height: 100%;
+
   border-radius: 50em;
   background-color: #6435c9;
+
+  transition: width .2s, background-color .2s;
 }
-progress::-moz-progress-bar {
-  border-radius: 50em;
-  background-color: #6435c9;
+#progressBar.done {
+  background-color: #06c814;
 }
-progress::-ms-fill {
-  border: none;
+
+@keyframes progressBarAnim {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#progressBar::before {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  background: linear-gradient(
+    to right, rgba(255,255,255,0), rgba(255,255,255,.5));
   border-radius: 50em;
+  transition: opacity 1s;
+  transform-origin: 0 50%;
+  animation: progressBarAnim 2s ease infinite;
+
+  content: '';
+}
+#progressBar.done::before {
+  animation: none;
+  opacity: 0;
 }

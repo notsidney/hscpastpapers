@@ -1,5 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+
+import faCloudDownloadAlt from '@fortawesome/fontawesome-free-solid/faCloudDownloadAlt';
+import faWindowClose from '@fortawesome/fontawesome-free-solid/faWindowClose';
+import faGraduationCap from '@fortawesome/fontawesome-free-solid/faGraduationCap';
+import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
+import faFile from '@fortawesome/fontawesome-free-solid/faFile';
+import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
+import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
+import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
+import faDownload from '@fortawesome/fontawesome-free-solid/faDownload';
+import faLink from '@fortawesome/fontawesome-free-solid/faLink';
+import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
+import faExternalLinkAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkAlt';
+fontawesome.library.add(
+  faCloudDownloadAlt,
+  faWindowClose,
+  faGraduationCap,
+  faHistory,
+  faFile,
+  faSearch,
+  faChevronRight,
+  faFilePdf,
+  faDownload,
+  faLink,
+  faCopy,
+  faExternalLinkAlt
+);
 
 import Header from './components/Header.jsx';
 import List from './components/List.jsx';
@@ -8,49 +39,134 @@ import LoadingIndicator from './components/LoadingIndicator.jsx';
 
 import styles from '../css/base.css';
 
-const courses = ['Aboriginal Studies', 'Agriculture', 'Ancient History', 'Arabic Beginners', 'Arabic Continuers', 'Arabic Extension', 'Armenian Continuers', 'Automotive', 'Biology', 'Business Services', 'Business Studies', 'Chemistry', 'Chinese Beginners', 'Chinese Continuers', 'Chinese Extension', 'Chinese and Literature/Chinese Background Speakers', 'Chinese in Context/Heritage Chinese (Mandarin)', 'Classical Greek Continuers', 'Classical Hebrew Extension', 'Community and Family Studies', 'Construction'];
-const years = ['2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005', '2004', '2003', '2002', '2001'];
-const docs = ['HSC Exam Paper', 'Marking Guidelines', 'Sample Answers'];
-
 class App extends React.Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
-		this.selectItem = this.selectItem.bind(this);
+    this.selectItem = this.selectItem.bind(this);
 
-		this.state = {
-			downloading: true,
-			downloadProgress: 25,
-			course: -1,
-			year: -1,
-			doc: -1
-		};
-	}
+    this.state = {
+      downloading: true,
+      downloadProgress: 0,
+      data: [],
+      courseArray: [],
+      yearArray: [],
+      docArray: [],
+      course: -1,
+      year: -1,
+      doc: -1,
+      showDownloadView: false,
+      docName: '',
+      docLink: ''
+    };
+  }
 
-	selectItem(type, index) {
-		switch(type) {
-			case 'Course':
-				this.setState({course: index});
-		}
-	}
+  componentDidMount() {
+    // Load data.json
+    axios.get('../data/data.json', {
+      onDownloadProgress: progressEvent => {
+        let progress = Math.floor(
+          progressEvent.loaded / progressEvent.total * 100);
+        this.setState({downloadProgress: progress});
+      }
+    })
+    .then(response => {
+      this.setState({
+        downloading: false,
+        data: response.data,
+        courseArray: response.data.map(elem => elem.course_name)
+      });
+    })
+    .catch(error => {
+      alert('Error loading data:\n' + error);
+    });
+  }
+
+  selectItem(type, index) {
+    switch(type) {
+
+      case 'Course':
+        this.setState({
+          course: index,
+          yearArray: this.state.data[index]
+            .packs.map(elem => elem.year),
+          // reset
+          year: -1,
+          doc: -1,
+          docArray: [],
+          showDownloadView: false,
+          docName: '',
+          docLink: ''
+        });
+        break;
+
+      case 'Year':
+        this.setState({
+          year: index,
+          docArray: this.state.data[this.state.course]
+            .packs[index]
+            .docs.map(elem => elem.doc_name),
+          // reset
+          doc: -1,
+          showDownloadView: false,
+          docName: '',
+          docLink: ''
+        });
+        break;
+
+      case 'Doc':
+        let dataEntry = this.state.data[this.state.course]
+          .packs[this.state.year]
+          .docs[index];
+        this.setState({
+          doc: index,
+          showDownloadView: true,
+          docName: dataEntry.doc_name,
+          docLink: dataEntry.doc_link
+        });
+        break;
+    }
+  }
 
   render() {
-  	const bodyElements = (this.state.downloading) ?
-				<LoadingIndicator progress={this.state.downloadProgress} />
-  		:
-  			<div className="listContainer">
-		      <List title="Course" icon="graduation-cap" selected={this.state.course} selectItem={this.selectItem} items={courses} />
-		      <List title="Year" icon="history" items={[]} />
-		      <List title="Doc" icon="file-text" items={[]} />
-		      <DownloadView disabled="true" docName="really-long-doc-name-doc.pdf" url="example.com/doc.pdf" />
-		    </div>
-		;
+    // Show if loading
+    const bodyElements = (this.state.downloading) ?
+        <LoadingIndicator progress={this.state.downloadProgress} />
+      :
+        <div id="listContainer">
+          <List
+            title="Course"
+            icon="graduation-cap"
+            items={this.state.courseArray}
+            selected={this.state.course}
+            selectItem={this.selectItem}
+          />
+          <List
+            title="Year"
+            icon="history"
+            items={this.state.yearArray}
+            selected={this.state.year}
+            selectItem={this.selectItem}
+          />
+          <List
+            title="Doc"
+            icon="file"
+            items={this.state.docArray}
+            selected={this.state.doc}
+            selectItem={this.selectItem}
+          />
+          <DownloadView
+            enabled={this.state.showDownloadView}
+            url={this.state.docLink}
+          />
+        </div>
+    ;
 
     return(
-    	<div className="container">
-	      <Header />
-	      {bodyElements}
-	    </div>
+      <div className="container">
+        <Header />
+        {bodyElements}
+      </div>
     )
   }
 }

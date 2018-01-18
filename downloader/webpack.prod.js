@@ -5,6 +5,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
 
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
@@ -12,7 +14,7 @@ module.exports = {
   entry: APP_DIR + '/js/app.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.min.js'
   },
   module: {
     loaders: [
@@ -29,7 +31,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      output: {
+        comments: false
+      }
+    }),
+    new ExtractTextPlugin('bundle.min.css'),
     new OptimizeCSSAssetsPlugin({
       assetNameRegExp: /\.min\.css$/g,
       cssProcessor: cssnano,

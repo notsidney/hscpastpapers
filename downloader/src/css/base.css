@@ -16,6 +16,7 @@ input,
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: .875rem;
 }
 
 * {
@@ -32,7 +33,7 @@ button {
   flex-direction: column;
 }
 
-.fa {
+.svg-inline--fa {
   margin-right: .4rem;
 }
 

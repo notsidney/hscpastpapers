@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import styles from '../../css/SearchBox.css';
 
@@ -18,7 +18,7 @@ class SearchBox extends React.Component {
           type="text"
           placeholder={'Search ' + this.props.title.toLowerCase() + '…'}
         />
-        <FontAwesome name="search" />
+        <FontAwesomeIcon icon="search" />
       </div>
     )
   }

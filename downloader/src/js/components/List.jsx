@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import ListItem from './ListItem.jsx';
 import SearchBox from './SearchBox.jsx';
@@ -22,41 +22,41 @@ class List extends React.Component {
   }
 
   render() {
-  	if (this.props.items.length > 0) {
-	    const listItems = this.props.items.map((item, index) =>
-	    	(index === this.props.selected) ?
-	    		<ListItem
-	    			key={item}
-	    			index={item}
-	    			text={item}
-	    			activateItem={this.activateItem}
-	    			active="true"
-	    		/>
-	    	:
-		      <ListItem
-		        key={item}
-		        index={index}
-		        text={item}
-		        activateItem={this.activateItem}
-		      />
-	    );
+    if (this.props.items.length > 0) {
+      const listItems = this.props.items.map((item, index) =>
+        (index === this.props.selected) ?
+          <ListItem
+            key={item}
+            index={index}
+            text={item}
+            activateItem={this.activateItem}
+            active="true"
+          />
+        :
+          <ListItem
+            key={item}
+            index={index}
+            text={item}
+            activateItem={this.activateItem}
+          />
+      );
 
-	    return(
-	      <section>
-	      	<div className="title">
-	      		<FontAwesome name={this.props.icon} />
-	      		{this.props.title}
-	      	</div>
-	      	<SearchBox title={this.props.title + 's'} />
-	        <ol>{listItems}</ol>
-	      </section>
-	    )
-	  }
-	  else {
-	  	return(
-	  		<section className="disabled"></section>
-	  	)
-	  }
+      return(
+        <section>
+          <div className="title">
+            <FontAwesomeIcon icon={this.props.icon} fixedWidth />
+            {this.props.title}
+          </div>
+          <SearchBox title={this.props.title + 's'} />
+          <ol>{listItems}</ol>
+        </section>
+      )
+    }
+    else {
+      return(
+        <section className="disabled"></section>
+      )
+    }
   }
 }
 
