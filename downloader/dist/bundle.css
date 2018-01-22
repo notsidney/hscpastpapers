@@ -1,5 +1,6 @@
 .button {
-  padding: 0 1rem;
+  min-height: 2rem;
+  padding: .25rem .75rem;
   border-radius: .5rem;
   box-sizing: border-box;
 
@@ -13,6 +14,7 @@
 
   font-size: .875rem;
   font-weight: 600;
+  line-height: 1rem;
   text-decoration: none;
   text-align: center;
   user-select: none;
@@ -41,6 +43,7 @@
 }
 
 .button.primary {
+  margin: 0 0 .5rem;
   padding: .75rem 1.25rem;
   width: 100%;
   display: block;
@@ -241,16 +244,9 @@ section {
 
   background-color: #fff;
   border-right: 1px solid rgba(0,0,0,.2);
-
-  transform: translateX(0%);
-  opacity: 1;
-  transition: transform .2s, opacity .2s;
 }
 section.disabled {
   border-right-style: none;
-
-  transform: translateX(-100%);
-  opacity: 0;
 }
 
 section:first-of-type {
@@ -380,7 +376,6 @@ ol {
   transition: background-color 0s, box-shadow 0s, border-color 0s;
 }
 .linkContainer .button {
-  height: 2rem;
   width: 100%;
   margin: 0 0 .5rem 0;
 }

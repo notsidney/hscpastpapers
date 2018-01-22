@@ -78,7 +78,6 @@
   transition: background-color 0s, box-shadow 0s, border-color 0s;
 }
 .linkContainer .button {
-  height: 2rem;
   width: 100%;
   margin: 0 0 .5rem 0;
 }

@@ -20,16 +20,9 @@ section {
 
   background-color: #fff;
   border-right: 1px solid rgba(0,0,0,.2);
-
-  transform: translateX(0%);
-  opacity: 1;
-  transition: transform .2s, opacity .2s;
 }
 section.disabled {
   border-right-style: none;
-
-  transform: translateX(-100%);
-  opacity: 0;
 }
 
 section:first-of-type {

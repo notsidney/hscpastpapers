@@ -33,6 +33,12 @@ const DownloadView = (props) => {
             download="true"
             className="primary"
           />
+          <LinkButton
+            url={props.url}
+            text="Open in viewer"
+            icon="eye"
+            newTab="true"
+          />
           <div className="linkContainer">
             <FontAwesomeIcon icon="link" />
             <input

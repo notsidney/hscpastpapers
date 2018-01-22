@@ -14,6 +14,7 @@ import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
 import faDownload from '@fortawesome/fontawesome-free-solid/faDownload';
+import faEye from '@fortawesome/fontawesome-free-solid/faEye';
 import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
 import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
@@ -27,6 +28,7 @@ fontawesome.library.add(
   faSearch,
   faChevronRight,
   faDownload,
+  faEye,
   faLink,
   faCopy,
   faExternalLinkSquareAlt

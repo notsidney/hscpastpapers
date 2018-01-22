@@ -1,5 +1,6 @@
 .button {
-  padding: 0 1rem;
+  min-height: 2rem;
+  padding: .25rem .75rem;
   border-radius: .5rem;
   box-sizing: border-box;
 
@@ -13,6 +14,7 @@
 
   font-size: .875rem;
   font-weight: 600;
+  line-height: 1rem;
   text-decoration: none;
   text-align: center;
   user-select: none;
@@ -41,6 +43,7 @@
 }
 
 .button.primary {
+  margin: 0 0 .5rem;
   padding: .75rem 1.25rem;
   width: 100%;
   display: block;
