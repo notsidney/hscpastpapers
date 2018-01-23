@@ -140,7 +140,7 @@ class App extends React.Component {
     const bodyElements = (this.state.downloading) ?
         <LoadingIndicator progress={this.state.downloadProgress} />
       :
-        <div id="listContainer">
+        <main id="listContainer">
           <List
             title="Course"
             icon="book"
@@ -166,14 +166,14 @@ class App extends React.Component {
             enabled={this.state.showDownloadView}
             url={this.state.docLink}
           />
-        </div>
+        </main>
     ;
 
     return(
-      <div className="container">
+      <React.Fragment>
         <Header />
         {bodyElements}
-      </div>
+      </React.Fragment>
     )
   }
 }
