@@ -19,20 +19,9 @@ import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
 import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
 fontawesome.library.add(
-  faCloudDownloadAlt,
-  faMoon,
-  faWindowClose,
-  faBook,
-  faHistory,
-  faFilePdf,
-  faSearch,
-  faChevronRight,
-  faDownload,
-  faEye,
-  faLink,
-  faCopy,
-  faExternalLinkSquareAlt
-);
+  faCloudDownloadAlt, faMoon, faWindowClose, faBook, faHistory, faFilePdf,
+  faSearch, faChevronRight, faDownload, faEye, faLink, faCopy,
+  faExternalLinkSquareAlt);
 
 import Header from './components/Header.jsx';
 import List from './components/List.jsx';
@@ -149,22 +138,17 @@ class App extends React.Component {
     switch(type) {
 
       case 'Course':
-        // Reset
         this.setState({
-          yearArray: [],
+          course: index,
+          yearArray: this.state.data[index]
+            .packs.map(elem => elem.year),
+          // Reset
           docArray: [],
-          course: -1,
           year: -1,
           doc: -1,
           showDownloadView: false,
           docName: '',
           docLink: ''
-        });
-        // Show actual data
-        this.setState({
-          course: index,
-          yearArray: this.state.data[index]
-            .packs.map(elem => elem.year)
         });
         break;
 
@@ -174,7 +158,7 @@ class App extends React.Component {
           docArray: this.state.data[this.state.course]
             .packs[index]
             .docs.map(elem => elem.doc_name),
-          // reset
+          // Reset
           doc: -1,
           showDownloadView: false,
           docName: '',
@@ -183,14 +167,14 @@ class App extends React.Component {
         break;
 
       case 'Document':
-        let dataEntry = this.state.data[this.state.course]
+        let dataEntryPoint = this.state.data[this.state.course]
           .packs[this.state.year]
           .docs[index];
         this.setState({
           doc: index,
           showDownloadView: true,
-          docName: dataEntry.doc_name,
-          docLink: dataEntry.doc_link
+          docName: dataEntryPoint.doc_name,
+          docLink: dataEntryPoint.doc_link
         });
         break;
     }
