@@ -38,12 +38,18 @@ section {
   transition: transform .2s, opacity .2s;
   transform: translateX(0);
   opacity: 1;
+
+  animation: slideIn .2s ease;
 }
 section.disabled {
   border-right-style: none;
 
   transform: translateX(-100%);
   opacity: 0;
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
 section:first-of-type {

@@ -18,13 +18,14 @@ const Header = () => {
         id="darkMode"
         icon="moon"
         text="Dark mode"
+        className="item"
         ifToggled={darkMode}
       />
       <LinkButton
         url="../"
         text="Exit"
         icon="window-close"
-        className="item right"
+        className="item"
       />
     </header>
   )

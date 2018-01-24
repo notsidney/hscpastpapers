@@ -18,9 +18,13 @@ class ToggleButton extends React.Component {
   }
 
   render() {
+    let extraClasses = '';
+    if (this.props.className) extraClasses = this.props.className;
+
     return(
       <button
-        className={this.state.toggled ? 'button active' : 'button'}
+        className={extraClasses + (this.state.toggled ? ' button active'
+          : ' button')}
         id={this.props.id}
         onClick={this.toggle}
       >
