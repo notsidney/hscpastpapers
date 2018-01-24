@@ -24,9 +24,9 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css/,
+        test: /\.scss$/,
         include: APP_DIR,
-        loaders: ExtractTextPlugin.extract('css-loader')
+        loaders: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       }
     ]
   },

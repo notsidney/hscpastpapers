@@ -17,14 +17,14 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?/,
+        test: /\.jsx$/,
         include: APP_DIR,
         loader: 'babel-loader'
       },
       {
-        test: /\.css/,
+        test: /\.scss$/,
         include: APP_DIR,
-        loaders: ExtractTextPlugin.extract('css-loader')
+        loaders: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       }
     ]
   },
