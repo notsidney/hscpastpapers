@@ -64,7 +64,7 @@ class App extends React.Component {
     };
   }
 
-  // Load data.json
+  // Before loading data.json, check if localStorage cached version is expired
   componentDidMount() {
     // No need to check for localStorage support since it's more widely
     // supported than JS Promises, which is required by axios
@@ -96,7 +96,7 @@ class App extends React.Component {
       })
       .catch(error => alert(`Error loading data:\n${error}`));
   }
-
+  // Load data.json into App state
   loadData(expired) {
     // Check if data.json is in localStorage and not expired
     const lsData = localStorage.getItem('data');
@@ -144,7 +144,7 @@ class App extends React.Component {
         .catch(error => alert(`Error loading data:\n${error}`));
     }
   }
-
+  // Handle when items are selected in <List>s
   selectItem(type, index) {
     switch(type) {
 
