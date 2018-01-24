@@ -1,7 +1,7 @@
 # [HSCPastPapers.com](https://hscpastpapers.com)
 Web app to quickly browse past HSC papers.
 
-![Screenshot](https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/screenshot_fb_1.5.png)
+![Screenshot](https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/promo.png)
 
 # Acknowledgements
 Built with [Semantic UI 2.2.13](http://semantic-ui.com),
