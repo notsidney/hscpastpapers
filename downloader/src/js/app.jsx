@@ -45,6 +45,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    this.loadData = this.loadData.bind(this);
     this.selectItem = this.selectItem.bind(this);
 
     this.state = {
@@ -63,25 +64,85 @@ class App extends React.Component {
     };
   }
 
+  // Load data.json
   componentDidMount() {
-    // Load data.json
-    axios.get('../data/data.json', {
-      onDownloadProgress: progressEvent => {
-        let progress = Math.floor(
-          progressEvent.loaded / progressEvent.total * 100);
-        this.setState({downloadProgress: progress});
+    // No need to check for localStorage support since it's more widely
+    // supported than JS Promises, which is required by axios
+    let expired = true;
+    const lsTimestamp = localStorage.getItem('timestamp');
+    // Get meta.json timestamp
+    axios.get('../data/meta.json')
+      .then(response => {
+        // Store in localStorage
+        localStorage.setItem('meta', JSON.stringify(response.data));
+        console.log('Cached meta.json');
+        // Check if there is a timestamp in localStorage
+        if (lsTimestamp !== null) {
+          // Compare with timestamp in localStorage:
+          // if localStorage's timestamp is greater than timestamp of data.json,
+          // data.json in localStorage is not expired
+          if (new Date(response.data.timestamp) < new Date(lsTimestamp)) {
+            expired = false;
+          }
+        }
+        // Otherwise, put a timestamp in localStorage
+        else {
+          const newTimestamp = new Date();
+          localStorage.setItem('timestamp', newTimestamp);
+          console.log(`Set new download date: ${newTimestamp}`);
+        }
+        // Finally, load data
+        this.loadData(expired);
+      })
+      .catch(error => alert(`Error loading data:\n${error}`));
+  }
+
+  loadData(expired) {
+    // Check if data.json is in localStorage and not expired
+    const lsData = localStorage.getItem('data');
+    if (lsData !== null && !expired) {
+      console.log('Serving cached data.json');
+      // Parse stringified JSON from localStorage
+      try {
+        const data = JSON.parse(lsData);
+        // Add to App state
+        this.setState({
+          downloading: false,
+          data: data,
+          courseArray: data.map(elem => elem.course_name)
+        });
       }
-    })
-    .then(response => {
-      this.setState({
-        downloading: false,
-        data: response.data,
-        courseArray: response.data.map(elem => elem.course_name)
-      });
-    })
-    .catch(error => {
-      alert('Error loading data:\n' + error);
-    });
+      // Display error message, remove from localStorage, and reload
+      catch (e) {
+        alert(`Failed to parse data.json from localStorage cache.\n
+          ${e}\n\nPress OK to reload.`);
+        localStorage.removeItem('data');
+        location.reload();
+      }
+    }
+    // Otherwise, download data.json
+    else {
+      console.log('Downloading data.json');
+      axios.get('../data/data.json', {
+        // Send progress to App state
+        onDownloadProgress: progressEvent => {
+          let progress = Math.floor(
+            progressEvent.loaded / progressEvent.total * 100);
+          this.setState({downloadProgress: progress});
+        }
+      })
+        .then(response => {
+          // Cache to localStorage
+          localStorage.setItem('data', JSON.stringify(response.data));
+          // Add to App state
+          this.setState({
+            downloading: false,
+            data: response.data,
+            courseArray: response.data.map(elem => elem.course_name)
+          });
+        })
+        .catch(error => alert(`Error loading data:\n${error}`));
+    }
   }
 
   selectItem(type, index) {
