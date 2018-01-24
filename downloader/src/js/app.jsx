@@ -151,6 +151,7 @@ class App extends React.Component {
           <List
             title="Year"
             icon="history"
+            prevSelection={this.state.course}
             items={this.state.yearArray}
             selected={this.state.year}
             selectItem={this.selectItem}
@@ -158,6 +159,7 @@ class App extends React.Component {
           <List
             title="Document"
             icon="file-pdf"
+            prevSelection={this.state.year}
             items={this.state.docArray}
             selected={this.state.doc}
             selectItem={this.selectItem}

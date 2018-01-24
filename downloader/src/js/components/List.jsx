@@ -58,7 +58,7 @@ class List extends React.Component {
       );
 
       return(
-        <section>
+        <section ref={node => this.node = node}>
           <div className="title">
             <FontAwesomeIcon icon={this.props.icon} fixedWidth />
             {this.props.title}
@@ -75,6 +75,20 @@ class List extends React.Component {
       return(
         <section className="disabled"></section>
       )
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.items.length > 0 &&
+        nextProps.items.length > 0 &&
+        this.props.prevSelection !== nextProps.prevSelection) {
+      this.node.classList.add('disabled');
+    }
+  }
+
+  componentDidUpdate() {
+    if (this.props.items.length > 0) {
+      setTimeout(() => this.node.classList.remove('disabled'), 200);
     }
   }
 }

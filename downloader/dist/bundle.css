@@ -226,12 +226,26 @@ li.active .svg-inline--fa {
   width: 100%;
 
   display: flex;
+  position: relative;
 
   flex: 1;
 
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   overflow-y: hidden;
+}
+#listContainer::before {
+  width: 47rem;
+  height: 1px;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0,0,0,0);
+
+  content: '';
 }
 
 section {
@@ -244,9 +258,16 @@ section {
 
   background-color: #fff;
   border-right: 1px solid rgba(0,0,0,.2);
+
+  transition: transform .2s, opacity .2s;
+  transform: translateX(0);
+  opacity: 1;
 }
 section.disabled {
   border-right-style: none;
+
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 section:first-of-type {
@@ -481,6 +502,8 @@ body {
 
   background-color: #f5f5f5;
   color: rgba(0,0,0,.87);
+
+  overflow: hidden;
 
   font-size: 16px;
 }
