@@ -4,7 +4,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import LinkButton from './LinkButton.jsx';
 import ToggleButton from './ToggleButton.jsx';
 
-import styles from '../../css/Header.css';
+import '../../css/Header.css';
 
 const Header = () => {
   return(

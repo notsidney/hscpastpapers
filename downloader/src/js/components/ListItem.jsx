@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import styles from '../../css/ListItem.css';
+import '../../css/ListItem.css';
 
 const ListItem = (props) => {
   return(

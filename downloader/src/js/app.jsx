@@ -28,7 +28,7 @@ import List from './components/List.jsx';
 import DownloadView from './components/DownloadView.jsx';
 import LoadingIndicator from './components/LoadingIndicator.jsx';
 
-import styles from '../css/base.css';
+import '../css/base.css';
 
 class App extends React.Component {
   constructor(props) {

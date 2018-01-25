@@ -4,7 +4,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import ListItem from './ListItem.jsx';
 import SearchBox from './SearchBox.jsx';
 
-import styles from '../../css/List.css';
+import '../../css/List.css';
 
 class List extends React.Component {
   constructor(props) {

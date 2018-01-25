@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../../css/LoadingIndicator.css';
+import '../../css/LoadingIndicator.css';
 
 const LoadingIndicator = (props) => {
   let isDone = (props.progress === 100) ? 'done' : '';

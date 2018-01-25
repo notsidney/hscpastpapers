@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import styles from '../../css/buttons.css';
+import '../../css/buttons.css';
 
 class ToggleButton extends React.Component {
   constructor(props) {

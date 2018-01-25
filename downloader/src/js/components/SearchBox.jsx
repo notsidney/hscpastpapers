@@ -1,7 +1,7 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import styles from '../../css/SearchBox.css';
+import '../../css/SearchBox.css';
 
 const SearchBox = (props) => {
   return(

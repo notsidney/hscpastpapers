@@ -3,7 +3,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import LinkButton from './LinkButton.jsx';
 
-import styles from '../../css/DownloadView.css';
+import '../../css/DownloadView.css';
 
 class DownloadView extends React.Component {
   constructor(props) {
