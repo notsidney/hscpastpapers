@@ -6,10 +6,11 @@ li {
   align-items: center;
   position: relative;
 
-  background-color: #fff;
+  background-color: var(--panel-background-color);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-  transition: background-color .2s, color .2s;
+  transition: background-color var(--animation-duration),
+    color var(--animation-duration);
 
   line-height: 1rem;
 
@@ -17,26 +18,27 @@ li {
 }
 li:hover,
 li:focus {
-  background-color: #f5f5f5;
+  background-color: var(--background-color);
 }
 
-li .listItemText {
+li .list-item-text {
   flex-grow: 1;
 }
 
 li .svg-inline--fa {
   margin: 0 0 0 1rem;
 
-  font-size: .75rem;
-  opacity: .36;
+  font-size: var(--text-size-small);
+  color: var(--border-color);
 }
 
 li.active {
-  background-color: #6435c9;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
 
   transition: background-color 0s, color 0s;
 }
 li.active .svg-inline--fa {
+  color: var(--button-text-color);
   opacity: .75;
 }

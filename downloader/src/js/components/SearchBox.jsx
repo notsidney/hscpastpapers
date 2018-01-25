@@ -5,9 +5,9 @@ import '../../css/SearchBox.css';
 
 const SearchBox = (props) => {
   return(
-    <div className="searchBoxContainer">
+    <div className="search-box-container">
       <input
-        className="searchBox"
+        className="search-box"
         type="text"
         placeholder={'Search ' + props.title.toLowerCase() + '…'}
         onChange={(e) => props.filterItems(e.target.value)}

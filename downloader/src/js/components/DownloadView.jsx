@@ -29,12 +29,12 @@ class DownloadView extends React.Component {
       fileName = fileName[0].replace('?MOD=AJPERES','');
 
       return(
-        <section className="downloadView" ref={node => this.node = node}>
+        <section className="download-view" ref={node => this.node = node}>
           <h1>
             <FontAwesomeIcon icon="file-pdf" />
             {fileName}
           </h1>
-          <div className="controlsContainer">
+          <div className="controls-container">
             <LinkButton
               url={this.props.url}
               download="true"
@@ -46,7 +46,7 @@ class DownloadView extends React.Component {
               icon="eye"
               newTab="true"
             />
-            <div className="linkContainer">
+            <div className="link-container">
               <FontAwesomeIcon icon="link" />
               <input
                 type="text"
@@ -72,7 +72,7 @@ class DownloadView extends React.Component {
       )
     }
     else {
-      return <section className="downloadView disabled"></section>
+      return <section className="download-view disabled"></section>
     }
   }
 

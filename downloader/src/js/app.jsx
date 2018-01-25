@@ -185,7 +185,7 @@ class App extends React.Component {
     const bodyElements = (this.state.downloading) ?
         <LoadingIndicator progress={this.state.downloadProgress} />
       :
-        <main id="listContainer">
+        <main id="list-container">
           <List
             title="Course"
             icon="book"

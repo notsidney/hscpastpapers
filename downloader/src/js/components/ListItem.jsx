@@ -9,7 +9,7 @@ const ListItem = (props) => {
       className={(props.active) ? 'active' : ''}
       onClick={() => { props.activateItem(props.index); }}
     >
-      <span className="listItemText">{props.text}</span>
+      <span className="list-item-text">{props.text}</span>
       <FontAwesomeIcon icon="chevron-right" />
     </li>
   )

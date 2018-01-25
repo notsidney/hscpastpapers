@@ -6,15 +6,15 @@ const LoadingIndicator = (props) => {
   let isDone = (props.progress === 100) ? 'done' : '';
 
   return(
-    <div className="loadingIndicatorFlexContainer">
-      <div className="loadingIndicatorContainer">
+    <div className="loading-indicator-flex-container">
+      <div className="loading-indicator-container">
         <div className="left text">
           Loading data…
         </div>
         <div className="right text">{props.progress}%</div>
-        <div id="progressContainer">
+        <div id="progress-container">
           <div
-            id="progressBar"
+            id="progress-bar"
             className={isDone}
             style={{width: props.progress + '%'}} />
         </div>

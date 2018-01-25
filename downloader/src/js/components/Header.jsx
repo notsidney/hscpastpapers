@@ -5,12 +5,13 @@ import LinkButton from './LinkButton.jsx';
 import ToggleButton from './ToggleButton.jsx';
 
 import '../../css/Header.css';
+import '../../css/dark.css';
 
 const Header = () => {
   return(
     <header>
       <img className="item" src="../img/icon.svg" width="16" height="16" />
-      <div className="item headerTitle">
+      <div className="item header-title">
         <FontAwesomeIcon icon="cloud-download-alt" />
         Downloader
       </div>
