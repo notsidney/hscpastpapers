@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <ToggleButton
         id="darkMode"
-        icon="moon"
+        icon="lightbulb"
         text="Dark mode"
         className="item"
         ifToggled={darkMode}

@@ -6,7 +6,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import faCloudDownloadAlt from '@fortawesome/fontawesome-free-solid/faCloudDownloadAlt';
-import faMoon from '@fortawesome/fontawesome-free-solid/faMoon';
+import faLightbulb from '@fortawesome/fontawesome-free-solid/faLightbulb';
 import faWindowClose from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import faBook from '@fortawesome/fontawesome-free-solid/faBook';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
@@ -19,7 +19,7 @@ import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
 import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
 fontawesome.library.add(
-  faCloudDownloadAlt, faMoon, faWindowClose, faBook, faHistory, faFilePdf,
+  faCloudDownloadAlt, faLightbulb, faWindowClose, faBook, faHistory, faFilePdf,
   faSearch, faChevronRight, faDownload, faEye, faLink, faCopy,
   faExternalLinkSquareAlt);
 
