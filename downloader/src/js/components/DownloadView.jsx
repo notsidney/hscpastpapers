@@ -1,5 +1,10 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
+import faEye from '@fortawesome/fontawesome-free-solid/faEye';
+import faLink from '@fortawesome/fontawesome-free-solid/faLink';
+import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
+import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
 
 import LinkButton from './LinkButton.jsx';
 
@@ -31,7 +36,7 @@ class DownloadView extends React.Component {
       return(
         <section className="download-view" ref={node => this.node = node}>
           <h1>
-            <FontAwesomeIcon icon="file-pdf" />
+            <FontAwesomeIcon icon={faFilePdf} />
             {fileName}
           </h1>
           <div className="controls-container">
@@ -41,13 +46,13 @@ class DownloadView extends React.Component {
               className="primary"
             />
             <LinkButton
-              url={this.props.url}
+              url={this.props.viewerUrl}
               text="Open in viewer"
-              icon="eye"
+              icon={faEye}
               newTab="true"
             />
             <div className="link-container">
-              <FontAwesomeIcon icon="link" />
+              <FontAwesomeIcon icon={faLink} />
               <input
                 type="text"
                 className="linkBox"
@@ -57,13 +62,13 @@ class DownloadView extends React.Component {
                 readOnly
               />
               <button className="button" onClick={this.copyLink}>
-                <FontAwesomeIcon icon="copy" />
+                <FontAwesomeIcon icon={faCopy} />
                 Copy link
               </button>
               <LinkButton
                 url={this.props.url}
                 text="Open in new tab"
-                icon="external-link-square-alt"
+                icon={faExternalLinkSquareAlt}
                 newTab="true"
               />
             </div>

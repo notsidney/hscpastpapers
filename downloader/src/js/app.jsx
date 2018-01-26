@@ -2,26 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import fontawesome from '@fortawesome/fontawesome';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-
-import faCloudDownloadAlt from '@fortawesome/fontawesome-free-solid/faCloudDownloadAlt';
-import faLightbulb from '@fortawesome/fontawesome-free-solid/faLightbulb';
-import faWindowClose from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import faBook from '@fortawesome/fontawesome-free-solid/faBook';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
 import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
-import faChevronRight from '@fortawesome/fontawesome-free-solid/faChevronRight';
-import faDownload from '@fortawesome/fontawesome-free-solid/faDownload';
-import faEye from '@fortawesome/fontawesome-free-solid/faEye';
-import faLink from '@fortawesome/fontawesome-free-solid/faLink';
-import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
-import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
-fontawesome.library.add(
-  faCloudDownloadAlt, faLightbulb, faWindowClose, faBook, faHistory, faFilePdf,
-  faSearch, faChevronRight, faDownload, faEye, faLink, faCopy,
-  faExternalLinkSquareAlt);
 
 import Header from './components/Header.jsx';
 import List from './components/List.jsx';
@@ -39,18 +22,12 @@ class App extends React.Component {
     this.selectItem = this.selectItem.bind(this);
 
     this.state = {
-      downloading: true,
-      downloadProgress: 0,
+      downloading: true, downloadProgress: 0,
       data: [],
-      courseArray: [],
-      yearArray: [],
-      docArray: [],
-      course: -1,
-      year: -1,
-      doc: -1,
-      showDownloadView: false,
-      docName: '',
-      docLink: ''
+      courseArray: [], yearArray: [], docArray: [],
+      course: -1,      year: -1,      doc: -1,
+      courseName: '',  yearName: '',  docName: '',  docLink: '',
+      showDownloadView: false
     };
   }
 
@@ -141,29 +118,28 @@ class App extends React.Component {
       case 'Course':
         this.setState({
           course: index,
+          courseName: this.state.data[index].course_name,
           yearArray: this.state.data[index]
             .packs.map(elem => elem.year),
           // Reset
           docArray: [],
-          year: -1,
-          doc: -1,
-          showDownloadView: false,
-          docName: '',
-          docLink: ''
+          year: -1, doc: -1,
+          docName: '', docLink: '',
+          showDownloadView: false
         });
         break;
 
       case 'Year':
         this.setState({
           year: index,
+          yearName: this.state.data[this.state.course].packs[index].year,
           docArray: this.state.data[this.state.course]
             .packs[index]
             .docs.map(elem => elem.doc_name),
           // Reset
           doc: -1,
-          showDownloadView: false,
-          docName: '',
-          docLink: ''
+          docName: '', docLink: '',
+          showDownloadView: false
         });
         break;
 
@@ -173,9 +149,8 @@ class App extends React.Component {
           .docs[index];
         this.setState({
           doc: index,
-          showDownloadView: true,
-          docName: dataEntryPoint.doc_name,
-          docLink: dataEntryPoint.doc_link
+          docName: dataEntryPoint.doc_name, docLink: dataEntryPoint.doc_link,
+          showDownloadView: true
         });
         break;
     }
@@ -189,14 +164,14 @@ class App extends React.Component {
         <main id="list-container">
           <List
             title="Course"
-            icon="book"
+            icon={faBook}
             items={this.state.courseArray}
             selected={this.state.course}
             selectItem={this.selectItem}
           />
           <List
             title="Year"
-            icon="history"
+            icon={faHistory}
             prevSelection={this.state.course}
             items={this.state.yearArray}
             selected={this.state.year}
@@ -204,7 +179,7 @@ class App extends React.Component {
           />
           <List
             title="Document"
-            icon="file-pdf"
+            icon={faFilePdf}
             prevSelection={this.state.year}
             items={this.state.docArray}
             selected={this.state.doc}
@@ -213,6 +188,11 @@ class App extends React.Component {
           <DownloadView
             enabled={this.state.showDownloadView}
             url={this.state.docLink}
+            viewerUrl={'../'
+              + '?course=' + this.state.courseName.toLowerCase()
+              + '&year=' + this.state.yearName
+              + '&doc=' + this.state.docName.toLowerCase()
+            }
           />
         </main>
     ;
