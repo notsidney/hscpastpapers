@@ -260,6 +260,7 @@ li.active:focus::before {
 
   font-size: var(--text-size);
   line-height: var(--button-height);
+  color: var(--text-color);
 }
 .search-box:active {
   transition: background-color 0s, box-shadow 0s;

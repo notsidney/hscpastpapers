@@ -33,7 +33,6 @@ class List extends React.Component {
   }
 
   moveFocus(e) {
-    console.log('key', e.keyCode);
     const LEFT  = 37;
     const UP    = 38;
     const RIGHT = 39;
@@ -64,7 +63,6 @@ class List extends React.Component {
   }
 
   render() {
-    console.log('focused', this.state.focused, 'length', this.props.items.length);
     if (this.props.items.length > 0) {
       // Get array from props
       let listArray = this.props.items;

@@ -7,7 +7,9 @@ class ToggleButton extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {toggled: false};
+    this.props.firstState ?
+      this.state = {toggled: true}
+    : this.state = {toggled: false};
 
     this.toggle = this.toggle.bind(this);
   }

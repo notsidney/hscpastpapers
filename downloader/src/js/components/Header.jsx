@@ -24,6 +24,7 @@ const Header = () => {
         text="Dark mode"
         className="item"
         ifToggled={darkMode}
+        firstState={document.body.classList.contains('dark')}
       />
       <LinkButton
         url="../"
@@ -36,11 +37,22 @@ const Header = () => {
 }
 
 function darkMode(active) {
-  (active) ?
-    document.body.classList.add('dark')
-  :
-    document.body.classList.remove('dark')
-  ;
+  if (active) {
+    document.body.classList.add('dark');
+    localStorage.setItem('dark', 'true');
+  }
+  else {
+    document.body.classList.remove('dark');
+    localStorage.setItem('dark', 'false');
+  }
 }
+
+// Check localStorage on page load if dark mode is enabled
+(function() {
+  console.log('loaded');
+  if (localStorage.getItem('dark') === 'true') {
+    document.body.classList.add('dark');
+  }
+})();
 
 export default Header;
