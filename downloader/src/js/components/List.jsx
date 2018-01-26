@@ -12,12 +12,15 @@ class List extends React.Component {
 
     this.state = {
       searchQuery: '', filter: false,
+      filteredList: [], filteredItemsIndexes: [],
       focused: -1
     };
 
     this.activateItem = this.activateItem.bind(this);
     this.filterItems = this.filterItems.bind(this);
     this.moveFocus = this.moveFocus.bind(this);
+
+    this.listArray = this.props.items;
   }
 
   activateItem(index) {
@@ -26,10 +29,32 @@ class List extends React.Component {
   }
 
   filterItems(query) {
-    query ?
-      this.setState({searchQuery: query.toLowerCase(), filter: true})
-    :
-      this.setState({searchQuery: '', filter: false});
+    if (query) {
+      // Array containing indexes of filtered items
+      let filteredItemsIndexes = [];
+      // Filter items and register their indexes to filteredItemsIndexes
+      let filteredList = this.props.items.filter((item, index) => {
+        if (item.toLowerCase().indexOf(query.toLowerCase()) > -1) {
+          filteredItemsIndexes.push(index);
+          return true;
+        }
+      });
+      // Add to state
+      this.setState({
+        searchQuery: query.toLowerCase(),
+        filter: true,
+        filteredList: filteredList,
+        filteredItemsIndexes: filteredItemsIndexes
+      });
+    }
+    else {
+      this.setState({
+        searchQuery: '',
+        filter: false,
+        filteredList: [],
+        filteredItemsIndexes: []
+      });
+    }
   }
 
   moveFocus(e) {
@@ -64,15 +89,11 @@ class List extends React.Component {
 
   render() {
     if (this.props.items.length > 0) {
-      // Get array from props
-      let listArray = this.props.items;
-      // If items need to be filtered for search, filter them
-      if (this.state.filter) {
-        listArray = listArray.filter(
-          item => item.toLowerCase().indexOf(this.state.searchQuery) > -1);
-      }
+      // Choose source array based on whether the list is being filtered
+      const sourceArray = this.state.filter ?
+        this.state.filteredList : this.props.items;
       // Create elements for each item in array
-      const listItems = listArray.map((item) =>
+      const listItems = sourceArray.map((item) =>
         <ListItem
           key={item}
           // Index must be the same as from props, not the filtered array
