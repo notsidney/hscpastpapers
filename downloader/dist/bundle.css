@@ -181,18 +181,13 @@ li {
 
   cursor: pointer;
 }
-li:hover {
+li:hover,
+li.focused {
   background-color: var(--header-button-hover);
 }
 li:active {
   transition: opacity 0s;
   opacity: .5;
-}
-li:focus {
-  box-shadow: var(--focus-outline) inset;
-  outline: none;
-
-  z-index: 39;
 }
 
 li .list-item-text {

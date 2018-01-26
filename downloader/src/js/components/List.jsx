@@ -58,6 +58,7 @@ class List extends React.Component {
   }
 
   moveFocus(e) {
+    console.log('moveFocus', e.keyCode);
     const LEFT  = 37;
     const UP    = 38;
     const RIGHT = 39;
@@ -85,6 +86,7 @@ class List extends React.Component {
         if (this.state.focused > -1) this.activateItem(this.state.focused);
         break;
     }
+    console.log('focused: ', this.state.focused);
   }
 
   render() {
