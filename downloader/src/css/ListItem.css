@@ -11,20 +11,26 @@ li {
 
   transition: background-color var(--animation-duration),
     color var(--animation-duration),
-    opacity var(--animation-duration);
+    opacity var(--animation-duration),
+    box-shadow var(--animation-duration);
   opacity: 1;
 
   line-height: 1rem;
 
   cursor: pointer;
 }
-li:hover,
-li:focus {
-  background-color: var(--background-color);
+li:hover {
+  background-color: var(--header-button-hover);
 }
 li:active {
   transition: opacity 0s;
   opacity: .5;
+}
+li:focus {
+  box-shadow: var(--focus-outline) inset;
+  outline: none;
+
+  z-index: 39;
 }
 
 li .list-item-text {
@@ -56,10 +62,14 @@ li.active::before {
 
   background-color: var(--primary-color);
   animation: slide-in var(--animation-duration) ease both;
+  transition: box-shadow var(--animation-duration);
 
   content: '';
 }
 li.active .svg-inline--fa {
   color: var(--button-text-color);
   opacity: .75;
+}
+li.active:focus::before {
+  box-shadow: var(--focus-outline);
 }

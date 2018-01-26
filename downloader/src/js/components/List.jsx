@@ -10,13 +10,18 @@ class List extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { searchQuery: '', filter: false };
+    this.state = {
+      searchQuery: '', filter: false,
+      focused: -1
+    };
 
     this.activateItem = this.activateItem.bind(this);
     this.filterItems = this.filterItems.bind(this);
+    this.moveFocus = this.moveFocus.bind(this);
   }
 
   activateItem(index) {
+    this.setState({focused: index});
     this.props.selectItem(this.props.title, index);
   }
 
@@ -27,7 +32,39 @@ class List extends React.Component {
       this.setState({searchQuery: '', filter: false});
   }
 
+  moveFocus(e) {
+    console.log('key', e.keyCode);
+    const LEFT  = 37;
+    const UP    = 38;
+    const RIGHT = 39;
+    const DOWN  = 40;
+    const ENTER = 13;
+
+    switch(e.keyCode) {
+      case DOWN:
+        e.preventDefault();
+        if (this.state.focused < this.props.items.length - 1) {
+          this.setState({focused: this.state.focused + 1});
+        }
+        break;
+
+      case UP:
+        e.preventDefault();
+        if (this.state.focused > 0) {
+          this.setState({focused: this.state.focused - 1});
+        }
+        break;
+
+      case RIGHT:
+      case ENTER:
+        e.preventDefault();
+        if (this.state.focused > -1) this.activateItem(this.state.focused);
+        break;
+    }
+  }
+
   render() {
+    console.log('focused', this.state.focused, 'length', this.props.items.length);
     if (this.props.items.length > 0) {
       // Get array from props
       let listArray = this.props.items;
@@ -38,27 +75,25 @@ class List extends React.Component {
       }
       // Create elements for each item in array
       const listItems = listArray.map((item) =>
-        // Highlight if selected
-        (item === this.props.items[this.props.selected]) ?
-          <ListItem
-            key={item}
-            // Index must be the same as from props, not the filtered array
-            index={this.props.items.indexOf(item)}
-            text={item}
-            activateItem={this.activateItem}
-            active="true"
-          />
-        :
-          <ListItem
-            key={item}
-            index={this.props.items.indexOf(item)}
-            text={item}
-            activateItem={this.activateItem}
-          />
+        <ListItem
+          key={item}
+          // Index must be the same as from props, not the filtered array
+          index={this.props.items.indexOf(item)}
+          text={item}
+          activateItem={this.activateItem}
+          // Highlight if selected
+          active={item === this.props.items[this.props.selected]}
+          // Highlight if focused
+          focused={this.props.items.indexOf(item) === this.state.focused}
+        />
       );
 
       return(
-        <section ref={node => this.node = node}>
+        <section
+          tabIndex={0}
+          onKeyDown={this.moveFocus}
+          ref={node => this.node = node}
+        >
           <div className="title">
             <FontAwesomeIcon icon={this.props.icon} fixedWidth />
             {this.props.title}

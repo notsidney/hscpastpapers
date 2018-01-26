@@ -173,20 +173,26 @@ li {
 
   transition: background-color var(--animation-duration),
     color var(--animation-duration),
-    opacity var(--animation-duration);
+    opacity var(--animation-duration),
+    box-shadow var(--animation-duration);
   opacity: 1;
 
   line-height: 1rem;
 
   cursor: pointer;
 }
-li:hover,
-li:focus {
-  background-color: var(--background-color);
+li:hover {
+  background-color: var(--header-button-hover);
 }
 li:active {
   transition: opacity 0s;
   opacity: .5;
+}
+li:focus {
+  box-shadow: var(--focus-outline) inset;
+  outline: none;
+
+  z-index: 39;
 }
 
 li .list-item-text {
@@ -218,12 +224,16 @@ li.active::before {
 
   background-color: var(--primary-color);
   animation: slide-in var(--animation-duration) ease both;
+  transition: box-shadow var(--animation-duration);
 
   content: '';
 }
 li.active .svg-inline--fa {
   color: var(--button-text-color);
   opacity: .75;
+}
+li.active:focus::before {
+  box-shadow: var(--focus-outline);
 }
 .search-box-container {
   position: relative;
@@ -312,11 +322,18 @@ section {
   border-right: var(--border);
 
   transition: transform var(--animation-duration),
-    opacity var(--animation-duration);
+    opacity var(--animation-duration),
+    box-shadow var(--animation-duration);
   transform: translateX(0);
   opacity: 1;
 
   animation: slide-in var(--animation-duration) ease backwards;
+}
+section:focus {
+  box-shadow: var(--focus-outline);
+  outline: none;
+
+  z-index: 50;
 }
 section.disabled {
   border-right-style: none;
@@ -575,7 +592,7 @@ ol {
   --primary-color: hsl(260, 100%, 40%);
   --primary-border: 1px solid var(--primary-color);
   --button-text-color: #fff;
-  --focus-outline: 0 0 0 4px hsla(260, 100%, 40%, .4);
+  --focus-outline: 0 0 0 .25rem hsla(260, 100%, 40%, .4);
   --header-button-hover: rgba(0,0,0,.1);
   --done-color: #06c814;
   --search-box-background-color: #ddd;

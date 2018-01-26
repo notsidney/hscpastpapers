@@ -36,11 +36,18 @@ section {
   border-right: var(--border);
 
   transition: transform var(--animation-duration),
-    opacity var(--animation-duration);
+    opacity var(--animation-duration),
+    box-shadow var(--animation-duration);
   transform: translateX(0);
   opacity: 1;
 
   animation: slide-in var(--animation-duration) ease backwards;
+}
+section:focus {
+  box-shadow: var(--focus-outline);
+  outline: none;
+
+  z-index: 50;
 }
 section.disabled {
   border-right-style: none;
