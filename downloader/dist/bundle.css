@@ -148,17 +148,18 @@ body.dark {
   --panel-background-color: #111;
 
   --border-color: #333;
-  --border: 1px solid var(--border-color);
+  --border: .0625rem solid var(--border-color);
   --header-shadow-color: #000;
 
   --text-color: rgba(255,255,255,.87);
 
   --primary-color: hsl(260, 100%, 70%);
-  --primary-border: 1px solid var(--primary-color);
+  --primary-border: .0625rem solid var(--primary-color);
   --button-text-color: #000;
-  --focus-outline: 0 0 0 4px hsla(260, 100%, 75%, .4);
+
+  --focus-color: hsla(260, 100%, 75%, .4);
+
   --header-button-hover: rgba(255,255,255,.1);
-  --search-box-background-color: #1d1d1d;
 }
 li {
   min-height: 2.25rem;
@@ -270,7 +271,7 @@ li.active .svg-inline--fa {
 }
 #list-container::before {
   width: 47rem;
-  height: 1px;
+  height: .0625rem;
 
   display: block;
   position: absolute;
@@ -344,7 +345,7 @@ section:last-of-type {
 
   font-weight: var(--font-weight-bold);
   font-size: var(--text-size-small);
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
   text-transform: uppercase;
   user-select: none;
 }
@@ -554,7 +555,7 @@ ol {
   --panel-background-color: #fff;
 
   --border-color: #ccc;
-  --border: 1px solid var(--border-color);
+  --border: .0625rem solid var(--border-color);
   --header-shadow-color: rgba(0,0,0,.2);
 
   --text-color: rgba(0,0,0,.87);
@@ -566,7 +567,7 @@ ol {
   --font-weight-bold: bold;
 
   --primary-color: hsl(260, 100%, 40%);
-  --primary-border: 1px solid var(--primary-color);
+  --primary-border: .0625rem solid var(--primary-color);
   --button-text-color: #fff;
 
   --focus-color: hsla(260, 100%, 40%, .4);

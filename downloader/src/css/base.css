@@ -5,7 +5,7 @@
   --panel-background-color: #fff;
 
   --border-color: #ccc;
-  --border: 1px solid var(--border-color);
+  --border: .0625rem solid var(--border-color);
   --header-shadow-color: rgba(0,0,0,.2);
 
   --text-color: rgba(0,0,0,.87);
@@ -17,7 +17,7 @@
   --font-weight-bold: bold;
 
   --primary-color: hsl(260, 100%, 40%);
-  --primary-border: 1px solid var(--primary-color);
+  --primary-border: .0625rem solid var(--primary-color);
   --button-text-color: #fff;
 
   --focus-color: hsla(260, 100%, 40%, .4);

@@ -12,7 +12,7 @@
 }
 #list-container::before {
   width: 47rem;
-  height: 1px;
+  height: .0625rem;
 
   display: block;
   position: absolute;
@@ -86,7 +86,7 @@ section:last-of-type {
 
   font-weight: var(--font-weight-bold);
   font-size: var(--text-size-small);
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
   text-transform: uppercase;
   user-select: none;
 }
