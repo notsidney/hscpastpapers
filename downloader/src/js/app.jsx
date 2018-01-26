@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import faBook from '@fortawesome/fontawesome-free-solid/faBook';
+import faGraduationCap from '@fortawesome/fontawesome-free-solid/faGraduationCap';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
 import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 
@@ -164,7 +164,7 @@ class App extends React.Component {
         <main id="list-container">
           <List
             title="Course"
-            icon={faBook}
+            icon={faGraduationCap}
             items={this.state.courseArray}
             selected={this.state.course}
             selectItem={this.selectItem}

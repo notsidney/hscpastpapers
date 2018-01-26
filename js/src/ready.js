@@ -61,14 +61,14 @@ function dataReceived(data) {
 	iframeMsg('left',
 		'<p>' +
       'Select a' +
-      '<i class="book icon left spaced"></i>Course,' +
+      '<i class="student icon left spaced"></i>Course,' +
       '<i class="history icon left spaced"></i>Year, and' +
       '<i class="file pdf outline icon left spaced"></i>Document above' +
     '</p>');
 	iframeMsg('right',
 		'<p>' +
       'Select a' +
-      '<i class="book icon left spaced"></i>Course,' +
+      '<i class="student icon left spaced"></i>Course,' +
       '<i class="history icon left spaced"></i>Year, and' +
       '<i class="file pdf outline icon left spaced"></i>Document above' +
     '</p>');
