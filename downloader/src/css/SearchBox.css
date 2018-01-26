@@ -1,6 +1,4 @@
 .search-box-container {
-  position: relative;
-
   flex: none;
 
   background-color: var(--background-color);
@@ -12,7 +10,7 @@
   margin: 0 .5rem .5rem;
   padding: 0 0 0 1.75rem;
 
-  background-color: var(--search-box-background-color);
+  background-color: var(--panel-background-color);
   border: var(--border);
   border-radius: var(--border-radius);
   -webkit-appearance: none;
@@ -29,7 +27,6 @@
   transition: background-color 0s, box-shadow 0s;
 }
 .search-box:focus {
-  background-color: var(--panel-background-color);
   border: var(--primary-border);
   box-shadow: var(--focus-outline);
   outline: none;
@@ -43,7 +40,7 @@
   padding: .5rem .75rem;
 
   position: absolute;
-  top: 0;
+  top: var(--button-height);
   left: 0;
 
   opacity: .5;

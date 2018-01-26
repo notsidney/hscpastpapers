@@ -49,7 +49,6 @@ function darkMode(active) {
 
 // Check localStorage on page load if dark mode is enabled
 (function() {
-  console.log('loaded');
   if (localStorage.getItem('dark') === 'true') {
     document.body.classList.add('dark');
   }

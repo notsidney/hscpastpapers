@@ -6,7 +6,6 @@ li {
   align-items: center;
   position: relative;
 
-  background-color: var(--panel-background-color);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   transition: background-color var(--animation-duration),

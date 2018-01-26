@@ -58,7 +58,6 @@ class List extends React.Component {
   }
 
   moveFocus(e) {
-    console.log('moveFocus', e.keyCode);
     const LEFT  = 37;
     const UP    = 38;
     const RIGHT = 39;
@@ -68,14 +67,40 @@ class List extends React.Component {
     switch(e.keyCode) {
       case DOWN:
         e.preventDefault();
-        if (this.state.focused < this.props.items.length - 1) {
+        // Focus only on filtered items
+        if (this.state.filter) {
+          // Find position of index of focused item in filteredItemsIndexes
+          let index =
+            this.state.filteredItemsIndexes.indexOf(this.state.focused);
+          // Focus on next index from filteredItemsIndexes if it exists
+          if (index < this.state.filteredItemsIndexes.length - 1) {
+            this.setState({
+              focused: this.state.filteredItemsIndexes[index + 1]
+            });
+          }
+        }
+        // Prevent from focusing on non-existent items
+        else if (this.state.focused < this.props.items.length - 1) {
           this.setState({focused: this.state.focused + 1});
         }
         break;
 
       case UP:
         e.preventDefault();
-        if (this.state.focused > 0) {
+        // Focus only on filtered items
+        if (this.state.filter) {
+          // Find position of index of focused item in filteredItemsIndexes
+          let index =
+            this.state.filteredItemsIndexes.indexOf(this.state.focused);
+          // Focus on previous index from filteredItemsIndexes if it exists
+          if (index > 0) {
+            this.setState({
+              focused: this.state.filteredItemsIndexes[index - 1]
+            });
+          }
+        }
+        // Prevent from focusing on non-existent items
+        else if (this.state.focused > 0) {
           this.setState({focused: this.state.focused - 1});
         }
         break;
@@ -86,7 +111,6 @@ class List extends React.Component {
         if (this.state.focused > -1) this.activateItem(this.state.focused);
         break;
     }
-    console.log('focused: ', this.state.focused);
   }
 
   render() {
