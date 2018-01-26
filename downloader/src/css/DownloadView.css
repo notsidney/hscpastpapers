@@ -54,7 +54,7 @@
   opacity: .8;
 }
 .link-container input {
-  height: 2rem;
+  height: var(--button-height);
   width: 100%;
   padding: 0 0 0 1.5rem;
   margin: 0 0 .5rem;
@@ -71,7 +71,7 @@
 
   font-size: var(--text-size);
   color: var(--text-color);
-  line-height: 2rem;
+  line-height: var(--button-height);
 }
 .link-container input:active {
   transition: background-color 0s, box-shadow 0s, border-color 0s;

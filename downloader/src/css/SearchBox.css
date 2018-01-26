@@ -8,6 +8,7 @@
 
 .search-box {
   width: calc(100% - 1rem);
+  height: var(--button-height);
   margin: 0 .5rem .5rem;
   padding: 0 0 0 1.75rem;
 
@@ -21,15 +22,16 @@
     box-shadow var(--animation-duration);
 
   font-size: var(--text-size);
-  line-height: 1.875rem;
+  line-height: var(--button-height);
+}
+.search-box:active {
+  transition: background-color 0s, box-shadow 0s;
 }
 .search-box:focus {
   background-color: var(--panel-background-color);
   border: var(--primary-border);
   box-shadow: var(--focus-outline);
   outline: none;
-
-  transition: background-color 0s, box-shadow 0s;
 }
 
 .search-box+.fa-search {
