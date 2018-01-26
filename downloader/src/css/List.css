@@ -45,21 +45,14 @@ section {
   animation: slide-in var(--animation-duration) ease backwards;
 }
 section:focus {
+  box-shadow: var(--focus-outline) inset;
   outline: none;
 }
-section::before {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-  position: absolute;
-
+section .search-box-container {
   transition: box-shadow var(--animation-duration);
-
-  content: '';
 }
-section:focus::before {
-  box-shadow: var(--focus-outline) inset;
+section:focus .search-box-container {
+  box-shadow: 0 calc(var(--focus-width) + .0625rem) var(--focus-color);
 }
 section.disabled {
   border-right-style: none;
@@ -96,9 +89,6 @@ section:last-of-type {
   letter-spacing: 1px;
   text-transform: uppercase;
   user-select: none;
-}
-.title .svg-inline--fa {
-  margin-right: .3rem;
 }
 
 ol {

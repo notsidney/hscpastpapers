@@ -19,10 +19,14 @@
   --primary-color: hsl(260, 100%, 40%);
   --primary-border: 1px solid var(--primary-color);
   --button-text-color: #fff;
-  --focus-outline: 0 0 0 .25rem hsla(260, 100%, 40%, .4);
+
+  --focus-color: hsla(260, 100%, 40%, .4);
+  --focus-width: .25rem;
+  --focus-outline: 0 0 0 var(--focus-width) var(--focus-color);
+
   --header-button-hover: rgba(0,0,0,.1);
+
   --done-color: #06c814;
-  --search-box-background-color: #ddd;
 
   --border-radius: .5rem;
   --button-height: 2rem;
