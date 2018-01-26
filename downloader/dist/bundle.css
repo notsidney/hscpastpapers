@@ -98,10 +98,6 @@ header > .item {
 
   animation: fade-in var(--animation-duration) ease;
 }
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
 header > img {
   width: 1rem;
@@ -176,7 +172,9 @@ li {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   transition: background-color var(--animation-duration),
-    color var(--animation-duration);
+    color var(--animation-duration),
+    opacity var(--animation-duration);
+  opacity: 1;
 
   line-height: 1rem;
 
@@ -186,23 +184,42 @@ li:hover,
 li:focus {
   background-color: var(--background-color);
 }
+li:active {
+  transition: opacity 0s;
+  opacity: .5;
+}
 
 li .list-item-text {
   flex-grow: 1;
+
+  z-index: 9;
 }
 
 li .svg-inline--fa {
   margin: 0 0 0 1rem;
+
+  z-index: 10;
 
   font-size: var(--text-size-small);
   color: var(--border-color);
 }
 
 li.active {
-  background-color: var(--primary-color);
   color: var(--button-text-color);
+}
+li.active::before {
+  width: 100%;
+  height: 100%;
 
-  transition: background-color 0s, color 0s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+
+  background-color: var(--primary-color);
+  animation: slide-in var(--animation-duration) ease both;
+
+  content: '';
 }
 li.active .svg-inline--fa {
   color: var(--button-text-color);
@@ -304,10 +321,6 @@ section.disabled {
 
   transform: translateX(-100%);
   opacity: 0;
-}
-@keyframes slide-in {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
 }
 
 section:first-of-type {
@@ -609,4 +622,45 @@ button {
 
 .svg-inline--fa {
   margin-right: .4rem;
+}
+
+.center-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: .2rem solid var(--background-color);
+  border-top-color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  border-radius: 50%;
+
+  animation: spin .8s linear infinite;
+}
+
+.spinner.big {
+  width: 3rem;
+  height: 3rem;
+
+  border-width: .25rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

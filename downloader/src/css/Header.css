@@ -26,10 +26,6 @@ header > .item {
 
   animation: fade-in var(--animation-duration) ease;
 }
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
 header > img {
   width: 1rem;

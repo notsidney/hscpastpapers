@@ -29,6 +29,7 @@ import DownloadView from './components/DownloadView.jsx';
 import LoadingIndicator from './components/LoadingIndicator.jsx';
 
 import '../css/base.css';
+import '../css/spinner.css';
 
 class App extends React.Component {
   constructor(props) {

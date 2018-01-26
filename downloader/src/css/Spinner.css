@@ -1,0 +1,23 @@
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: .2rem solid var(--background-color);
+  border-top-color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  border-radius: 50%;
+
+  animation: spin .8s linear infinite;
+}
+
+.spinner.big {
+  width: 3rem;
+  height: 3rem;
+
+  border-width: .25rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
