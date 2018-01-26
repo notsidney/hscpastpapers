@@ -153,7 +153,7 @@ body.dark {
 
   --text-color: rgba(255,255,255,.87);
 
-  --primary-color: hsl(250, 100%, 75%);
+  --primary-color: hsl(260, 100%, 70%);
   --primary-border: 1px solid var(--primary-color);
   --button-text-color: #000;
   --focus-outline: 0 0 0 4px hsla(260, 100%, 75%, .4);
@@ -321,6 +321,7 @@ section {
 
   background-color: var(--panel-background-color);
   border-right: var(--border);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   transition: transform var(--animation-duration),
     opacity var(--animation-duration),
