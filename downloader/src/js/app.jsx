@@ -161,8 +161,18 @@ class App extends React.Component {
     }
   }
 
-  sectionFocus(direction) {
-    let newFocus = this.state.focusedSection + direction;
+  sectionFocus(input) {
+    let newFocus = null;
+
+    if (typeof input === 'number') {
+      newFocus = input;
+    }
+    else if (input === 'f') {
+      newFocus = this.state.focusedSection + 1;
+    }
+    else if (input === 'b') {
+      newFocus = this.state.focusedSection - 1;
+    }
 
     if (newFocus > 2) newFocus = 2;
     if (newFocus < 0) newFocus = 0;
@@ -184,6 +194,7 @@ class App extends React.Component {
             selectItem={this.selectItem}
             sectionFocus={this.sectionFocus}
             focus={this.state.focusedSection === 0}
+            index={0}
             autoFocus={true}
           />
           <List
@@ -195,6 +206,7 @@ class App extends React.Component {
             selectItem={this.selectItem}
             sectionFocus={this.sectionFocus}
             focus={this.state.focusedSection === 1}
+            index={1}
           />
           <List
             title="Document"
@@ -205,6 +217,7 @@ class App extends React.Component {
             selectItem={this.selectItem}
             sectionFocus={this.sectionFocus}
             focus={this.state.focusedSection === 2}
+            index={2}
           />
           <DownloadView
             enabled={this.state.showDownloadView}

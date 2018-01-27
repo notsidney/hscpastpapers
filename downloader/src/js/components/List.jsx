@@ -60,6 +60,7 @@ class List extends React.Component {
   // When section is clicked, set focus to search box within section
   focusSection() {
     this.section.getElementsByTagName('input')[0].focus();
+    this.props.sectionFocus(this.props.index);
   }
 
   moveFocus(e) {
@@ -115,13 +116,13 @@ class List extends React.Component {
         e.preventDefault();
         if (this.state.focused > -1) {
           this.activateItem(this.state.focused);
-          this.props.sectionFocus(1);
+          this.props.sectionFocus('f');
         }
         break;
 
       case LEFT:
         e.preventDefault();
-        this.props.sectionFocus(-1);
+        this.props.sectionFocus('b');
         break;
     }
   }
@@ -192,7 +193,7 @@ class List extends React.Component {
       this.state.focused !== this.props.selected)
         this.ol.scrollTop = this.ol.getElementsByClassName('focused')[0].offsetTop - 18; // 18px gap
     // If focused in props, focus on searchBox
-    if (this.props.focus) this.focusSection();
+    if (this.props.focus) this.section.getElementsByTagName('input')[0].focus();
   }
 }
 
