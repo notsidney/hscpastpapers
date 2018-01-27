@@ -44,16 +44,6 @@ section {
 
   animation: slide-in var(--animation-duration) ease backwards;
 }
-section:focus {
-  box-shadow: var(--focus-outline) inset;
-  outline: none;
-}
-section .search-box-container {
-  transition: box-shadow var(--animation-duration);
-}
-section:focus .search-box-container {
-  box-shadow: 0 calc(var(--focus-width) + .0625rem) var(--focus-color);
-}
 section.disabled {
   border-right-style: none;
 
@@ -96,6 +86,7 @@ ol {
   padding: 0 0 2.25rem;
 
   flex: 1;
+  position: relative;
 
   border-top: var(--border);
 

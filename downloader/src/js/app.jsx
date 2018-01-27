@@ -18,17 +18,19 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.loadData = this.loadData.bind(this);
-    this.selectItem = this.selectItem.bind(this);
-
     this.state = {
       downloading: true, downloadProgress: 0,
       data: [],
+      focusedSection: 0,
       courseArray: [], yearArray: [], docArray: [],
       course: -1,      year: -1,      doc: -1,
       courseName: '',  yearName: '',  docName: '',  docLink: '',
       showDownloadView: false
     };
+
+    this.loadData = this.loadData.bind(this);
+    this.selectItem = this.selectItem.bind(this);
+    this.sectionFocus = this.sectionFocus.bind(this);
   }
 
   // Before loading data.json, check if localStorage cached version is expired
@@ -117,6 +119,7 @@ class App extends React.Component {
 
       case 'Course':
         this.setState({
+          focusedSection: 1,
           course: index,
           courseName: this.state.data[index].course_name,
           yearArray: this.state.data[index]
@@ -131,6 +134,7 @@ class App extends React.Component {
 
       case 'Year':
         this.setState({
+          focusedSection: 2,
           year: index,
           yearName: this.state.data[this.state.course].packs[index].year,
           docArray: this.state.data[this.state.course]
@@ -148,12 +152,22 @@ class App extends React.Component {
           .packs[this.state.year]
           .docs[index];
         this.setState({
+          focusedSection: 3,
           doc: index,
           docName: dataEntryPoint.doc_name, docLink: dataEntryPoint.doc_link,
           showDownloadView: true
         });
         break;
     }
+  }
+
+  sectionFocus(direction) {
+    let newFocus = this.state.focusedSection + direction;
+
+    if (newFocus > 2) newFocus = 2;
+    if (newFocus < 0) newFocus = 0;
+
+    this.setState({focusedSection: newFocus});
   }
 
   render() {
@@ -168,6 +182,9 @@ class App extends React.Component {
             items={this.state.courseArray}
             selected={this.state.course}
             selectItem={this.selectItem}
+            sectionFocus={this.sectionFocus}
+            focus={this.state.focusedSection === 0}
+            autoFocus={true}
           />
           <List
             title="Year"
@@ -176,6 +193,8 @@ class App extends React.Component {
             items={this.state.yearArray}
             selected={this.state.year}
             selectItem={this.selectItem}
+            sectionFocus={this.sectionFocus}
+            focus={this.state.focusedSection === 1}
           />
           <List
             title="Document"
@@ -184,6 +203,8 @@ class App extends React.Component {
             items={this.state.docArray}
             selected={this.state.doc}
             selectItem={this.selectItem}
+            sectionFocus={this.sectionFocus}
+            focus={this.state.focusedSection === 2}
           />
           <DownloadView
             enabled={this.state.showDownloadView}

@@ -12,7 +12,8 @@ body.dark {
   --primary-border: .0625rem solid var(--primary-color);
   --button-text-color: #000;
 
-  --focus-color: hsla(260, 100%, 75%, .4);
+  --focus-color: hsla(260, 100%, 70%, .4);
+  --focus-outline: 0 0 0 var(--focus-width) var(--focus-color);
 
   --header-button-hover: rgba(255,255,255,.1);
 }

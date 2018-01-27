@@ -18,6 +18,7 @@ class List extends React.Component {
 
     this.activateItem = this.activateItem.bind(this);
     this.filterItems = this.filterItems.bind(this);
+    this.focusSection = this.focusSection.bind(this);
     this.moveFocus = this.moveFocus.bind(this);
 
     this.listArray = this.props.items;
@@ -55,6 +56,10 @@ class List extends React.Component {
         filteredItemsIndexes: []
       });
     }
+  }
+  // When section is clicked, set focus to search box within section
+  focusSection() {
+    this.section.getElementsByTagName('input')[0].focus();
   }
 
   moveFocus(e) {
@@ -108,7 +113,15 @@ class List extends React.Component {
       case RIGHT:
       case ENTER:
         e.preventDefault();
-        if (this.state.focused > -1) this.activateItem(this.state.focused);
+        if (this.state.focused > -1) {
+          this.activateItem(this.state.focused);
+          this.props.sectionFocus(1);
+        }
+        break;
+
+      case LEFT:
+        e.preventDefault();
+        this.props.sectionFocus(-1);
         break;
     }
   }
@@ -135,9 +148,9 @@ class List extends React.Component {
 
       return(
         <section
-          tabIndex={0}
           onKeyDown={this.moveFocus}
-          ref={node => this.node = node}
+          onClick={this.focusSection}
+          ref={section => this.section = section}
         >
           <div className="title">
             <FontAwesomeIcon icon={this.props.icon} fixedWidth />
@@ -146,8 +159,9 @@ class List extends React.Component {
           <SearchBox
             title={this.props.title + 's'}
             filterItems={this.filterItems}
+            autoFocus={this.props.autoFocus}
           />
-          <ol>{listItems}</ol>
+          <ol ref={ol => this.ol = ol}>{listItems}</ol>
         </section>
       )
     }
@@ -159,17 +173,26 @@ class List extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    // Show disabled class for animation when list items change
     if (this.props.items.length > 0 &&
         nextProps.items.length > 0 &&
         this.props.prevSelection !== nextProps.prevSelection) {
-      this.node.classList.add('disabled');
+      this.section.classList.add('disabled');
     }
   }
 
   componentDidUpdate() {
-    if (this.props.items.length > 0) {
-      setTimeout(() => this.node.classList.remove('disabled'), 200);
-    }
+    // Remove disabled class to show again
+    if (this.props.items.length > 0 &&
+      this.section.classList.contains('disabled'))
+        setTimeout(() => this.section.classList.remove('disabled'), 200);
+    // If an element is focused but not selected, scroll to it
+    if (this.ol &&
+      this.ol.getElementsByClassName('focused').length > 0 &&
+      this.state.focused !== this.props.selected)
+        this.ol.scrollTop = this.ol.getElementsByClassName('focused')[0].offsetTop - 18; // 18px gap
+    // If focused in props, focus on searchBox
+    if (this.props.focus) this.focusSection();
   }
 }
 
