@@ -187,22 +187,9 @@ li .list-item-text {
   z-index: 9;
 }
 
-li .svg-inline--fa {
-  margin: 0 0 0 1rem;
-
-  z-index: 10;
-
-  font-size: var(--text-size-small);
-  color: var(--border-color);
-}
-
 li.active {
   background-color: var(--primary-color);
   color: var(--button-text-color);
-}
-li.active .svg-inline--fa {
-  color: var(--button-text-color);
-  opacity: .75;
 }
 .search-box-container {
   flex: none;

@@ -133,19 +133,21 @@ class List extends React.Component {
       const sourceArray = this.state.filter ?
         this.state.filteredList : this.props.items;
       // Create elements for each item in array
-      const listItems = sourceArray.map((item) =>
-        <ListItem
+      const listItems = sourceArray.map((item, index) => {
+        const itemIndex = this.state.filter ?
+          this.props.items.indexOf(item) : index;
+        return <ListItem
           key={item}
           // Index must be the same as from props, not the filtered array
-          index={this.props.items.indexOf(item)}
+          index={itemIndex}
           text={item}
           activateItem={this.activateItem}
           // Highlight if selected
           active={item === this.props.items[this.props.selected]}
           // Highlight if focused
-          focused={this.props.items.indexOf(item) === this.state.focused}
+          focused={itemIndex === this.state.focused}
         />
-      );
+      });
 
       return(
         <section
