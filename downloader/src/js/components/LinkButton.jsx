@@ -10,7 +10,9 @@ const LinkButton = (props) => {
 
   if (props.download) {
     return(
-      <a className={extraClasses + ' button'} href={props.url} download>
+      <a className={extraClasses + ' button'} href={props.url} download
+        id="download-button"
+      >
         <FontAwesomeIcon icon={faDownload} />
         Download {props.text}
       </a>

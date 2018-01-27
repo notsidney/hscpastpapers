@@ -10,30 +10,32 @@ import ToggleButton from './ToggleButton.jsx';
 import '../../css/Header.css';
 import '../../css/dark.css';
 
-const Header = () => {
-  return(
-    <header>
-      <img className="item" src="../img/icon.svg" width="16" height="16" />
-      <div className="item header-title">
-        <FontAwesomeIcon icon={faCloudDownloadAlt} />
-        Downloader
-      </div>
-      <ToggleButton
-        id="darkMode"
-        icon={faLightbulb}
-        text="Dark mode"
-        className="item"
-        ifToggled={darkMode}
-        firstState={document.body.classList.contains('dark')}
-      />
-      <LinkButton
-        url="../"
-        text="Exit"
-        icon={faWindowClose}
-        className="item"
-      />
-    </header>
-  )
+class Header extends React.PureComponent {
+  render() {
+    return(
+      <header>
+        <img className="item" src="../img/icon.svg" width="16" height="16" />
+        <div className="item header-title">
+          <FontAwesomeIcon icon={faCloudDownloadAlt} />
+          Downloader
+        </div>
+        <ToggleButton
+          id="darkMode"
+          icon={faLightbulb}
+          text="Dark mode"
+          className="item"
+          ifToggled={darkMode}
+          firstState={document.body.classList.contains('dark')}
+        />
+        <LinkButton
+          url="../"
+          text="Exit"
+          icon={faWindowClose}
+          className="item"
+        />
+      </header>
+    )
+  }
 }
 
 function darkMode(active) {

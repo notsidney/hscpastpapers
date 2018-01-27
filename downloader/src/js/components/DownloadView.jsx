@@ -10,7 +10,7 @@ import LinkButton from './LinkButton.jsx';
 
 import '../../css/DownloadView.css';
 
-class DownloadView extends React.Component {
+class DownloadView extends React.PureComponent {
   constructor(props) {
     super(props);
 

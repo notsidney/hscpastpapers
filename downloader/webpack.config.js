@@ -14,6 +14,7 @@ module.exports = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  devtool: true,
   module: {
     loaders: [
       {

@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
+if (process.env.NODE_ENV !== 'production') {
+  const {whyDidYouUpdate} = require('why-did-you-update')
+  whyDidYouUpdate(React)
+}
+
 import faGraduationCap from '@fortawesome/fontawesome-free-solid/faGraduationCap';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
 import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
@@ -65,6 +70,7 @@ class App extends React.Component {
       })
       .catch(error => alert(`Error loading data:\n${error}`));
   }
+
   // Load data.json into App state
   loadData(expired) {
     // Check if data.json is in localStorage and not expired
@@ -113,6 +119,7 @@ class App extends React.Component {
         .catch(error => alert(`Error loading data:\n${error}`));
     }
   }
+
   // Handle when items are selected in <List>s
   selectItem(type, index) {
     switch(type) {
@@ -227,6 +234,9 @@ class App extends React.Component {
               + '&year=' + this.state.yearName
               + '&doc=' + this.state.docName.toLowerCase()
             }
+            sectionFocus={this.sectionFocus}
+            focus={this.state.focusedSection === 3}
+            index={3}
           />
         </main>
     ;
@@ -237,6 +247,16 @@ class App extends React.Component {
         {bodyElements}
       </React.Fragment>
     )
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.state.downloading !== nextState.downloading) return true;
+    if (this.state.downloadProgress !== nextState.downloadProgress) return true;
+    if (this.state.course !== nextState.course) return true;
+    if (this.state.year !== nextState.year) return true;
+    if (this.state.focusedSection !== nextState.focusedSection) return true;
+    if (this.state.showDownloadView !== nextState.showDownloadView) return true;
+    return false;
   }
 }
 

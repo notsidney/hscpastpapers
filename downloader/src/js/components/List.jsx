@@ -6,7 +6,7 @@ import SearchBox from './SearchBox.jsx';
 
 import '../../css/List.css';
 
-class List extends React.Component {
+class List extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -16,15 +16,24 @@ class List extends React.Component {
       focused: -1
     };
 
+    this.focusSection = this.focusSection.bind(this);
     this.activateItem = this.activateItem.bind(this);
     this.filterItems = this.filterItems.bind(this);
-    this.focusSection = this.focusSection.bind(this);
     this.moveFocus = this.moveFocus.bind(this);
 
     this.listArray = this.props.items;
   }
 
-  activateItem(index) {
+  // When section is clicked, set focus to search box within section
+  focusSection(liftToState) {
+    this.section.getElementsByTagName('input')[0].focus();
+    // Use !== false so it triggers even if parameter is not passed
+    if (liftToState !== false) this.props.sectionFocus(this.props.index);
+  }
+
+  activateItem(index, event) {
+    if (event) event.stopPropagation();
+    console.log('activateItem', this.props.title);
     this.setState({focused: index});
     this.props.selectItem(this.props.title, index);
   }
@@ -56,11 +65,6 @@ class List extends React.Component {
         filteredItemsIndexes: []
       });
     }
-  }
-  // When section is clicked, set focus to search box within section
-  focusSection() {
-    this.section.getElementsByTagName('input')[0].focus();
-    this.props.sectionFocus(this.props.index);
   }
 
   moveFocus(e) {
@@ -192,10 +196,12 @@ class List extends React.Component {
     // If an element is focused but not selected, scroll to it
     if (this.ol &&
       this.ol.getElementsByClassName('focused').length > 0 &&
-      this.state.focused !== this.props.selected)
-        this.ol.scrollTop = this.ol.getElementsByClassName('focused')[0].offsetTop - 18; // 18px gap
+      this.state.focused !== this.props.selected) {
+        this.ol.scrollTop =
+          this.ol.getElementsByClassName('focused')[0].offsetTop - 18; // 18 gap
+      }
     // If focused in props, focus on searchBox
-    if (this.props.focus) this.section.getElementsByTagName('input')[0].focus();
+    if (this.props.focus) this.focusSection(false);
   }
 }
 
