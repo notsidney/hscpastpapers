@@ -48,6 +48,11 @@ class List extends React.PureComponent {
           return true;
         }
       });
+      // If focused item is not part of filtered list, focus on the first
+      // element in the filtered list
+      if (filteredItemsIndexes.indexOf(this.state.focused) === -1) {
+        this.setState({focused: filteredItemsIndexes[0]});
+      }
       // Add to state
       this.setState({
         searchQuery: query.toLowerCase(),
@@ -57,6 +62,7 @@ class List extends React.PureComponent {
       });
     }
     else {
+      // Reset
       this.setState({
         searchQuery: '',
         filter: false,
@@ -194,6 +200,12 @@ class List extends React.PureComponent {
         nextProps.items.length > 0 &&
         this.props.prevSelection !== nextProps.prevSelection) {
       this.section.classList.add('disabled');
+    }
+    // If list items are different length, check if focused item exists
+    if (this.props.items.length !== nextProps.items.length) {
+      if (this.state.focused > nextProps.items.length - 1) {
+        this.setState({focused: -1});
+      }
     }
   }
 
