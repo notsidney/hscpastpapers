@@ -60,19 +60,27 @@
       </div>
     </div>
 
+    <!-- Scripts to run before React is loaded -->
+    <script>
+      // Check localStorage on page load if dark mode is enabled
+      (function() {
+        // Check for promise support
+        if (typeof Promise == 'undefined') {
+          document.getElementById('root').innerHTML =
+            '<h1>This browser is not supported.' +
+            ' You need to upgrade your browser.</h1>' + 
+            '<a href="https://browser-update.org/update.html" target="_blank">' +
+              'Learn more about how to upgrade your browser here' +
+            '</a>';
+        }
+        if (localStorage.getItem('dark') === 'true') {
+          document.body.classList.add('dark');
+        }
+      })();
+    </script>
+
     <script src="dist/bundle.js"></script>
 
-    <!-- Check for promise support -->
-    <script>
-      if (typeof Promise == 'undefined') {
-        document.getElementById('root').innerHTML =
-          '<h1>This browser is not supported.' +
-          ' You need to upgrade your browser.</h1>' + 
-          '<a href="https://browser-update.org/update.html" target="_blank">' +
-            'Learn more about how to upgrade your browser here' +
-          '</a>';
-      }
-    </script>
   </body>
 
 </html>
