@@ -33,7 +33,6 @@ class List extends React.PureComponent {
 
   activateItem(index, event) {
     if (event) event.stopPropagation();
-    console.log('activateItem', this.props.title);
     this.setState({focused: index});
     this.props.selectItem(this.props.title, index);
   }
@@ -160,9 +159,7 @@ class List extends React.PureComponent {
         }</ol>
       // Else, show a message
       :
-        <div className="empty-message">
-          No {this.props.title.toLowerCase()}s
-        </div>
+        <div className="empty-message">No results</div>
       ;
 
       return(
@@ -173,7 +170,7 @@ class List extends React.PureComponent {
         >
           <div className="title">
             <FontAwesomeIcon icon={this.props.icon} fixedWidth />
-            {this.props.title}
+            Select {this.props.title}
           </div>
           <SearchBox
             title={this.props.title + 's'}
