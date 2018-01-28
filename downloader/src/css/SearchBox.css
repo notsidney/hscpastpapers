@@ -2,6 +2,7 @@
   flex: none;
 
   background-color: var(--background-color);
+  border-bottom: var(--border);
 }
 
 .search-box {

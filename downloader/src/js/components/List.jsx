@@ -132,26 +132,38 @@ class List extends React.PureComponent {
   }
 
   render() {
+    // Only render if props array has elements
     if (this.props.items.length > 0) {
       // Choose source array based on whether the list is being filtered
       const sourceArray = this.state.filter ?
         this.state.filteredList : this.props.items;
-      // Create elements for each item in array
-      const listItems = sourceArray.map((item, index) => {
-        const itemIndex = this.state.filter ?
-          this.props.items.indexOf(item) : index;
-        return <ListItem
-          key={item}
-          // Index must be the same as from props, not the filtered array
-          index={itemIndex}
-          text={item}
-          activateItem={this.activateItem}
-          // Highlight if selected
-          active={item === this.props.items[this.props.selected]}
-          // Highlight if focused
-          focused={itemIndex === this.state.focused}
-        />
-      });
+      // If source array has elements...
+      const listContents = (sourceArray.length > 0) ?
+        // ...wrap in an ol...
+        <ol ref={ol => this.ol = ol}> {
+          // ...and create ListItems for each item in array
+          sourceArray.map((item, index) => {
+            const itemIndex = this.state.filter ?
+              this.props.items.indexOf(item) : index;
+            return <ListItem
+              key={item}
+              // Index must be the same as from props, not the filtered array
+              index={itemIndex}
+              text={item}
+              activateItem={this.activateItem}
+              // Highlight if selected
+              active={item === this.props.items[this.props.selected]}
+              // Highlight if focused
+              focused={itemIndex === this.state.focused}
+            />
+          })
+        }</ol>
+      // Else, show a message
+      :
+        <div className="empty-message">
+          No {this.props.title.toLowerCase()}s
+        </div>
+      ;
 
       return(
         <section
@@ -168,7 +180,7 @@ class List extends React.PureComponent {
             filterItems={this.filterItems}
             autoFocus={this.props.autoFocus}
           />
-          <ol ref={ol => this.ol = ol}>{listItems}</ol>
+          {listContents}
         </section>
       )
     }

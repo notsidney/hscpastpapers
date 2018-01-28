@@ -88,11 +88,23 @@ ol {
   flex: 1;
   position: relative;
 
-  border-top: var(--border);
-
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   overflow-y: auto;
 
   list-style: none;
+}
+
+.empty-message {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: .5;
+
+  font-size: var(--text-size-big);
+  font-weight: var(--font-weight-medium);
+  user-select: none;
 }
