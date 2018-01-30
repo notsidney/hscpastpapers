@@ -1,1 +1,1 @@
-var version = 'dev-downloader';
+var version = '1.9.0';
