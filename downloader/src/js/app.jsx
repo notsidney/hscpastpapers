@@ -254,6 +254,7 @@ class App extends React.Component {
     if (this.state.downloadProgress !== nextState.downloadProgress) return true;
     if (this.state.course !== nextState.course) return true;
     if (this.state.year !== nextState.year) return true;
+    if (this.state.doc !== nextState.doc) return true;
     if (this.state.focusedSection !== nextState.focusedSection) return true;
     if (this.state.showDownloadView !== nextState.showDownloadView) return true;
     return false;
