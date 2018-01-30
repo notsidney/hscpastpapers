@@ -145,7 +145,7 @@ $('#doc-input2').change( function(){
 	// activate download & link buttons
 	// $('.button-download').removeClass('disabled').attr('href', docLink);
 	// $('.button-link').removeClass('disabled').removeAttr('disabled');
-	// $('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
+	// $('#actions-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title

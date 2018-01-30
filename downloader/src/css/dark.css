@@ -1,0 +1,19 @@
+body.dark {
+  --background-color: #000;
+  --panel-background-color: #111;
+
+  --border-color: #333;
+  --border: .0625rem solid var(--border-color);
+  --header-shadow-color: #000;
+
+  --text-color: rgba(255,255,255,.87);
+
+  --primary-color: hsl(260, 100%, 70%);
+  --primary-border: .0625rem solid var(--primary-color);
+  --button-text-color: #000;
+
+  --focus-color: hsla(260, 100%, 70%, .4);
+  --focus-outline: 0 0 0 var(--focus-width) var(--focus-color);
+
+  --header-button-hover: rgba(255,255,255,.1);
+}

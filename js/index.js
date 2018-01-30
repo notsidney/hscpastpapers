@@ -1,4 +1,4 @@
-var version = '1.8.5';
+var version = '1.9.0';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -275,6 +275,7 @@ $('#year-input').change( function() {
 		if ( !$('#doc-dropdown').dropdown('get value') ) urlNotFound('Doc');
 	}
 	// activate exam pack buttons and adds link
+  $('#actions-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	$('.button-exampack')
 		.removeClass('disabled')
 		.attr('href', jsonData[courseIndex].packs[yearIndex].link);
@@ -287,7 +288,7 @@ $('#doc-input').change( function(){
 	// if selected doc is blank, ignore
 	if ($(this)[0].value == '') return;
 	// get selected doc
-	selectedDoc = $('#doc-input')[0].value;
+	selectedDoc = $('#doc-input')[0].value.replace('&amp;', '&');
 	// add to new params
 	params.doc = selectedDoc;
 	// loops thorugh each doc to find doc index
@@ -307,7 +308,6 @@ $('#doc-input').change( function(){
 	// activate download & link buttons
 	$('.button-download').removeClass('disabled').attr('href', docLink);
 	$('.button-link').removeClass('disabled').removeAttr('disabled');
-	$('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
@@ -452,14 +452,14 @@ function dataReceived(data) {
       'Select a' +
       '<i class="student icon left spaced"></i>Course,' +
       '<i class="history icon left spaced"></i>Year, and' +
-      '<i class="file text icon left spaced"></i>Document above' +
+      '<i class="file pdf outline icon left spaced"></i>Document above' +
     '</p>');
 	iframeMsg('right',
 		'<p>' +
       'Select a' +
       '<i class="student icon left spaced"></i>Course,' +
       '<i class="history icon left spaced"></i>Year, and' +
-      '<i class="file text icon left spaced"></i>Document above' +
+      '<i class="file pdf outline icon left spaced"></i>Document above' +
     '</p>');
 	// change page background
 	$('body').css('background-color', '#fff');
@@ -718,7 +718,7 @@ $('#doc-input2').change( function(){
 	// activate download & link buttons
 	// $('.button-download').removeClass('disabled').attr('href', docLink);
 	// $('.button-link').removeClass('disabled').removeAttr('disabled');
-	// $('#pdf-dropdown').removeClass('disabled').dropdown({action:'nothing'});
+	// $('#actions-dropdown').removeClass('disabled').dropdown({action:'nothing'});
 	// change url to new params
 	history.pushState(null, '', '?' + $.param(params) );
 	// change tab title
