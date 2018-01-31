@@ -26,7 +26,7 @@ class List extends React.PureComponent {
 
   // When section is clicked, set focus to search box within section
   focusSection(liftToState) {
-    this.section.getElementsByTagName('input')[0].focus();
+    if (this.section) this.section.getElementsByTagName('input')[0].focus();
     // Use !== false so it triggers even if parameter is not passed
     if (liftToState !== false) this.props.sectionFocus(this.props.index);
   }
