@@ -1,4 +1,4 @@
-var version = '1.9.2';
+var version = '1.9.3';
 
 /*------------------------------------------------------------------------------
 vars.js
@@ -182,7 +182,7 @@ dropdown.js
 ------------------------------------------------------------------------------*/
 
 // parses JSON to populate dropdowns
-function populateDropdown(json, searchFor, pushTo, reverse) {
+function populateDropdown(json, searchFor, pushTo, reverse, examPack) {
 	if (typeof(json) == 'object') {
 		// get all items into an array
 		var items = [];
@@ -196,10 +196,20 @@ function populateDropdown(json, searchFor, pushTo, reverse) {
 		if (reverse) items.reverse();
 		// clears dropdown
 		$(pushTo).empty();
-		// loops through items in array and adds to the dropdown
-		for (j = 0; j < items.length; j++) {
-			$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
-		}
+		// loops through items in array and adds to the dropdown if not empty
+    if (items.length == 0 && examPack) {
+      $(pushTo).append(
+        '<div class="item" style="display:none"></div>' +
+        '<div class="no-item-msg">' +
+        'No documents available.<br><a target="_blank" href="' + examPack +
+        '">View exam pack on NESA website <i class="external icon"></i></a>' +
+        '</div>');
+    }
+    else {
+  		for (j = 0; j < items.length; j++) {
+  			$(pushTo).append('<div class="item" data-value"1">' + items[j] + '</div>');
+  		}
+    }
 	} else {
 		console.error('Input JSON not an object: ' + json);
 		alert('Error:\n\nInput JSON not an object: ' + json);
@@ -260,7 +270,7 @@ $('#year-input').change( function() {
 	}
 	// populates dropdown
 	populateDropdown(jsonData[courseIndex].packs[yearIndex].docs,
-		'doc_name', '#doc-menu', false);
+		'doc_name', '#doc-menu', false, jsonData[courseIndex].packs[yearIndex].link);
 	// activate doc dropdown
 	$('#doc-dropdown')
 		.removeClass('loading')
