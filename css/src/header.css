@@ -114,3 +114,8 @@ button.item.link {
   cursor: not-allowed;
   pointer-events: auto;
 }
+
+#mobile-menu .link-copyright {
+  background-color: #6435c9 !important;
+  color: #fff !important;
+}
