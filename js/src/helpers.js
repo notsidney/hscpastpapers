@@ -79,11 +79,11 @@ function openPDF(link, side) {
   var target = $('#iframe');
   if (side === 'right') target = $('#iframe-split-right');
   // show PDF in iframe - also includes fix for firefox
-  if (PDFObject.supportsPDFs || navigator.userAgent.indexOf("Firefox") > -1) {
-    target.attr('src', link);
-    // dim
-    dimmable = true;
-  } else {
+  // if (PDFObject.supportsPDFs || navigator.userAgent.indexOf("Firefox") > -1) {
+  //   target.attr('src', link);
+  //   // dim
+  //   dimmable = true;
+  // } else {
     // hide loader
     $('#loader').removeClass('active');
     // get file name
@@ -91,14 +91,14 @@ function openPDF(link, side) {
     fileName = fileName[0].replace('?MOD=AJPERES','');
     // show message
     iframeMsg(side,
-      '<i class="big warning circle icon"></i><br>' +
-      'Your browser doesn’t support PDF embeds<br>' +
+      // '<i class="big warning circle icon"></i><br>' +
+      'Biology 2015 HSC Exam Paper<br>' +
       '<a href="' + link + '" download target="_blank"' +
       'class="ui huge primary compact button">' +
-        '<i class="download icon"></i>Download ' + fileName +
-      '</a>'
+        '<i class="external icon"></i>Open ' + fileName + 
+      ' in a new tab</a>'
     );
-  }
+  // }
 }
 
 // write message to iframe
