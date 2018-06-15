@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
     <script>
       if (window.location.host !== 'localhost' && window.location.host) {
         window.dataLayer = window.dataLayer || [];
@@ -11,7 +11,7 @@
 
         gtag('config', 'UA-108396697-1');
       }
-    </script> -->
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,246 +44,72 @@
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.min.css">
+
+    <style>
+      .msg-body {
+        min-width: auto;
+        padding: 20px
+      }
+      .container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center
+      }
+      .message {
+        background: 0 0;
+        cursor: default;
+        font-size: 20px;
+        line-height: 1.2em;
+        text-align: center;
+        user-select: none;
+        padding: 0 10px;
+      }
+      h1 {
+        margin: 0;
+      }
+      .ui.button {
+        border-radius: 10px;
+        margin-top: .5em;
+      }
+      .ui.button.button-about {
+        position: absolute;
+        bottom: 40px;
+        margin-left: -110px;
+        width: 220px;
+      }
+      .ui.divider {
+        margin: 40px auto;
+        width: 20%;
+      }
+    </style>
   </head>
 
-  <body class="loading">
-    <!-- top menu -->
-    <div class="ui top borderless inverted fixed menu segment">
+  <body>
 
-      <a id="logo" class="vertically fitted item" href="?">
-        <img src="img/icon.svg" width="16" height="16" class="ui image">
-        <div class="ui loader" id="loader"></div>
-      </a>
-
-      <noscript id="nojs" class="item">
-        <a class="ui red button" href="https://www.enable-javascript.com/">
-          <i class="warning sign icon"></i>
-          JavaScript is disabled. Click here to enable.
-        </a>
-      </noscript>
-
-      <div id="nojquery" class="item" style="display:none">
-        <a class="ui red button"
-        href="https://code.jquery.com/jquery-3.1.1.min.js">
-          <i class="warning sign icon"></i>
-          Unable to load jQuery. Click here to test.
-        </a>
+    <div class="container">
+      <div class="message">
+        <img src="img/icon.svg" width="48" height="48">
+        <h1>HSCPastPapers.com</h1>
+        <div class="ui divider"></div>
+        <p>Temporarily down while responding to a copyright issue with NESA.</p>
+        <p>
+          In the meantime, you can use the Downloader, which should not breach
+          NESA Copyright Policy.<br>
+          <a class="ui primary large button" href="downloader">
+            <i class="cloud download icon"></i>
+            Downloader
+          </a>
+        </p>
+        <p>
+          You can read about the changes that will be made to comply with
+          NESA Copyright Policy
+          <a href="https://github.com/notseenee/hscpastpapers/blob/master/copyright-changes.md">here</a>.
+        </p>
+        <br>
+        <button class="ui basic button button-about">About HSCPastPapers.com</button>
       </div>
-
-      <div id="loadingmsg" class="ui vertically fitted item loading-show">
-        Loading data&hellip;
-        <span id="loadingpercent">0%</span>
-      </div>
-
-      <div class="ui violet bottom attached progress"
-        data-percent="0" id="loadingbar">
-        <div class="bar"></div>
-      </div>
-
-      <div id="course-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="course" id="course-input">
-        <i class="student left icon compact"></i>
-        <span class="text overflow">Course</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search courses&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="course-menu"></div>
-
-        </div>
-      </div>
-
-      <div id="year-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="year" id="year-input">
-        <i class="history left icon compact"></i>
-        <span class="text">Year</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search years&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="year-menu"></div>
-
-        </div>
-      </div>
-
-      <div id="doc-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="doc" id="doc-input">
-        <i class="file pdf outline left icon compact"></i>
-        <span class="text overflow">Document</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search documents&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="doc-menu"></div>
-
-        </div>
-      </div>
-
-      <a class="item link button-reset split-hide loading-hide" href="?">
-        <i class="undo icon compact"></i>
-        <span class="text">Reset</span>
-      </a>
-
-      <div id="menu-split-right" class="menu loading-hide split-show">
-
-        <div id="course-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="course" id="course-input2">
-          <i class="student left icon compact"></i>
-          <span class="text overflow">Course</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search courses&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="course-menu2"></div>
-
-          </div>
-        </div>
-
-        <div id="year-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="year" id="year-input2">
-          <i class="history left icon compact"></i>
-          <span class="text">Year</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search years&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="year-menu2"></div>
-
-          </div>
-        </div>
-
-        <div id="doc-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="doc" id="doc-input2">
-          <i class="file pdf outline left icon compact"></i>
-          <span class="text overflow">Document</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search documents&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="doc-menu2"></div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- mobile menu -->
-      <div id="mobile-menu" class="right menu">
-
-        <div id="more-dropdown" class="ui dropdown item">
-          More
-          <i class="ellipsis vertical icon"></i>
-          <div class="ui menu">
-            <div class="header split-hide loading-hide">PDF</div>
-            <a class="item disabled button-download split-hide" target="_blank">
-              <i class="external icon"></i>Open in new tab
-            </a>
-            <button class="item link disabled button-link split-hide loading-hide" disabled>
-              <i class="linkify icon"></i>Copy link
-            </button>
-            <a class="item disabled button-download split-hide loading-hide" download target="_blank">
-              <i class="download icon"></i>Download
-            </a>
-            <div class="ui divider split-hide loading-hide"></div>
-            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
-              <i class="external icon"></i>Exam pack
-            </a>
-            <div class="ui divider split-hide loading-hide"></div>
-            <a class="item link button-reset split-show" href="?">
-              <i class="undo icon compact"></i>Reset
-            </a>
-            <a class="item link split-hide" href="/downloader/">
-              <i class="cloud download icon compact"></i>Downloader
-            </a>
-            <!-- <button class="item link button-split split-hide loading-hide">
-              <i class="columns icon"></i>Split view
-            </button>
-            <button class="item link button-splitexit split-show loading-hide">
-              <i class="window close icon"></i>Exit split view
-            </button> -->
-            <div class="ui divider"></div>
-            <button class="item link button-about">
-              <i class="info icon"></i>About
-            </button>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- desktop menu -->
-      <div id="desktop-menu" class="right menu">
-
-        <div id="actions-dropdown" class="ui dropdown right disabled item split-hide loading-hide">
-          <i class="lightning left icon"></i>Actions
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="header">PDF</div>
-            <a class="item disabled button-download" target="_blank">
-              <i class="external icon"></i>Open in new tab
-            </a>
-            <button class="item link disabled button-link" disabled>
-              <i class="linkify icon"></i>Copy link
-            </button>
-            <a class="item disabled button-download" download target="_blank">
-              <i class="download icon"></i>Download
-            </a>
-            <div class="ui divider"></div>
-            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
-              <i class="external icon"></i>Exam pack
-            </a>
-          </div>
-        </div>
-
-        <a class="item link button-reset split-show" href="?">
-          <i class="undo icon compact"></i>
-          <span class="text">Reset</span>
-        </a>
-        <a class="item link split-hide" href="/downloader/">
-          <i class="cloud download icon compact"></i>Downloader
-        </a>
-        <!-- <button class="item link button-split split-hide loading-hide">
-          <i class="columns icon"></i>Split view
-        </button>
-        <button class="item link button-splitexit split-show loading-hide">
-          <i class="window close icon"></i>Exit split view
-        </button> -->
-        <button class="item link button-about">
-          <i class="info icon"></i>About
-        </button>
-
-      </div>
-
     </div>
-
-    <!-- iframe that displays doc -->
-    <iframe id="iframe"></iframe>
-    <iframe id="iframe-split-right" class="split-show"></iframe>
 
     <!-- About modal -->
     <div id="about-modal" class="ui tiny modal about">
@@ -374,16 +200,6 @@
       </div>
     </div>
 
-    <!-- URL Parameter not found modal -->
-    <div id="not-found-modal" class="ui mini modal">
-      <div class="content">
-        <h3 class="header"><span id="not-found-modal-type"></span> not found from URL</h3>
-        <table class="ui definition table"><tbody id="not-found-modal-table">
-        </tbody></table>
-      </div>
-      <div class="actions"><button class="ui primary ok button">OK</button></div>
-    </div>
-
     <script>
       // if JS is enabled but jQuery isn't loading, show warning
       window.onload = function() {
@@ -401,7 +217,6 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-    <script src="js/pdfobject.min.js"></script>
     <script src="js/index.min.js"></script>
 
   </body>
