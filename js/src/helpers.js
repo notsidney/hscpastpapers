@@ -84,20 +84,21 @@ function openPDF(link, side) {
   //   // dim
   //   dimmable = true;
   // } else {
-    // hide loader
-    $('#loader').removeClass('active');
-    // get file name
-    var fileName = /[^\/]+$/.exec(link);
-    fileName = fileName[0].replace('?MOD=AJPERES','');
-    // show message
-    iframeMsg(side,
-      // '<i class="big warning circle icon"></i><br>' +
-      'Biology 2015 HSC Exam Paper<br>' +
-      '<a href="' + link + '" download target="_blank"' +
-      'class="ui huge primary compact button">' +
-        '<i class="external icon"></i>Open ' + fileName + 
-      ' in a new tab</a>'
-    );
+  // hide loader
+  $('#loader').removeClass('active');
+  // get file name
+  var fileName = /[^\/]+$/.exec(link);
+  fileName = fileName[0].replace('?MOD=AJPERES','');
+  // show message
+  iframeMsg(side,
+    // '<i class="big warning circle icon"></i><br>' +
+    '<b>' + fileName + '</b><br>' +
+    '<a href="' + link + '" target="_blank"' +
+    'class="ui huge primary compact button">' +
+    '<i class="external icon"></i>Open in a new tab</a>'
+  );
+  // Open in new tab
+  window.open(link, '_blank');
   // }
 }
 
@@ -139,7 +140,7 @@ function iframeMsg(side, msg) {
       '.ui.button {' +
         'border-radius: 10px;' +
         'line-height: 1.2em;' +
-        'margin-top: 1.5em;' +
+        'margin-top: 1em;' +
       '}' +
       '.divider {' +
         'background-color: rgba(255,255,255,.2);' +
@@ -149,12 +150,34 @@ function iframeMsg(side, msg) {
         'top: 10%;' +
         'width: 1px' +
       '}' +
+      '.message p.copyright {' +
+        'font-size: 16px;' +
+        'margin-top: 4em;' +
+        'max-width: 560px' +
+      '}' +
+      '.message p.copyright a {' +
+        'color: #fff;' +
+      '}' +
+      '.message p.copyright a:hover,' +
+      '.message p.copyright a:active,' +
+      '.message p.copyright a:focus {' +
+        'text-decoration: underline;' +
+      '}' +
     '</style>'
   );
   target.contents().find('body').addClass('msg-body').html(
     '<div class="container">' +
       '<div class="message">' +
         msg +
+        '<p class="copyright">' +
+          'Past papers are no longer directly viewable on this web app to ' +
+          'comply with <a target="_blank" href="' +
+            'http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright' +
+          '">NESA Copyright Policy</a>. You can read about the changes made ' +
+          '<a target="_blank" href="' +
+            'https://github.com/notseenee/hscpastpapers/blob/master/copyright-changes.md' +
+          '">here</a>.' +
+        '</p>' +
       '</div>' +
     '</div>'
   );
