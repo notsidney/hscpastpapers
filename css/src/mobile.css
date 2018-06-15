@@ -10,7 +10,7 @@ mobile.css
 
 	/* Also: extend width of dropdown text for larger screens */
 	.ui.dropdown .text.overflow {
-		max-width: calc((100vw - 856px - 40px) / 2);
+		max-width: calc((100vw - 940px - 40px) / 2);
 	}
 }
 
