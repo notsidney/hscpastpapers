@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
+    <script>
+      if (window.location.host !== 'localhost' && window.location.host) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108396697-1');
+      }
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/icon48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon64.png">
+    <!-- more icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#6435c9">
+    <meta name="theme-color" content="#1b1c1d">
+    <!-- Facebook Open Graph stuff (for sharing on FB) -->
+    <meta property="og:url" content="https://hscpastpapers.com/">
+    <meta property="og:title" content="HSCPastPapers.com">
+    <meta property="og:description" content="
+      Quickly browse and download NSW HSC past exam papers, marking guidelines,
+      notes from the marking centre, and more for free. Not affiliated with NESA.
+    ">
+    <meta property="og:image" content="https://hscpastpapers.com/img/promo.png">
+    <!-- Google search -->
+    <meta name="Description" content="
+      Quickly browse and download NSW HSC past exam papers, marking guidelines,
+      notes from the marking centre, and more for free. Not affiliated with NESA.
+    ">
+
+    <title>HSCPastPapers.com</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+
+    <style>
+      .msg-body {
+        min-width: auto;
+        padding: 20px
+      }
+      .container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center
+      }
+      .message {
+        background: 0 0;
+        cursor: default;
+        font-size: 20px;
+        line-height: 1.2em;
+        text-align: center;
+        user-select: none;
+        padding: 0 10px;
+      }
+      h1 {
+        margin: 0;
+      }
+      .ui.button {
+        border-radius: 10px;
+        margin-top: 1em;
+      }
+      .ui.button.button-about {
+        position: absolute;
+        bottom: 40px;
+        margin-left: -110px;
+        width: 220px;
+      }
+      .ui.divider {
+        margin: 40px auto;
+        width: 20%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="message">
+        <img src="img/icon.svg" width="48" height="48">
+        <h1>HSCPastPapers.com</h1>
+        <div class="ui divider"></div>
+        <p>Temporarily down while responding to a copyright issue with NESA.</p>
+        <p>
+          In the meantime, you can use the Downloader, which should not breach
+          NESA’s copyright policy.<br>
+          <a class="ui primary large button" href="downloader">
+            <i class="cloud download icon"></i>
+            Downloader
+          </a>
+        </p>
+        <br>
+        <button class="ui basic button button-about">About HSCPastPapers.com</button>
+      </div>
+    </div>
+
+    <!-- About modal -->
+    <div id="about-modal" class="ui tiny modal about">
+
+      <i id="close-modal" class="circular inverted red close icon"></i>
+
+      <h2 class="ui header">
+        <img src="img/icon.svg" width="48" height="48" class="ui image">
+        <div class="content">
+          HSCPastPapers.com
+          <div class="sub header">
+            Version&nbsp;<span id="version"></span><br>
+            Data updated&nbsp;<span id="timestamp"></span>
+            <a id="clear-cache" href="#">
+              <i class="trash outline icon"></i>Clear cache
+            </a>
+          </div>
+        </div>
+      </h2>
+
+      <div class="content">
+
+        <div class="ui horizontal section divider">About</div>
+
+        <p>
+          <b>
+            &copy; 2017&ndash;<span id="currentYear"></span> Sidney Alcantara
+          </b>&nbsp;
+          <a class="ui basic small compact button" target="_blank"
+            href="mailto:sidneyalcantara@outlook.com.au">
+            <i class="mail outline icon"></i>
+            sidneyalcantara@outlook.com.au
+          </a>
+        </p>
+
+        <p>
+          This web app and its source code are freely available under the MIT Licence.
+          <br>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/blob/master/LICENSE">
+            <i class="law icon"></i>
+            Licence
+          </a>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/">
+            <i class="github icon"></i>
+            Source code
+          </a>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/commits">
+            <i class="list icon"></i>
+            Changelog
+          </a>
+        </p>
+
+        <div class="ui horizontal section divider">
+          Report issue or send feature request
+        </div>
+
+        <p>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://github.com/notseenee/hscpastpapers/issues/new">
+            <i class="github icon"></i>
+            Report on GitHub
+          </a>
+          <a class="ui basic small compact button" target="_blank"
+            href="https://gitreports.com/issue/notseenee/hscpastpapers">
+            <i class="send icon"></i>
+            Report anonymously
+          </a>
+        </p>
+
+        <div class="ui horizontal section divider">
+          Disclaimer and Copyright Notice
+        </div>
+
+        <p>
+          This web app is not affiliated with the NSW Education Standards
+          Authority (NESA). All documents linked to by this web app are owned by
+          the State of New South Wales, provided by NESA.
+        </p>
+        <p>
+          This web app does not store copies of any NESA documents. No ownership
+          is claimed over them. This web app was built for informational
+          purposes only.
+        </p>
+
+      </div>
+    </div>
+
+    <script>
+      // if JS is enabled but jQuery isn't loading, show warning
+      window.onload = function() {
+          if (window.jQuery) {  
+              // jQuery is loaded  
+              console.log('jQuery loaded');
+          } else {
+              // jQuery is not loaded
+              document.getElementById('nojquery').style.display = "block";
+          }
+      }
+    </script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="js/index.min.js"></script>
+
+  </body>
+</html>
