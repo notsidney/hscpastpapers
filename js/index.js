@@ -330,7 +330,7 @@ $('#doc-input').change( function(){
 			selectedDoc) {
 			docLink = jsonData[courseIndex].packs[yearIndex].docs[m].doc_link;
 			// force https
-			docLink = docLink.replace('http', 'https');
+			docLink = docLink.replace('http:', 'https:');
 			break;
 		}
 	}
@@ -740,7 +740,7 @@ $('#doc-input2').change( function(){
 			selectedDoc2) {
 			docLink2 = jsonData[courseIndex2].packs[yearIndex2].docs[m].doc_link;
 			// force https
-			docLink2 = docLink2.replace('http', 'https');
+			docLink2 = docLink2.replace('http:', 'https:');
 			break;
 		}
 	}
