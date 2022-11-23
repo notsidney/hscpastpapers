@@ -17,398 +17,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="img/icon48.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="img/icon64.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../img/icon48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="../img/icon64.png">
     <!-- more icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#6435c9">
-    <meta name="theme-color" content="#1b1c1d">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#6435c9">
     <!-- Facebook Open Graph stuff (for sharing on FB) -->
     <meta property="og:url" content="https://hscpastpapers.com/">
     <meta property="og:title" content="HSCPastPapers.com">
     <meta property="og:description" content="
-      Quickly browse and download NSW HSC past exam papers, marking guidelines,
+      Quickly download NSW HSC past exam papers, marking guidelines,
       notes from the marking centre, and more for free. Not affiliated with NESA.
     ">
-    <meta property="og:image" content="https://hscpastpapers.com/img/promo.png">
+    <!-- TODO: -->
+    <meta property="og:image" content="https://hscpastpapers.com/img/promo-downloader.png">
     <!-- Google search -->
     <meta name="Description" content="
-      Quickly browse and download NSW HSC past exam papers, marking guidelines,
+      Quickly download NSW HSC past exam papers, marking guidelines,
       notes from the marking centre, and more for free. Not affiliated with NESA.
     ">
 
     <title>HSCPastPapers.com</title>
 
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+    <link href="dist/bundle.min.css" rel="stylesheet" />
   </head>
 
-  <body class="loading">
-    <!-- top menu -->
-    <div class="ui top borderless inverted fixed menu segment">
-
-      <a id="logo" class="vertically fitted item" href="?">
-        <img src="img/icon.svg" width="16" height="16" class="ui image">
-        <div class="ui loader" id="loader"></div>
+  <body>
+    <noscript>
+      <h1>JavaScript is needed to run this page.</h1>
+      <a href="https://www.enable-javascript.com/" target="_blank">
+        Instructions to enable JavaScript
       </a>
+    </noscript>
 
-      <noscript id="nojs" class="item">
-        <a class="ui red button" href="https://www.enable-javascript.com/">
-          <i class="warning sign icon"></i>
-          JavaScript is disabled. Click here to enable.
-        </a>
-      </noscript>
-
-      <div id="nojquery" class="item" style="display:none">
-        <a class="ui red button"
-        href="https://code.jquery.com/jquery-3.1.1.min.js">
-          <i class="warning sign icon"></i>
-          Unable to load jQuery. Click here to test.
-        </a>
-      </div>
-
-      <div id="loadingmsg" class="ui vertically fitted item loading-show">
-        Loading data&hellip;
-        <span id="loadingpercent">0%</span>
-      </div>
-
-      <div class="ui violet bottom attached progress"
-        data-percent="0" id="loadingbar">
-        <div class="bar"></div>
-      </div>
-
-      <div id="course-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="course" id="course-input">
-        <i class="student left icon compact"></i>
-        <span class="text overflow">Course</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search courses&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="course-menu"></div>
-
-        </div>
-      </div>
-
-      <div id="year-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="year" id="year-input">
-        <i class="history left icon compact"></i>
-        <span class="text">Year</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search years&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="year-menu"></div>
-
-        </div>
-      </div>
-
-      <div id="doc-dropdown" class="ui loading-hide disabled dropdown item">
-        <input type="hidden" name="doc" id="doc-input">
-        <i class="file pdf outline left icon compact"></i>
-        <span class="text overflow">Document</span>
-        <i class="dropdown icon"></i>
-
-        <div class="menu">
-          <div class="ui icon search input">
-            <i class="search icon"></i>
-            <input type="text" placeholder="Search documents&hellip;">
-          </div>
-
-          <div class="scrolling menu" id="doc-menu"></div>
-
-        </div>
-      </div>
-
-      <a class="item link button-reset split-hide loading-hide" href="?">
-        <i class="undo icon compact"></i>
-        <span class="text">Reset</span>
-      </a>
-
-      <div id="menu-split-right" class="menu loading-hide split-show">
-
-        <div id="course-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="course" id="course-input2">
-          <i class="student left icon compact"></i>
-          <span class="text overflow">Course</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search courses&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="course-menu2"></div>
-
-          </div>
-        </div>
-
-        <div id="year-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="year" id="year-input2">
-          <i class="history left icon compact"></i>
-          <span class="text">Year</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search years&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="year-menu2"></div>
-
-          </div>
-        </div>
-
-        <div id="doc-dropdown2" class="ui disabled dropdown item">
-          <input type="hidden" name="doc" id="doc-input2">
-          <i class="file pdf outline left icon compact"></i>
-          <span class="text overflow">Document</span>
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="ui icon search input">
-              <i class="search icon"></i>
-              <input type="text" placeholder="Search documents&hellip;">
-            </div>
-
-            <div class="scrolling menu" id="doc-menu2"></div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- mobile menu -->
-      <div id="mobile-menu" class="right menu">
-
-        <div id="more-dropdown" class="ui dropdown item">
-          More
-          <i class="ellipsis vertical icon"></i>
-          <div class="ui menu">
-            <div class="header split-hide loading-hide">PDF</div>
-            <a class="item disabled button-download split-hide" target="_blank">
-              <i class="external icon"></i>Open in new tab
-            </a>
-            <button class="item link disabled button-link split-hide loading-hide" disabled>
-              <i class="linkify icon"></i>Copy link
-            </button>
-            <a class="item disabled button-download split-hide loading-hide" download target="_blank">
-              <i class="download icon"></i>Download
-            </a>
-            <div class="ui divider split-hide loading-hide"></div>
-            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
-              <i class="external icon"></i>Exam pack
-            </a>
-            <div class="ui divider split-hide loading-hide"></div>
-            <a class="item link button-reset split-show" href="?">
-              <i class="undo icon compact"></i>Reset
-            </a>
-            <a class="item link split-hide" href="/downloader/">
-              <i class="cloud download icon compact"></i>Downloader
-            </a>
-            <div class="ui divider"></div>
-            <!--<a class="item link link-special" target="_blank"
-              href="https://github.com/notseenee/hscpastpapers/blob/master/new-papers.md">
-              <i class="info circle icon"></i>2018 papers now available
-            </a>-->
-            <button class="item link button-about">
-              <i class="info icon"></i>About
-            </button>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- desktop menu -->
-      <div id="desktop-menu" class="right menu">
-
-        <div id="actions-dropdown" class="ui dropdown right disabled item split-hide loading-hide">
-          <i class="lightning left icon"></i>Actions
-          <i class="dropdown icon"></i>
-
-          <div class="menu">
-            <div class="header">PDF</div>
-            <a class="item disabled button-download" target="_blank">
-              <i class="external icon"></i>Open in new tab
-            </a>
-            <button class="item link disabled button-link" disabled>
-              <i class="linkify icon"></i>Copy link
-            </button>
-            <a class="item disabled button-download" download target="_blank">
-              <i class="download icon"></i>Download
-            </a>
-            <div class="ui divider"></div>
-            <a class="item disabled button-exampack split-hide loading-hide" target="_blank">
-              <i class="external icon"></i>Exam pack
-            </a>
-          </div>
-        </div>
-
-        <a class="item link button-reset split-show" href="?">
-          <i class="undo icon compact"></i>
-          <span class="text">Reset</span>
-        </a>
-        <a class="item link split-hide" href="/downloader/">
-          <i class="cloud download icon compact"></i>Downloader
-        </a>
-        <!--<a class="active violet item link link-special" target="_blank"
-          href="https://github.com/notseenee/hscpastpapers/blob/master/new-papers.md">
-          <i class="info circle icon"></i>2018 papers now available
-        </a>-->
-        <button class="item link button-about">
-          <i class="info icon"></i>About
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- iframe that displays doc -->
-    <iframe id="iframe"></iframe>
-    <iframe id="iframe-split-right" class="split-show"></iframe>
-
-    <!-- About modal -->
-    <div id="about-modal" class="ui tiny modal about">
-
-      <i id="close-modal" class="circular inverted red close icon"></i>
-
-      <h2 class="ui header">
-        <img src="img/icon.svg" width="48" height="48" class="ui image">
-        <div class="content">
-          HSCPastPapers.com
-          <div class="sub header">
-            Version&nbsp;<span id="version"></span><br>
-            Data updated&nbsp;<span id="timestamp"></span>
-            <a id="clear-cache" href="#">
-              <i class="trash outline icon"></i>Clear cache
-            </a>
-          </div>
-        </div>
-      </h2>
-
-      <div class="content">
-
-        <div class="ui horizontal section divider">About</div>
-
-        <p>
-          <b>
-            &copy; 2017&ndash;<span id="currentYear"></span> Sidney Alcantara
-          </b>&nbsp;
-          <a class="ui basic small compact button" target="_blank"
-            href="mailto:sidney@sidney.me">
-            <i class="mail outline icon"></i>
-            sidney@sidney.me
-          </a>
-        </p>
-
-        <p>
-          This web app and its source code are freely available under the MIT Licence.
-          <br>
-          <a class="ui basic small compact button" target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/blob/master/LICENSE">
-            <i class="law icon"></i>
-            Licence
-          </a>
-          <a class="ui basic small compact button" target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/">
-            <i class="github icon"></i>
-            Source code
-          </a>
-          <a class="ui basic small compact button" target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/commits">
-            <i class="list icon"></i>
-            Changelog
-          </a>
-        </p>
-
-        <div class="ui horizontal section divider">
-          Report issue or send feature request
-        </div>
-
-        <p>
-          <a class="ui basic small compact button" target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/issues/new">
-            <i class="github icon"></i>
-            Report on GitHub
-          </a>
-          <a class="ui basic small compact button" target="_blank"
-            href="https://gitreports.com/issue/notseenee/hscpastpapers">
-            <i class="send icon"></i>
-            Report anonymously
-          </a>
-        </p>
-
-        <div class="ui horizontal section divider">
-          Disclaimer and Copyright Notice
-        </div>
-
-        <p>
-          This web app is not affiliated with the NSW Education Standards
-          Authority (NESA). All documents linked to by this web app are owned by
-          the State of New South Wales, provided by NESA.
-        </p>
-        <p>
-          This web app does not store copies of any NESA documents. No ownership
-          is claimed over them. This web app was built for informational
-          purposes only.
-        </p>
-        <p>
-          On 15 June 2018, changes were made to this web app to comply with
-          <a target="_blank"
-            href="http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright">
-            NESA Copyright Policy</a>.
-          Learn more about the changes made due to copyright 
-          <a target="_blank"
-            href="https://github.com/notseenee/hscpastpapers/blob/master/copyright-changes.md">
-            here</a>.
-        </p>
-
+    <div id="root">
+      <header></header>
+      <div class="center-container">
+        <div class="spinner big"></div>
       </div>
     </div>
 
-    <!-- URL Parameter not found modal -->
-    <div id="not-found-modal" class="ui mini modal">
-      <div class="content">
-        <h3 class="header"><span id="not-found-modal-type"></span> not found from URL</h3>
-        <table class="ui definition table"><tbody id="not-found-modal-table">
-        </tbody></table>
-      </div>
-      <div class="actions"><button class="ui primary ok button">OK</button></div>
-    </div>
-
+    <!-- Scripts to run before React is loaded -->
     <script>
-      // if JS is enabled but jQuery isn't loading, show warning
-      window.onload = function() {
-          if (window.jQuery) {  
-              // jQuery is loaded  
-              console.log('jQuery loaded');
-          } else {
-              // jQuery is not loaded
-              document.getElementById('nojquery').style.display = "block";
-          }
-      }
+      // Check localStorage on page load if dark mode is enabled
+      (function() {
+        // Check for promise support
+        if (typeof Promise == 'undefined') {
+          document.getElementById('root').innerHTML =
+            '<h1>This browser is not supported.' +
+            ' You need to upgrade your browser.</h1>' + 
+            '<a href="https://browser-update.org/update.html" target="_blank">' +
+              'Learn more about how to upgrade your browser here' +
+            '</a>';
+        }
+        if (localStorage.getItem('dark') === 'true') {
+          document.body.classList.add('dark');
+        }
+      })();
     </script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
-    <script src="js/pdfobject.min.js"></script>
-    <script src="js/index.min.js"></script>
+
+    <script src="dist/bundle.min.js"></script>
 
   </body>
+
 </html>
