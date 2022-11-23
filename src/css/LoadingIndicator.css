@@ -28,9 +28,9 @@
 
 #progress-container {
   width: 15rem;
-  height: .5rem;
+  height: 0.5rem;
 
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 
   border-radius: 50em;
   background-color: var(--border-color);
@@ -69,13 +69,16 @@
   display: block;
 
   background: linear-gradient(
-    to right, rgba(255,255,255,0), rgba(255,255,255,.5));
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5)
+  );
   border-radius: 50em;
   transition: opacity 1s;
   transform-origin: 0 50%;
   animation: progress-bar-anim 2s ease infinite;
 
-  content: '';
+  content: "";
 }
 #progress-bar.done::before {
   animation: none;

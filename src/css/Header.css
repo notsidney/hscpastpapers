@@ -10,7 +10,7 @@ header {
 
   background-color: var(--background-color);
   border-bottom: var(--border);
-  box-shadow: 0 .125rem .5rem var(--header-shadow-color);
+  box-shadow: 0 0.125rem 0.5rem var(--header-shadow-color);
   box-sizing: content-box;
 
   line-height: 1rem;

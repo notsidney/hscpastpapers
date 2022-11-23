@@ -12,16 +12,16 @@
 }
 #list-container::before {
   width: 47rem;
-  height: .0625rem;
+  height: 0.0625rem;
 
   display: block;
   position: absolute;
   top: 0;
   left: 0;
 
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 
-  content: '';
+  content: "";
 }
 
 section {
@@ -34,11 +34,10 @@ section {
 
   background-color: var(--panel-background-color);
   border-right: var(--border);
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   transition: transform var(--animation-duration),
-    opacity var(--animation-duration),
-    box-shadow var(--animation-duration);
+    opacity var(--animation-duration), box-shadow var(--animation-duration);
   transform: translateX(0);
   opacity: 1;
 
@@ -68,7 +67,7 @@ section:last-of-type {
 .title {
   height: var(--button-height);
 
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 
   flex: none;
 
@@ -76,7 +75,7 @@ section:last-of-type {
 
   font-weight: var(--font-weight-bold);
   font-size: var(--text-size-small);
-  letter-spacing: .0625rem;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
   user-select: none;
 }
@@ -102,7 +101,7 @@ ol {
   align-items: center;
   justify-content: center;
 
-  opacity: .5;
+  opacity: 0.5;
 
   font-size: var(--text-size-big);
   font-weight: var(--font-weight-medium);
