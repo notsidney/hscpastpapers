@@ -188,7 +188,7 @@ function iframeMsg(side, msg) {
             'http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright' +
           '">NESA Copyright Policy</a>. You can read about the changes made ' +
           '<a target="_blank" href="' +
-            'https://github.com/notseenee/hscpastpapers/blob/master/copyright-changes.md' +
+            'https://github.com/notsidney/hscpastpapers/blob/main/classic/copyright-changes.md' +
           '">here</a>.' +
         '</p>' +
       '</div>' +

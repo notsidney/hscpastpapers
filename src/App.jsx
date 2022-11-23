@@ -1,11 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
-
-if (process.env.NODE_ENV !== 'production') {
-  const {whyDidYouUpdate} = require('why-did-you-update')
-  whyDidYouUpdate(React)
-}
 
 import faGraduationCap from '@fortawesome/fontawesome-free-solid/faGraduationCap';
 import faHistory from '@fortawesome/fontawesome-free-solid/faHistory';
@@ -16,10 +10,10 @@ import List from './components/List.jsx';
 import DownloadView from './components/DownloadView.jsx';
 import LoadingIndicator from './components/LoadingIndicator.jsx';
 
-import '../css/base.css';
-import '../css/spinner.css';
+import './css/base.css';
+import './css/spinner.css';
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -260,8 +254,3 @@ class App extends React.Component {
     return false;
   }
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);

@@ -1,39 +1,39 @@
 :root {
+  color-scheme: light dark;
   font-size: 16px;
 
   --background-color: #f5f5f5;
   --panel-background-color: #fff;
 
   --border-color: #ccc;
-  --border: .0625rem solid var(--border-color);
-  --header-shadow-color: rgba(0,0,0,.2);
+  --border: 0.0625rem solid var(--border-color);
+  --header-shadow-color: rgba(0, 0, 0, 0.2);
 
-  --text-color: rgba(0,0,0,.87);
+  --text-color: rgba(0, 0, 0, 0.87);
   --text-size-huge: 1.5rem;
   --text-size-big: 1.25rem;
-  --text-size: .875rem;
-  --text-size-small: .75rem;
+  --text-size: 0.875rem;
+  --text-size-small: 0.75rem;
   --font-weight-medium: 600;
   --font-weight-bold: bold;
 
   --primary-color: hsl(260, 100%, 40%);
-  --primary-border: .0625rem solid var(--primary-color);
+  --primary-border: 0.0625rem solid var(--primary-color);
   --button-text-color: #fff;
 
-  --focus-color: hsla(260, 100%, 40%, .4);
-  --focus-width: .25rem;
+  --focus-color: hsla(260, 100%, 40%, 0.4);
+  --focus-width: 0.25rem;
   --focus-outline: 0 0 0 var(--focus-width) var(--focus-color);
 
-  --header-button-hover: rgba(0,0,0,.1);
+  --header-button-hover: rgba(0, 0, 0, 0.1);
 
   --done-color: #06c814;
 
-  --border-radius: .5rem;
+  --border-radius: 0.5rem;
   --button-height: 2rem;
   --header-height: 2.5rem;
 
-  --animation-duration: .2s;
-
+  --animation-duration: 0.2s;
 }
 
 html,
@@ -56,7 +56,7 @@ body,
 input,
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   font-size: var(--text-size);
 }
@@ -73,7 +73,7 @@ button {
 }
 
 .svg-inline--fa {
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 .center-container {
@@ -86,10 +86,18 @@ button {
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes slide-in {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

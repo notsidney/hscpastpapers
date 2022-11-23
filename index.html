@@ -2,47 +2,75 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-108396697-1"
+    ></script>
     <script>
-      if (window.location.host !== 'localhost' && window.location.host) {
+      if (window.location.host !== "localhost" && window.location.host) {
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'UA-108396697-1');
+        gtag("config", "UA-108396697-1");
       }
     </script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/icon16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../img/icon48.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="../img/icon64.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/classic/img/icon16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/classic/img/icon32.png"
+    />
     <!-- more icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#6435c9">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/classic/img/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/classic/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/classic/img/safari-pinned-tab.svg"
+      color="#6435c9"
+    />
     <!-- Facebook Open Graph stuff (for sharing on FB) -->
-    <meta property="og:url" content="https://hscpastpapers.com/">
-    <meta property="og:title" content="HSCPastPapers.com">
-    <meta property="og:description" content="
+    <meta property="og:url" content="https://hscpastpapers.com/" />
+    <meta property="og:title" content="HSCPastPapers.com" />
+    <meta
+      property="og:description"
+      content="
       Quickly download NSW HSC past exam papers, marking guidelines,
       notes from the marking centre, and more for free. Not affiliated with NESA.
-    ">
+    "
+    />
     <!-- TODO: -->
-    <meta property="og:image" content="https://hscpastpapers.com/img/promo-downloader.png">
+    <meta
+      property="og:image"
+      content="https://hscpastpapers.com/img/promo-downloader.png"
+    />
     <!-- Google search -->
-    <meta name="Description" content="
+    <meta
+      name="Description"
+      content="
       Quickly download NSW HSC past exam papers, marking guidelines,
       notes from the marking centre, and more for free. Not affiliated with NESA.
-    ">
+    "
+    />
 
     <title>HSCPastPapers.com</title>
-
-    <link href="dist/bundle.min.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -60,27 +88,6 @@
       </div>
     </div>
 
-    <!-- Scripts to run before React is loaded -->
-    <script>
-      // Check localStorage on page load if dark mode is enabled
-      (function() {
-        // Check for promise support
-        if (typeof Promise == 'undefined') {
-          document.getElementById('root').innerHTML =
-            '<h1>This browser is not supported.' +
-            ' You need to upgrade your browser.</h1>' + 
-            '<a href="https://browser-update.org/update.html" target="_blank">' +
-              'Learn more about how to upgrade your browser here' +
-            '</a>';
-        }
-        if (localStorage.getItem('dark') === 'true') {
-          document.body.classList.add('dark');
-        }
-      })();
-    </script>
-
-    <script src="dist/bundle.min.js"></script>
-
+    <script type="module" src="/src/main.jsx"></script>
   </body>
-
 </html>

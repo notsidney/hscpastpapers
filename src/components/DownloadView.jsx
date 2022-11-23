@@ -1,14 +1,15 @@
-import React from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
-import faEye from '@fortawesome/fontawesome-free-solid/faEye';
-import faLink from '@fortawesome/fontawesome-free-solid/faLink';
-import faCopy from '@fortawesome/fontawesome-free-solid/faCopy';
-import faExternalLinkSquareAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import LinkButton from './LinkButton.jsx';
+import faFilePdf from "@fortawesome/fontawesome-free-solid/faFilePdf";
+import faEye from "@fortawesome/fontawesome-free-solid/faEye";
+import faLink from "@fortawesome/fontawesome-free-solid/faLink";
+import faCopy from "@fortawesome/fontawesome-free-solid/faCopy";
+import faExternalLinkSquareAlt from "@fortawesome/fontawesome-free-solid/faExternalLinkSquareAlt";
 
-import '../../css/DownloadView.css';
+import LinkButton from "./LinkButton.jsx";
+
+import "../css/DownloadView.css";
 
 class DownloadView extends React.PureComponent {
   constructor(props) {
@@ -24,17 +25,17 @@ class DownloadView extends React.PureComponent {
 
   copyLink() {
     this.linkBox.select();
-    document.execCommand('Copy');
-    alert('Copied link');
+    document.execCommand("Copy");
+    alert("Copied link");
   }
 
   render() {
     if (this.props.enabled) {
       let fileName = /[^\/]+$/.exec(this.props.url);
-      fileName = fileName[0].replace('?MOD=AJPERES','');
+      fileName = fileName[0].replace("?MOD=AJPERES", "");
 
-      return(
-        <section className="download-view" ref={node => this.node = node}>
+      return (
+        <section className="download-view" ref={(node) => (this.node = node)}>
           <h1>
             <FontAwesomeIcon icon={faFilePdf} />
             {fileName}
@@ -56,7 +57,7 @@ class DownloadView extends React.PureComponent {
               <input
                 type="text"
                 className="linkBox"
-                ref={input => this.linkBox = input}
+                ref={(input) => (this.linkBox = input)}
                 value={this.props.url}
                 onClick={this.selectOnClick}
                 readOnly
@@ -74,23 +75,21 @@ class DownloadView extends React.PureComponent {
             </div>
           </div>
         </section>
-      )
-    }
-    else {
-      return <section className="download-view disabled"></section>
+      );
+    } else {
+      return <section className="download-view disabled"></section>;
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.url.length > 0 &&
-        this.props.url !== nextProps.url) {
-      this.node.classList.add('disabled');
+    if (this.props.url.length > 0 && this.props.url !== nextProps.url) {
+      this.node.classList.add("disabled");
     }
   }
 
   componentDidUpdate() {
     if (this.props.url.length > 0) {
-      setTimeout(() => this.node.classList.remove('disabled'), 200);
+      setTimeout(() => this.node.classList.remove("disabled"), 200);
     }
   }
 }
