@@ -5,7 +5,7 @@
   --background-color: oklch(97% 0.005 285);
   --panel-background-color: oklch(100% 0 285);
 
-  --input-color: oklch(92% 0.015 285 / 80%);
+  --input-color: oklch(87% 0.015 285 / 50%);
   --input-placeholder-color: oklch(40% 0.015 285);
   --input-caret-color: var(--primary-color);
 
@@ -53,7 +53,7 @@
     --background-color: #000;
     --panel-background-color: oklch(20% 0.005 285);
 
-    --input-color: oklch(40% 0.015 285 / 80%);
+    --input-color: oklch(50% 0.015 285 / 50%);
     --input-placeholder-color: oklch(80% 0.015 285);
     --input-caret-color: var(--text-color);
 
