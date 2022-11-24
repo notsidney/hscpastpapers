@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../css/buttons.css";
 
@@ -32,7 +31,7 @@ class ToggleButton extends React.Component {
         id={this.props.id}
         onClick={this.toggle}
       >
-        <FontAwesomeIcon icon={this.props.icon} />
+        {this.props.icon}
         <span className="text">{this.props.text}</span>
       </button>
     );

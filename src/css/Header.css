@@ -4,13 +4,17 @@ header {
   display: flex;
   align-items: center;
   z-index: 999;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding-left: max(0.5rem, env(safe-area-inset-left));
+  padding-right: max(0.5rem, env(safe-area-inset-right));
 
   flex: none;
 
   background-color: var(--background-color);
-  border-bottom: var(--border);
-  box-shadow: 0 0.125rem 0.5rem var(--header-shadow-color);
   box-sizing: content-box;
 
   line-height: 1rem;
@@ -35,19 +39,21 @@ header > img {
 }
 
 header > .item.header-title {
-  border-left: var(--border);
   font-weight: var(--font-weight-medium);
+  font-size: var(--text-size);
+
+  margin: 0;
   flex-grow: 1;
 }
-header > .item.header-title .svg-inline--fa {
-  min-width: 1.35rem;
-  min-height: 1rem;
+header > .item.header-title img {
+  margin-right: 0.5rem;
 }
 
 header > .button {
   height: 100%;
+  flex: none;
 
-  border-radius: 0;
+  border-radius: var(--border-radius);
 
   color: var(--text-color);
   border: none;
@@ -58,16 +64,4 @@ header > .button:hover,
 header > .button:active {
   background-color: var(--header-button-hover);
   color: var(--text-color);
-}
-header > .button .svg-inline--fa {
-  vertical-align: sub;
-}
-
-@media (max-width: 25rem) {
-  header > .button .svg-inline--fa {
-    margin-right: 0;
-  }
-  header > .button .text {
-    display: none;
-  }
 }

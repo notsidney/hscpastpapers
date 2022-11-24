@@ -1,10 +1,6 @@
 import React from "react";
 import axios from "axios";
 
-import faGraduationCap from "@fortawesome/fontawesome-free-solid/faGraduationCap";
-import faHistory from "@fortawesome/fontawesome-free-solid/faHistory";
-import faFilePdf from "@fortawesome/fontawesome-free-solid/faFilePdf";
-
 import Header from "./components/Header.jsx";
 import List from "./components/List.jsx";
 import DownloadView from "./components/DownloadView.jsx";
@@ -148,9 +144,12 @@ export default class App extends React.Component {
           focusedSection: 2,
           year: index,
           yearName: this.state.data[this.state.course].packs[index].year,
-          docArray: this.state.data[this.state.course].packs[index].docs.map(
-            (elem) => elem.doc_name
-          ),
+          docArray: [
+            ...this.state.data[this.state.course].packs[index].docs.map(
+              (elem) => elem.doc_name
+            ),
+            "Exam pack",
+          ],
           // Reset
           doc: -1,
           docName: "",
@@ -159,16 +158,28 @@ export default class App extends React.Component {
         });
         break;
 
-      case "Document":
-        let dataEntryPoint =
-          this.state.data[this.state.course].packs[this.state.year].docs[index];
-        this.setState({
-          focusedSection: 3,
-          doc: index,
-          docName: dataEntryPoint.doc_name,
-          docLink: dataEntryPoint.doc_link,
-          showDownloadView: true,
-        });
+      case "Link":
+        const pack = this.state.data[this.state.course].packs[this.state.year];
+
+        // Exam pack is always at the end
+        if (index >= pack.docs.length) {
+          this.setState({
+            focusedSection: 3,
+            doc: index,
+            docName: "Exam pack",
+            docLink: pack.link,
+            showDownloadView: true,
+          });
+        } else {
+          const dataEntryPoint = pack.docs[index];
+          this.setState({
+            focusedSection: 3,
+            doc: index,
+            docName: dataEntryPoint.doc_name,
+            docLink: dataEntryPoint.doc_link,
+            showDownloadView: true,
+          });
+        }
         break;
     }
   }
@@ -198,7 +209,6 @@ export default class App extends React.Component {
       <main id="list-container">
         <List
           title="Course"
-          icon={faGraduationCap}
           items={this.state.courseArray}
           selected={this.state.course}
           selectItem={this.selectItem}
@@ -209,7 +219,6 @@ export default class App extends React.Component {
         />
         <List
           title="Year"
-          icon={faHistory}
           prevSelection={this.state.course}
           items={this.state.yearArray}
           selected={this.state.year}
@@ -219,8 +228,7 @@ export default class App extends React.Component {
           index={1}
         />
         <List
-          title="Document"
-          icon={faFilePdf}
+          title="Link"
           prevSelection={this.state.year}
           items={this.state.docArray}
           selected={this.state.doc}
@@ -231,16 +239,10 @@ export default class App extends React.Component {
         />
         <DownloadView
           enabled={this.state.showDownloadView}
+          courseName={this.state.courseName}
+          yearName={this.state.yearName}
+          docName={this.state.docName}
           url={this.state.docLink}
-          viewerUrl={
-            "../" +
-            "?course=" +
-            this.state.courseName.toLowerCase() +
-            "&year=" +
-            this.state.yearName +
-            "&doc=" +
-            this.state.docName.toLowerCase()
-          }
           sectionFocus={this.sectionFocus}
           focus={this.state.focusedSection === 3}
           index={3}

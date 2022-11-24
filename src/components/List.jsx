@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ListItem from "./ListItem.jsx";
 import SearchBox from "./SearchBox.jsx";
@@ -28,7 +27,10 @@ class List extends React.PureComponent {
 
   // When section is clicked, set focus to search box within section
   focusSection(liftToState) {
-    if (this.section) this.section.getElementsByTagName("input")[0].focus();
+    if (this.section) {
+      this.section.getElementsByTagName("input")[0].focus();
+      this.section.scrollIntoView({ behavior: "smooth", inline: "center" });
+    }
     // Use !== false so it triggers even if parameter is not passed
     if (liftToState !== false) this.props.sectionFocus(this.props.index);
   }
@@ -139,6 +141,11 @@ class List extends React.PureComponent {
     }
   }
 
+  componentDidMount() {
+    // If focused in props, focus on searchBox
+    if (this.props.focus) setTimeout(() => this.focusSection(false), 200);
+  }
+
   render() {
     // Only render if props array has elements
     if (this.props.items.length > 0) {
@@ -181,13 +188,10 @@ class List extends React.PureComponent {
       return (
         <section
           onKeyDown={this.moveFocus}
-          onClick={this.focusSection}
           ref={(section) => (this.section = section)}
+          onClick={this.focusSection}
         >
-          <div className="title">
-            <FontAwesomeIcon icon={this.props.icon} fixedWidth />
-            Select {this.props.title}
-          </div>
+          <h2 className="title">{this.props.title}s</h2>
           <SearchBox
             title={this.props.title + "s"}
             filterItems={this.filterItems}
@@ -235,7 +239,7 @@ class List extends React.PureComponent {
         this.ol.getElementsByClassName("focused")[0].offsetTop - 18; // 18 gap
     }
     // If focused in props, focus on searchBox
-    if (this.props.focus) this.focusSection(false);
+    if (this.props.focus) setTimeout(() => this.focusSection(false), 200);
   }
 }
 

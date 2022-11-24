@@ -33,7 +33,7 @@
   margin-top: 0.5rem;
 
   border-radius: 50em;
-  background-color: var(--border-color);
+  background-color: var(--input-color);
 }
 
 #progress-bar {

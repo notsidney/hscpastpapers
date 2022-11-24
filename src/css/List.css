@@ -1,13 +1,20 @@
 #list-container {
+  min-width: calc(15rem * 4 + 0.5rem * 5);
   width: 100%;
-
-  display: flex;
+  height: 100%;
   position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(15rem, 1fr));
+
+  padding-top: var(--header-height);
+  padding-left: max(0.5rem, env(safe-area-inset-left));
+  padding-right: max(0.5rem, env(safe-area-inset-right));
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  gap: 0.5rem;
 
   flex: 1;
 
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
   overflow-y: hidden;
 }
 #list-container::before {
@@ -27,21 +34,25 @@
 section {
   height: 100%;
 
-  flex: 1 0 11.5rem;
-
   display: flex;
   flex-direction: column;
 
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+
   background-color: var(--panel-background-color);
-  border-right: var(--border);
+  border-radius: calc(var(--border-radius) + 0.5rem);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: 0.5rem 0 0 var(--background-color);
 
   transition: transform var(--animation-duration),
-    opacity var(--animation-duration), box-shadow var(--animation-duration);
+    opacity var(--animation-duration);
   transform: translateX(0);
   opacity: 1;
 
-  animation: slide-in var(--animation-duration) ease backwards;
+  animation: slide-in var(--animation-duration) cubic-bezier(1, 0, 0, 1)
+    backwards;
 }
 section.disabled {
   border-right-style: none;
@@ -65,31 +76,22 @@ section:last-of-type {
 }
 
 .title {
-  height: var(--button-height);
-
-  padding: 0.5rem 1rem;
+  padding: 1.25rem 1.25rem 0.5rem;
+  margin: 0;
 
   flex: none;
 
-  background-color: var(--background-color);
-
-  font-weight: var(--font-weight-bold);
-  font-size: var(--text-size-small);
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-size-huge);
   user-select: none;
 }
 
 ol {
   margin: 0;
-  padding: 0 0 2.25rem;
+  padding: 0 0.5rem 0.5rem;
 
   flex: 1;
   position: relative;
-
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-  overflow-y: auto;
 
   list-style: none;
 }
@@ -103,7 +105,6 @@ ol {
 
   opacity: 0.5;
 
-  font-size: var(--text-size-big);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--text-size-large);
   user-select: none;
 }

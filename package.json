@@ -12,23 +12,35 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free-solid": "^5.0.13",
-    "@fortawesome/fontawesome-svg-core": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@iconicicons/react": "^1.5.1",
     "axios": "^1.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^16",
+    "react-dom": "^16"
   },
   "devDependencies": {
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
+    "@types/react": "^16",
+    "@types/react-dom": "^16",
     "@vitejs/plugin-react": "^2.2.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
+    "postcss-preset-env": "^7.8.3",
     "prettier": "2.8.0",
     "vite": "^3.2.3"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "features": {
+          "oklab-function": {
+            "subFeatures": {
+              "displayP3": false
+            }
+          }
+        }
+      }
+    }
   }
 }

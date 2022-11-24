@@ -1,20 +1,28 @@
 li {
-  min-height: 2.25rem;
-  padding: 0.625rem 0.75rem 0.625rem 1rem;
+  min-height: var(--button-height);
+  padding: calc(7 / 16 * 1rem) 0.75rem;
+  padding-right: 2rem;
 
   display: flex;
   align-items: center;
   position: relative;
 
+  border-radius: var(--border-radius);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-  line-height: 1rem;
+  line-height: calc(18 / 14);
+
+  transition: opacity var(--animation-duration);
 
   cursor: pointer;
 }
 li:hover,
 li.focused {
   background-color: var(--header-button-hover);
+}
+li:active {
+  transition: none;
+  opacity: 0.5;
 }
 
 li .list-item-text {
@@ -24,6 +32,17 @@ li .list-item-text {
 }
 
 li.active {
-  background-color: var(--primary-color);
-  color: var(--button-text-color);
+  background-color: var(--list-item-active-color);
+  color: var(--list-item-active-text-color);
+}
+
+li .chevron-right {
+  margin: calc(-7 / 16 * 1rem) -2rem;
+  margin-left: 0;
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+}
+li .chevron-right path {
+  stroke-width: 1.125px;
 }
