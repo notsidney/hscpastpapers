@@ -9,7 +9,7 @@ import AboutDialog from "./components/AboutDialog.jsx";
 
 import "./css/base.css";
 import "./css/buttons.css";
-import "./css/spinner.css";
+import "./css/Spinner.css";
 
 export default class App extends React.Component {
   constructor(props) {
