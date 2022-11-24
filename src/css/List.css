@@ -46,12 +46,12 @@ section {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: 0.5rem 0 0 var(--background-color);
 
-  transition: transform var(--animation-duration),
-    opacity var(--animation-duration);
+  transition: transform var(--animation-duration) var(--animation-easing),
+    opacity var(--animation-duration) var(--animation-easing);
   transform: translateX(0);
   opacity: 1;
 
-  animation: slide-in var(--animation-duration) cubic-bezier(1, 0, 0, 1)
+  animation: slide-in var(--animation-duration) var(--animation-easing)
     backwards;
 }
 section.disabled {

@@ -29,7 +29,9 @@ class List extends React.PureComponent {
   focusSection(liftToState) {
     if (this.section) {
       this.section.getElementsByTagName("input")[0].focus();
-      this.section.scrollIntoView({ behavior: "smooth", inline: "center" });
+      setTimeout(() => {
+        this.section.scrollIntoView({ behavior: "smooth", inline: "center" });
+      }, 200);
     }
     // Use !== false so it triggers even if parameter is not passed
     if (liftToState !== false) this.props.sectionFocus(this.props.index);
@@ -189,7 +191,6 @@ class List extends React.PureComponent {
         <section
           onKeyDown={this.moveFocus}
           ref={(section) => (this.section = section)}
-          onClick={this.focusSection}
         >
           <h2 className="title">{this.props.title}s</h2>
           <SearchBox

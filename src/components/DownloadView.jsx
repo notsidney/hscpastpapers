@@ -2,8 +2,6 @@ import React from "react";
 
 import { LinkIcon, ArrowUpRightIcon } from "@iconicicons/react";
 
-import LinkButton from "./LinkButton.jsx";
-
 import "../css/DownloadView.css";
 
 class DownloadView extends React.PureComponent {
@@ -23,13 +21,15 @@ class DownloadView extends React.PureComponent {
             </p>
           </div>
           <div className="controls-container">
-            <LinkButton
-              className="primary"
-              url={this.props.url}
-              text="Open in NESA website"
-              icon={<ArrowUpRightIcon />}
-              newTab="true"
-            />
+            <a
+              className="button primary"
+              href={this.props.url}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Open in NESA website
+              <ArrowUpRightIcon className="end" />
+            </a>
           </div>
         </section>
       );

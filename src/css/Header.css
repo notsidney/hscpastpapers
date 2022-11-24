@@ -53,15 +53,5 @@ header > .button {
   height: 100%;
   flex: none;
 
-  border-radius: var(--border-radius);
-
-  color: var(--text-color);
-  border: none;
-
-  line-height: 1rem;
-}
-header > .button:hover,
-header > .button:active {
-  background-color: var(--header-button-hover);
-  color: var(--text-color);
+  background-color: transparent;
 }

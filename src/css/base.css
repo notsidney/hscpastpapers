@@ -10,6 +10,7 @@
   --input-caret-color: var(--primary-color);
 
   --text-color: oklch(20% 0.05 285);
+  --underline-color: oklch(20% 0.05 285 / 33%);
   --text-size-huge: 1.5rem;
   --text-size-large: 1.25rem;
   --text-size: 0.875rem;
@@ -37,6 +38,14 @@
   --header-height: 3rem;
 
   --animation-duration: 0.2s;
+  --animation-easing: cubic-bezier(0.85, 0, 0, 1);
+
+  --dialog-shadow: 0 0 0 1px oklch(20% 0.05 285 / 8%),
+    0 25px 50px -12px oklch(20% 0.05 285 / 25%),
+    0 50px 80px oklch(20% 0.05 285 / 6%);
+}
+::backdrop {
+  background-color: oklch(97% 0.005 285 / 80%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +58,7 @@
     --input-caret-color: var(--text-color);
 
     --text-color: oklch(87% 0.005 285);
+    --underline-color: oklch(87% 0.005 285 / 50%);
 
     --primary-border: 0.0625rem solid oklch(75% 0.25 285);
 
@@ -59,6 +69,13 @@
     --header-button-hover: oklch(90% 0.1 285 / 12%);
     --list-item-active-color: oklch(30% 0.1 285);
     --list-item-active-text-color: oklch(100% 0.25 285);
+
+    --dialog-shadow: 0 0 0 1px oklch(0% 0.05 285 / 32%),
+      0 25px 50px -12px oklch(0% 0.05 285 / 75%),
+      0 50px 80px oklch(0% 0.05 285 / 24%);
+  }
+  ::backdrop {
+    background-color: oklch(0% 0 0 / 80%);
   }
 }
 
@@ -112,6 +129,21 @@ button {
 
 svg {
   margin-right: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--underline-color);
+}
+a:hover {
+  text-decoration-color: currentColor;
+}
+a:active {
+  opacity: 0.5;
+}
+a:focus {
+  outline: none;
+  box-shadow: var(--focus-box-shadow);
 }
 
 .center-container {

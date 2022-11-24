@@ -5,8 +5,10 @@ import Header from "./components/Header.jsx";
 import List from "./components/List.jsx";
 import DownloadView from "./components/DownloadView.jsx";
 import LoadingIndicator from "./components/LoadingIndicator.jsx";
+import AboutDialog from "./components/AboutDialog.jsx";
 
 import "./css/base.css";
+import "./css/buttons.css";
 import "./css/spinner.css";
 
 export default class App extends React.Component {
@@ -66,6 +68,10 @@ export default class App extends React.Component {
         }
         // Finally, load data
         this.loadData(expired);
+        // Display timestamp in about dialog
+        const metaTimestamp = new Date(response.data.timestamp);
+        document.getElementById("timestamp").innerHTML =
+          metaTimestamp.toLocaleDateString();
       })
       .catch((error) => alert(`Error loading data:\n${error}`));
   }
@@ -249,10 +255,12 @@ export default class App extends React.Component {
         />
       </main>
     );
+
     return (
       <React.Fragment>
         <Header />
         {bodyElements}
+        <AboutDialog />
       </React.Fragment>
     );
   }

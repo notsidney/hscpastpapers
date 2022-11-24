@@ -4,11 +4,11 @@
   border-radius: var(--border-radius);
   box-sizing: border-box;
 
-  border: var(--primary-border);
-  background-color: transparent;
-  color: var(--primary-color);
+  background-color: var(--input-color);
+  color: var(--text-color);
+  border: none;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -20,18 +20,17 @@
   user-select: none;
 
   transition: opacity var(--animation-duration),
-    box-shadow var(--animation-duration);
+    box-shadow var(--animation-duration),
+    background-color var(--animation-duration), color var(--animation-duration);
 
   cursor: pointer;
 }
-.button:hover {
-  background-color: var(--primary-color);
-  color: var(--button-text-color);
+.button:hover,
+.button:active {
+  background-color: var(--list-item-active-color);
+  color: var(--list-item-active-text-color);
 }
 .button:active {
-  background-color: var(--primary-color);
-  color: var(--button-text-color);
-
   transition: none;
   opacity: 0.5;
 }
@@ -43,9 +42,14 @@
 .button svg {
   min-width: 1rem;
   min-height: 1rem;
-
+}
+.button svg.start {
+  margin-left: -0.125em;
+  margin-right: 0.25em;
+}
+.button svg.end {
   margin-left: 0.25em;
-  margin-right: 0;
+  margin-right: -0.125em;
 }
 
 .button.primary {

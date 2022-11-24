@@ -3,6 +3,10 @@
   "version": "2.0.0",
   "author": "Sidney Alcantara",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notsidney/hscpastpapers.git"
+  },
   "source": "src/index.html",
   "browserslist": "> 0.5%, not dead, not op_mini all, not ie > 0, not and_uc > 0",
   "scripts": {
