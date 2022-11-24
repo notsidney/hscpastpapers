@@ -14,7 +14,7 @@ Examination papers should only appear on the NESA website”.
 It should be noted that HSCPastPapers.com never stored any NESA documents or
 made copies of these documents – this can be easily seen when viewing the source
 code, which has always been publicly available on GitHub:
-https://github.com/notseenee/hscpastpapers
+https://github.com/notsidney/hscpastpapers
 
 ---
 
@@ -34,4 +34,4 @@ for HSC past papers, especially with its keyboard-navigable interface. As such,
 I will keep this web app available indefinitely.
 
 [nesa copyright policy]: http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright
-[1.9]: https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/history/1.9.png
+[1.9]: https://raw.githubusercontent.com/notsidney/hscpastpapers/classic/img/history/1.9.png

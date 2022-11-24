@@ -110,7 +110,7 @@ export default function AboutDialog() {
           <a
             href={meta.repository.url.replace(
               ".git",
-              "/blob/main/classic/copyright-changes.md"
+              "/blob/main/copyright-changes.md"
             )}
             target="_blank"
             rel="noopener noreferrer"
