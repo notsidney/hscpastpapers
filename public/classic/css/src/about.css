@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------------------
+about.css
+------------------------------------------------------------------------------*/
+
+.ui.modal.about .ui.header .sub.header {
+	color: rgba(0,0,0,.75);
+	font-size: 1rem;
+}
+
+.ui.modal.about>.close {
+	font-size: 1rem;
+	top: 1.5rem;
+  right: 1.25rem;
+}
+
+.ui.modal.about>.header {
+	border-bottom: none;
+}
+
+.ui.modal.about .ui.header .icon:only-child {
+	margin: 0 .25rem 0 .75rem;
+}
+
+.ui.modal.about .ui.section.divider:first-of-type {
+	margin-top: -.5rem;
+}
+
+.ui.modal.about .ui.button {
+	color: rgba(0,0,0,.87) !important;
+	margin-bottom: .5em;
+	margin-top: .2em;
+}
+
+.ui.modal.about .ui.button>.icon {
+	opacity: 1;
+}
+
+.ui.modal.about .ui.section.divider {
+	margin-bottom: 1rem;
+	margin-top: 2.5rem;
+}

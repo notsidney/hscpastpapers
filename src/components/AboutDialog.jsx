@@ -4,6 +4,7 @@ import "../css/AboutDialog.css";
 import { CloseIcon, TrashIcon } from "@iconicicons/react";
 
 import meta from "../../package.json";
+import logoUrl from "../../img/icon.svg";
 
 export default function AboutDialog() {
   const ref = useRef(null);
@@ -34,7 +35,7 @@ export default function AboutDialog() {
         <CloseIcon />
       </button>
 
-      <img src="../img/icon.svg" width="60" height="60" aria-hidden />
+      <img src={logoUrl} width="60" height="60" aria-hidden />
       <h2>HSCPastPapers.com</h2>
       <p>
         Version {meta.version}
