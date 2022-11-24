@@ -4,10 +4,6 @@ Web app to quickly download past HSC papers.
 
 ![Screenshot](https://raw.githubusercontent.com/notseenee/hscpastpapers/master/img/promo-downloader.png)
 
-# Acknowledgements
-
-Built with [React 16.2.0](https://reactjs.org)
-
 ## NESA PP Scraper
 
 Note this web app only parses through a JSON file already containing links to
