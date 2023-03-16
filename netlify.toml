@@ -5,3 +5,8 @@
 [[redirects]]
   from = "/downloader"
   to = "/"
+
+[[redirects]]
+  from = "/pa/*"
+  to = "https://plausible.io/:splat"
+  status = 200
