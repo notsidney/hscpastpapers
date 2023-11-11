@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.5.1
     version: 1.5.1(react@16.14.0)
   axios:
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^1.6.0
+    version: 1.6.0
   react:
     specifier: ^16
     version: 16.14.0
@@ -716,8 +716,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /axios@1.2.0:
-    resolution: {integrity: sha512-zT7wZyNYu3N5Bu0wuZ6QccIf93Qk1eV8LOewxgjOZFd2DenOs98cJ7+Y6703d0wkaXGY6/nZd4EweJaHz9uzQw==}
+  /axios@1.6.0:
+    resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
