@@ -16,7 +16,7 @@
 }
 
 .download-view .info svg {
-  margin: 0 auto 0.5rem;
+  margin: 0.5rem auto;
   display: block;
 
   width: 3rem;
@@ -37,7 +37,8 @@
 }
 
 .controls-container {
-  margin-bottom: 2rem;
-
   flex: 1;
+}
+.controls-container .button.primary {
+  margin-bottom: 0;
 }

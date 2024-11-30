@@ -1,9 +1,5 @@
 header {
-  width: 100vw;
-  min-height: var(--header-height);
-  position: sticky;
-  top: 0;
-  left: 0;
+  flex-basis: var(--header-height);
   flex: none;
 
   box-sizing: border-box;

@@ -104,9 +104,8 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 body,
@@ -121,11 +120,7 @@ button {
 }
 
 #root {
-  width: min-content;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
+  display: contents;
 }
 
 svg {
