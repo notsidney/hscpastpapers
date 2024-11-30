@@ -1,24 +1,23 @@
 header {
-  height: var(--header-height);
-
-  display: flex;
-  align-items: center;
-  z-index: 999;
-  position: fixed;
+  width: 100vw;
+  min-height: var(--header-height);
+  position: sticky;
   top: 0;
   left: 0;
-  right: 0;
+  flex: none;
 
+  box-sizing: border-box;
+  padding: 0.5rem 0;
   padding-left: max(0.5rem, env(safe-area-inset-left));
   padding-right: max(0.5rem, env(safe-area-inset-right));
 
-  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 
   background-color: var(--background-color);
-  box-sizing: content-box;
-
   line-height: 1rem;
-
   user-select: none;
 }
 
@@ -41,17 +40,23 @@ header > img {
 header > .item.header-title {
   font-weight: var(--font-weight-medium);
   font-size: var(--text-size);
-
   margin: 0;
-  flex-grow: 1;
 }
 header > .item.header-title img {
   margin-right: 0.5rem;
 }
 
 header > .button {
-  height: 100%;
   flex: none;
-
   background-color: transparent;
+}
+
+@media (max-width: 40rem) {
+  header {
+    flex-wrap: wrap;
+  }
+  #banner {
+    order: 1;
+    width: 100%;
+  }
 }

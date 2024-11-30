@@ -85,7 +85,7 @@
   }
 }
 
-@media (pointer: coarse) and (max-width: 600px) {
+@media (pointer: coarse) and (max-width: 40rem) {
   :root {
     --text-size: 1rem;
   }
@@ -121,6 +121,7 @@ button {
 }
 
 #root {
+  width: min-content;
   height: 100%;
 
   display: flex;

@@ -43,7 +43,7 @@ export default function AboutDialog() {
         Data updated <span id="timestamp">—</span>
       </p>
 
-      <p>
+      {/* <p>
         Copyright &copy; 2017&ndash;{new Date().getFullYear()} Sidney Alcantara.
         Licensed under the{" "}
         <a
@@ -54,7 +54,7 @@ export default function AboutDialog() {
           MIT License
         </a>
         .
-      </p>
+      </p> */}
 
       <div className="button-row">
         <button className="button" onClick={handleClearCache}>

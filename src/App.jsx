@@ -70,8 +70,9 @@ export default class App extends React.Component {
         this.loadData(expired);
         // Display timestamp in about dialog
         const metaTimestamp = new Date(response.data.timestamp);
-        document.getElementById("timestamp").innerHTML =
-          metaTimestamp.toLocaleDateString();
+        document.getElementById("timestamp").innerHTML = metaTimestamp
+          .toISOString()
+          .split("T")[0];
       })
       .catch((error) => alert(`Error loading data:\n${error}`));
   }

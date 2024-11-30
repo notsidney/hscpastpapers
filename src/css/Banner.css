@@ -1,0 +1,29 @@
+#banner {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--list-item-active-color);
+  color: var(--list-item-active-text-color);
+  border-radius: calc(var(--border-radius) + 0.5rem);
+  min-height: var(--button-height);
+  padding-left: 0.5rem;
+}
+
+#banner .spacer {
+  min-width: 0.5rem;
+  flex-grow: 1;
+}
+
+#banner button.close {
+  aspect-ratio: 1;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: transparent;
+  color: inherit;
+}
+#banner button.close svg {
+  margin: 0;
+}
+#banner button.close:hover {
+  background-color: var(--focus-color);
+}

@@ -1,6 +1,6 @@
 {
   "name": "hscpastpapers",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "Sidney Alcantara",
   "license": "MIT",
   "repository": {
@@ -29,7 +29,7 @@
     "lint-staged": "^13.0.3",
     "postcss-preset-env": "^7.8.3",
     "prettier": "2.8.0",
-    "vite": "^3.2.10"
+    "vite": "^3.2.11"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
