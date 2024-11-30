@@ -3,6 +3,20 @@
     "course_name": "Aboriginal Studies",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/aboriginal-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a0ef26b9-2c86-49fd-9481-95944bd7c5b3/2024-hsc-aboriginal-studies.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b987e038-3bf8-4a25-b757-cb3209cc1ad8/2024-hsc-aboriginal-studies-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/aboriginal-studies-2023-hsc-exam-pack",
         "docs": [
@@ -349,6 +363,20 @@
   {
     "course_name": "Agriculture",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/agriculture-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/75c2c09d-cad2-4a01-bcf4-0b638e3fa9ae/2024-hsc-agriculture.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/892918f2-ee44-40b3-9fca-d9ca3f71d338/2024-hsc-agriculture-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/agriculture-2023-hsc-exam-pack",
@@ -740,6 +768,20 @@
   {
     "course_name": "Ancient History",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/ancient-history-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4c3267b5-7cd2-4507-9f82-0a6a66edbbe7/2024-hsc-ancient-history.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/8d465348-d167-42bd-b592-164c80be676f/2024-hsc-ancient-history-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/ancient-history-2023-hsc-exam-pack",
@@ -1405,6 +1447,24 @@
     "course_name": "Arabic Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/arabic-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b0690ac4-8174-4652-97bd-a633b1f9d328/2024-hsc-arabic-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c2c101c5-3132-446d-bd8e-e21469ee6d97/2024-hsc-arabic-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/d50ffed7-762b-40ba-ad2c-a448cfa5b664/2024-hsc-arabic-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/arabic-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -1808,6 +1868,24 @@
     "course_name": "Arabic Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/arabic-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ae403abd-4ca2-4596-b3d5-48ec3dc6668f/2024-hsc-arabic-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5d4d8eda-a385-4484-9a7f-1f27b65981db/2024-hsc-arabic-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2c86250d-e868-4ce2-8773-39ff524140f3/2024-hsc-arabic-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/arabic-extension-2023-hsc-exam-pack",
         "docs": [
@@ -2206,6 +2284,24 @@
   {
     "course_name": "Armenian Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/armenian-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f5d64474-8eb3-449c-83e4-91315e1d8336/2024-hsc-armenian-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/87bba23c-6f5f-448d-bb2f-35eeed52618b/2024-hsc-armenian.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9aeeb433-97af-4bca-ac71-ea9349bdc103/2024-hsc-armenian-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/armenian-continuers-2023-hsc-exam-pack",
@@ -2622,6 +2718,20 @@
     "course_name": "Automotive",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/automotive-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0e24c2a4-31e2-4dec-9836-a616eff12eac/2024-hsc-vet-automotive.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/d143370d-4cff-42ae-bc52-fbfc6ea872f5/2024-hsc-vet-automotive-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/automotive-2023-hsc-exam-pack",
         "docs": [
@@ -2916,6 +3026,20 @@
   {
     "course_name": "Biology",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/biology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/cce37364-0bc3-4fc4-8e0a-d57015343505/2024-hsc-biology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/599abb4a-2473-4b2d-95e8-2378029b0045/2024-hsc-biology-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/biology-2023-hsc-exam-pack",
@@ -3263,6 +3387,20 @@
   {
     "course_name": "Business Services",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/business-services-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/136dd572-287b-40a0-aeec-780ee919f514/2024-hsc-vet-business-services.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/32968401-ffc8-4555-9be4-7bf9faeb016d/2024-hsc-vet-business-services-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/business-services-2023-hsc-exam-pack",
@@ -3614,6 +3752,20 @@
   {
     "course_name": "Business Studies",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/business-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2bbd9d65-ea16-4d29-8053-043c46b46c98/2024-hsc-business-studies.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f4d901fa-ed4d-43c8-ac10-18324addcf49/2024-hsc-business-studies-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/business-studies-2023-hsc-exam-pack",
@@ -3970,6 +4122,20 @@
     "course_name": "Chemistry",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chemistry-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9d442d56-c9a3-4250-b2d0-1cf9d9baac71/2024-hsc-chemistry.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e2e17871-dd65-46eb-b9bf-ac4fffc1f0ff/2024-hsc-chemistry-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chemistry-2023-hsc-exam-pack",
         "docs": [
@@ -4320,6 +4486,24 @@
   {
     "course_name": "Chinese Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chinese-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/751e6bee-2376-490b-beb5-15b140695ce9/2024-hsc-chinese-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e16ae3c8-8aee-414a-8ff1-b99e313e2546/2024-hsc-chinese-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/bc3ea975-6666-4209-8567-f89aaa3c2469/2024-hsc-chinese-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chinese-beginners-2023-hsc-exam-pack",
@@ -4756,6 +4940,24 @@
     "course_name": "Chinese Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chinese-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/359d2c4d-7a0c-4e68-93f0-6898bca873cf/2024-hsc-chinese-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1114950b-4e86-4503-9ef2-644851c3a006/2024-hsc-chinese-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2a64e4cc-b86f-4feb-9ed8-88b583e2acf8/2024-hsc-chinese-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chinese-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -5154,6 +5356,24 @@
   {
     "course_name": "Chinese Extension",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chinese-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/683d9b45-3f01-48f6-8b71-9d70d0178e48/2024-hsc-chinese-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6b3bf3b5-1956-4521-b1c0-34b2eed3831d/2024-hsc-chinese-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f3959927-050f-41c1-a831-29c1266779ea/2024-hsc-chinese-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chinese-extension-2023-hsc-exam-pack",
@@ -5557,6 +5777,24 @@
   {
     "course_name": "Chinese and Literature",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chinese-and-literature-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f3d95408-6cd6-4d7b-a443-a7cefdff9d38/2024-hsc-chinese-and-lit-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/d52204c3-05c3-46b5-b180-1741c1a329ab/2024-hsc-chinese-and-lit.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9492c8ef-8655-46bb-95e7-48315e223a0a/2024-hsc-chinese-and-literature-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chinese-and-literature-2023-hsc-exam-pack",
@@ -6274,6 +6512,24 @@
     "course_name": "Chinese in Context",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/chinese-in-context-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/de7632a3-db52-40e3-8b6f-259a64af5ba5/2024-hsc-chinese-in-context-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4e1f3074-7822-43ad-adc5-aef2dddc4779/2024-hsc-chinese-in-context.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ecc5926b-385c-4564-9dd7-3098d8b30668/2024-hsc-chinese-in-context-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/chinese-in-context-2023-hsc-exam-pack",
         "docs": [
@@ -6642,6 +6898,20 @@
     "course_name": "Classical Greek Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/classical-greek-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2ba3458c-3ef1-4e86-946b-e042487d212b/2024-hsc-cl-greek-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/397e591b-131c-4e74-8a8c-e976ddc3e1af/2024-hsc-classical-greek-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/classical-greek-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -6989,6 +7259,20 @@
     "course_name": "Classical Greek Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/classical-greek-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/45b5d178-9898-4f47-94c7-c5d5cdb62967/2024-hsc-cl-greek-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/246d81cd-c31f-4ec8-8e15-0a437d10e217/2024-hsc-classical-greek-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/classical-greek-extension-2023-hsc-exam-pack",
         "docs": [
@@ -7335,6 +7619,20 @@
   {
     "course_name": "Classical Hebrew Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/classical-hebrew-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5372acf0-88c7-40c1-b378-6337690e2b07/2024-hsc-cl-hebrew-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3136dd0f-6e23-4a64-b0f6-ebb3906f82cc/2024-hsc-classical-hebrew-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/classical-hebrew-continuers-2023-hsc-exam-pack",
@@ -7691,6 +7989,20 @@
     "course_name": "Classical Hebrew Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/classical-hebrew-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f88a7649-6302-4e12-a6ce-51f938080262/2024-hsc-cl-hebrew-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c5aa24c8-30c1-402c-b8e5-845a4259f5fc/2024-hsc-classical-hebrew-ext-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/classical-hebrew-extension-2023-hsc-exam-pack",
         "docs": [
@@ -8037,6 +8349,20 @@
   {
     "course_name": "Community and Family Studies",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/community-and-family-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/7ad12247-b658-4d98-ba9c-d17753328189/2024-hsc-cafs.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/95de4e38-5f08-44da-9ddc-0742bcf1220a/2024-hsc-cafs-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/community-and-family-studies-2023-hsc-exam-pack",
@@ -8397,6 +8723,20 @@
     "course_name": "Construction",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/construction-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/84d4ddd1-e2ef-42bd-b46d-f1ac62c6a121/2024-hsc-vet-construction.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/530f586c-e048-489d-9303-11efb0ac0b17/2024-hsc-vet-construction-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/construction-2023-hsc-exam-pack",
         "docs": [
@@ -8747,6 +9087,24 @@
   {
     "course_name": "Croatian Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/croatian-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1f205dbb-807e-4ccb-8b48-ee858d651205/2024-hsc-croatian-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/39d39c14-8cf9-48cf-9c2a-fb3f6e8926c8/2024-hsc-croatian.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/46cf4fef-bae9-40fd-b820-4185fb17f15b/2024-hsc-croatian-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/croatian-continuers-2023-hsc-exam-pack",
@@ -9262,6 +9620,24 @@
     "course_name": "Dance",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/dance-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/725d44a5-a8dd-413d-bfa9-4c22a21938b0/2024-hsc-dance-s1-core.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper  - Section 1"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6a919af8-c020-479d-956a-eb1e82d91b67/2024-hsc-dance-s2-major.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper  - Section 2"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1ad3193a-34bd-40f4-9c26-4ff2d02e124f/2024-hsc-dance-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/dance-2023-hsc-exam-pack",
         "docs": [
@@ -9641,6 +10017,20 @@
     "course_name": "Design and Technology",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/design-and-technology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3a58561b-5576-4f7d-8db3-87d13f326c24/2024-hsc-design-and-technology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/96fa77c7-4331-46f7-8f05-65f3789d37dc/2024-hsc-design-and-tech-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/design-and-technology-2023-hsc-exam-pack",
         "docs": [
@@ -9988,6 +10378,20 @@
     "course_name": "Drama",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/drama-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/92011c00-17ee-4859-9435-2abde992e4d1/2024-hsc-drama.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/940c6094-fe81-4c2f-baae-ac8b51900ecd/2024-hsc-drama-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/drama-2023-hsc-exam-pack",
         "docs": [
@@ -10322,6 +10726,11 @@
   {
     "course_name": "Dutch Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/dutch-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/dutch-continuers-2023-hsc-exam-pack",
@@ -10848,6 +11257,20 @@
     "course_name": "Earth and Environmental Science",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/earth-and-environmental-science-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ff2dc1ac-0813-4d19-aa40-862f578e20b2/2024-hsc-earth-and-environmental-science.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a74aee6d-2c71-4b87-8cb4-34d1dc503751/2024-hsc-earth-and-environmental-science-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/earth-and-environmental-science-2023-hsc-exam-pack",
         "docs": [
@@ -11199,6 +11622,20 @@
     "course_name": "Economics",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/economics-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/987ccfd5-ca77-4f1b-b432-158141ac5f36/2024-hsc-economics.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c3df5d23-8bc8-42a1-a43e-02179da39786/2024-hsc-economics-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/economics-2023-hsc-exam-pack",
         "docs": [
@@ -11217,7 +11654,7 @@
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2022/economics-2022-hsc-exam-pack",
         "docs": [
           {
-            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f3c8d13d-ea41-46ca-8282-2ef78d98107a/2022-hsc-economics_Redacted.pdf?MOD=AJPERES",
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f3c8d13d-ea41-46ca-8282-2ef78d98107a/2022-hsc-economics.pdf?MOD=AJPERES",
             "doc_name": "HSC Exam Paper"
           },
           {
@@ -11546,6 +11983,20 @@
     "course_name": "Electrotechnology",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/electrotechnology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/cbca1af7-1d9c-4aa6-936c-3a4a660f5316/2024-hsc-vet-electrotechnology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/11f0653f-db75-4c07-814b-bd9c8b1486a7/2024-hsc-vet-electrotechnology-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/electrotechnology-2023-hsc-exam-pack",
         "docs": [
@@ -11776,6 +12227,20 @@
   {
     "course_name": "Engineering Studies",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/engineering-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ebc808d2-3de0-49e8-9499-b6e2afe9f7a3/2024-hsc-engineering-studies.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/73dfe20f-56cf-4701-a595-4ad2cb180cc1/2024-hsc-engineering-studies-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/engineering-studies-2023-hsc-exam-pack",
@@ -12132,6 +12597,28 @@
     "course_name": "English Advanced",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/english-advanced-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/fcfbabdd-0c55-4f33-ae3a-2c7146d68d6a/2024-hsc-english-adv-paper-1.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper 1"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/792ecbd7-75c3-4c1e-a7be-b7231c9b5d96/2024-hsc-english-adv-paper-2.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper 2"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4915811a-dc63-4dfd-804f-e199ab0d1af2/2024-hsc-english-adv-paper-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "Paper 1 Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/7431e630-d788-4b09-8166-f5f898894d69/2024-hsc-english-adv-paper-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "Paper 2 Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/english-advanced-2023-hsc-exam-pack",
         "docs": [
@@ -12180,7 +12667,7 @@
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2021/english-advanced-2021-hsc-exam-pack",
         "docs": [
           {
-            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ea67feba-dee3-45ad-a303-8a9c647611d3/2021-hsc-english-advanced-p1.pdf?MOD=AJPERES",
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ea67feba-dee3-45ad-a303-8a9c647611d3/2021-hsc-english-advanced-p1_unredacted+20240516.pdf?MOD=AJPERES",
             "doc_name": "HSC Exam Paper 1"
           },
           {
@@ -12647,6 +13134,36 @@
     "course_name": "English EAL/D",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/english-eald-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9f25aff6-deec-405f-8282-89a438418b6c/2024-hsc-english-eald-paper-1.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) HSC Exam Paper - 1"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a1a34ed0-e6fe-49de-9659-6731cef98d62/2024-hsc-english-eald-paper-2.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) HSC Exam Paper - 2"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/8cc87e51-0373-48e7-8c09-0b08ef15223f/2024-hsc-english-eald-listening.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) HSC Exam Paper - Listening"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a9af77ba-010f-41c5-82a8-2c96e3df9e41/2024-hsc-english-eald-listening-mg.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) Listening Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/04ec4070-cfc6-4b46-9b74-8998d0cf27bd/2024-hsc-english-eald-paper-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) Paper 1 Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ddc81385-d3d5-474c-98f6-3aa6f3f04307/2024-hsc-english-eald-paper-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "English (Eald) Paper 2 Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/english-eald-2023-hsc-exam-pack",
         "docs": [
@@ -12801,6 +13318,20 @@
   {
     "course_name": "English Extension 1",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/english-extension-1-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/472e6de6-77a3-49bd-a1fe-2df433dde36d/2024-hsc-english-ext-1.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b7b64984-6bc7-46c4-b63a-440970dc9918/2024-hsc-english-extension-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/english-extension-1-2023-hsc-exam-pack",
@@ -13287,6 +13818,28 @@
     "course_name": "English Standard",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/english-standard-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/fe304e5f-f65b-4426-8981-a6338caa85c6/2024-hsc-english-std-paper-1.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper 1"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0ed9c273-96a4-4c39-b69a-923d4a03985a/2024-hsc-english-std-paper-2.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper 2"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4effcd5e-d164-4188-a0da-1998a49e9fb3/2024-hsc-english-std-paper-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "Paper 1 Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/32babfa0-304e-4300-9154-c718b72dcbaf/2024-hsc-english-std-paper-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "Paper 2 Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/english-standard-2023-hsc-exam-pack",
         "docs": [
@@ -13295,7 +13848,7 @@
             "doc_name": "HSC Exam Paper 1"
           },
           {
-            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5df2db5a-7b32-4301-a0cf-b65ce5e63473/2023-hsc-english-std-paper-2.pdf?MOD=AJPERES",
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5df2db5a-7b32-4301-a0cf-b65ce5e63473/2023-hsc-english-std-paper-2+20240328.pdf?MOD=AJPERES",
             "doc_name": "HSC Exam Paper 2"
           },
           {
@@ -13317,7 +13870,7 @@
             "doc_name": "HSC Exam Paper 1"
           },
           {
-            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f335905d-2846-4cb2-937b-d70bd2c2f3d4/2022-hsc-english-standard-p2.pdf?MOD=AJPERES",
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f335905d-2846-4cb2-937b-d70bd2c2f3d4/2022-hsc-english-standard-p2_20240319.pdf?MOD=AJPERES",
             "doc_name": "HSC Exam Paper 2"
           },
           {
@@ -13774,6 +14327,20 @@
     "course_name": "English Studies",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/english-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/232318d3-7e78-46bd-8f4e-655c8e638412/2024-hsc-english-studies.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/38e968af-8974-4181-be14-0ba36277274a/2024-hsc-english-studies-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/english-studies-2023-hsc-exam-pack",
         "docs": [
@@ -13848,6 +14415,20 @@
   {
     "course_name": "Entertainment Industry",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/entertainment-industry-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a4b7c5fd-6903-4960-9a9a-1d7e20ba4af7/2024-hsc-vet-entertainment.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0895f2e7-0b7e-4895-aa99-8fc2ed4e76d6/2024-hsc-vet-entertainment-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/entertainment-industry-2023-hsc-exam-pack",
@@ -14153,6 +14734,24 @@
   {
     "course_name": "Filipino Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/filipino-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ace193ff-b27b-42f7-9fdf-e32157382698/2024-hsc-filipino-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e1ce2903-75ec-4d6d-952d-f7af91072f8d/2024-hsc-filipino.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6095fd11-72bb-425c-a755-b04c3aadcd83/2024-hsc-filipino-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/filipino-continuers-2023-hsc-exam-pack",
@@ -14561,6 +15160,20 @@
     "course_name": "Financial Services",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/financial-services-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e39e8d2a-042e-4826-9b3f-83e036e35eea/2024-hsc-vet-financial-services.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/de3f3736-4286-4940-8614-a5e877d33535/2024-hsc-vet-financial-services-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/financial-services-2023-hsc-exam-pack",
         "docs": [
@@ -14719,6 +15332,20 @@
   {
     "course_name": "Food Technology",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/food-technology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ac6a28a5-8d85-4124-b2f6-dd8198d4cf5a/2024-hsc-food-technology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/24614ed5-b474-452e-bbf2-af2351e42d64/2024-hsc-food-tech-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/food-technology-2023-hsc-exam-pack",
@@ -15066,6 +15693,24 @@
   {
     "course_name": "French Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/french-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b98e78ae-fa30-4a8e-88c0-d137b6d33d8b/2024-hsc-french-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3d0f746a-b8e8-4f73-9b08-622178d653ae/2024-hsc-french-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/01eab6ae-bf9e-4fa7-8eed-ba209445d2bc/2024-hsc-french-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/french-beginners-2023-hsc-exam-pack",
@@ -15498,6 +16143,24 @@
     "course_name": "French Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/french-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/32ef2aa0-c66f-4222-9550-14dbadddc7f5/2024-hsc-french-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/908b3671-0dc0-4bcf-81fe-d466831adc1e/2024-hsc-french-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/58ae5347-8e1c-4429-8541-e4dc28b5a502/2024-hsc-french-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/french-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -15901,6 +16564,24 @@
     "course_name": "French Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/french-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/68ff8f3d-7477-4bd9-90fa-3b4a506fca22/2024-hsc-french-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/dd92cc3a-a90e-4ed7-9e40-bd8c91572c12/2024-hsc-french-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b809dde8-3219-4819-b6db-64dfeea6fbe1/2024-hsc-french-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/french-extension-2023-hsc-exam-pack",
         "docs": [
@@ -16300,6 +16981,20 @@
     "course_name": "Geography",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/geography-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3cb03d52-2f89-4f90-9aeb-58c882be6fd7/2024-hsc-geography.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c5f0df2d-c4d1-466b-8ad6-a68f8d8b6e72/2024-hsc-geography-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/geography-2023-hsc-exam-pack",
         "docs": [
@@ -16654,6 +17349,24 @@
   {
     "course_name": "German Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/german-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e52f97ce-7d57-4ac1-8f51-a6cd9c7a1a32/2024-hsc-german-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/78b5f152-c0d2-4fbf-acb6-d8423dfa2b38/2024-hsc-german-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/cf126f45-52e8-4215-90ca-b975ded91fff/2024-hsc-german-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/german-beginners-2023-hsc-exam-pack",
@@ -17086,6 +17799,24 @@
     "course_name": "German Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/german-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/84d48864-6d8f-4ddf-aedb-f7c4961b6c4d/2024-hsc-german-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/36d8ae95-7f5e-476e-945f-8a03f5e05dd6/2024-hsc-german-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ff0ee054-8c64-4440-98c7-eda2fd78116a/2024-hsc-german-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/german-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -17485,6 +18216,24 @@
     "course_name": "German Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/german-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/14b4e2b7-556d-4e18-bbb5-cd94b3c0006d/2024-hsc-german-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a18435fe-a225-48d3-bb4b-a6067da65074/2024-hsc-german-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3dd9c1f1-5d6a-4b2a-8631-5c087aec53c4/2024-hsc-german-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/german-extension-2023-hsc-exam-pack",
         "docs": [
@@ -17880,6 +18629,11 @@
     "course_name": "Hindi Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/hindi-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/hindi-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -17924,6 +18678,20 @@
   {
     "course_name": "History Extension",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/history-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/357eb29b-13ed-4386-a385-e03714f44c8c/2024-hsc-history-extension.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/7ad95b75-e147-4a76-b793-bdf7ccbba4f7/2024-hsc-history-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/history-extension-2023-hsc-exam-pack",
@@ -18255,6 +19023,28 @@
   {
     "course_name": "Hospitality",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/hospitality-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/da5d9774-52cd-4da6-8b40-8fe6ea8785aa/2024-hsc-vet-hospitality-food-and-beverage.pdf?MOD=AJPERES",
+            "doc_name": "Food And Beverage HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/04561a16-47e7-42e3-abfe-4a729d47288c/2024-hsc-vet-hospitality-kitchen-op-and-cookery.pdf?MOD=AJPERES",
+            "doc_name": "Kitchen Operations And Cookery HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5b340b7d-cf53-4ba5-b2a7-3c0283d30ae5/2024-hsc-vet-hospitality-food-mg.pdf?MOD=AJPERES",
+            "doc_name": "Food And Beverage Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/57d8daad-7638-4168-b43f-e9f3b70ead2b/2024-hsc-vet-hospitality-kitchen-mg.pdf?MOD=AJPERES",
+            "doc_name": "Kitchen Operations And Cookery Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/hospitality-2023-hsc-exam-pack",
@@ -18671,6 +19461,20 @@
     "course_name": "Human Services",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/human-services-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6be46b0a-54c2-4ced-b739-ed66655cd5e1/2024-hsc-vet-human-services.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c0bc06c1-5eeb-4063-a10c-ded14ec7ff2c/2024-hsc-human-services-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/human-services-2023-hsc-exam-pack",
         "docs": [
@@ -18852,6 +19656,11 @@
     "course_name": "Hungarian Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/hungarian-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/hungarian-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -18891,6 +19700,24 @@
   {
     "course_name": "Indonesian Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/indonesian-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/515379d2-6ff2-4c28-8b89-69b4f0851fb9/2024-hsc-indo-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/49e952fa-cb82-4a02-ae61-d54faa83a85f/2024-hsc-indo-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper – Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0ee498f4-3ca6-49ef-b7af-adcb3115ad1b/2024-hsc-indonesian-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/indonesian-beginners-2023-hsc-exam-pack",
@@ -19327,6 +20154,24 @@
     "course_name": "Indonesian Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/indonesian-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e34a6b26-1f70-4e9e-8b74-5d850a78a20d/2024-hsc-indo-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b7d09c65-f473-4ad0-9852-b523bbb0d828/2024-hsc-indo-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0fce7b13-8f2b-44b3-92ac-ab871509907b/2024-hsc-indonesian-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/indonesian-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -19730,6 +20575,24 @@
     "course_name": "Indonesian Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/indonesian-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5f2b0ede-1df0-4e0f-a91f-3e03cdfe5696/2024-hsc-indonesian-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c2d39373-0949-4938-85fd-d71dd2ed2ba4/2024-hsc-indo-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/50496383-dff2-4367-870c-da7987c5bfb6/2024-hsc-indonesian-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/indonesian-extension-2023-hsc-exam-pack",
         "docs": [
@@ -20128,6 +20991,24 @@
   {
     "course_name": "Indonesian and Literature",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/indonesian-and-literature-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/712eaf7f-f392-43ef-a9ac-2877ef8e6de1/2024-hsc-indo-and-lit.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9d78b155-895a-407c-9b37-03ae25d736ab/2024-hsc-indo-and-lit-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/66a3116d-82c6-42a4-a6d0-be36521b192e/2024-hsc-indonesian-and-literature-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/indonesian-and-literature-2023-hsc-exam-pack",
@@ -21080,6 +21961,60 @@
   {
     "course_name": "Industrial Technology",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/industrial-technology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/170e0af3-1a45-4fb2-8172-17450892a53f/2024-hsc-indus-tech-automotive.pdf?MOD=AJPERES",
+            "doc_name": "Automotive HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f307cff0-855b-4928-ba84-3cf9bb4d1dfc/2024-hsc-indus-tech-electronics.pdf?MOD=AJPERES",
+            "doc_name": "Electronics HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/72b82973-4c87-48be-adbd-a00b300aa793/2024-hsc-indus-tech-graphics.pdf?MOD=AJPERES",
+            "doc_name": "Graphics HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/96d313ea-75e2-4615-b7dc-a5c1d412f653/2024-hsc-indus-tech-metal-and-engineering.pdf?MOD=AJPERES",
+            "doc_name": "Metal And Engineering HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/70649884-4702-47ce-9166-dc23d4e49d3c/2024-hsc-indus-tech-multimedia.pdf?MOD=AJPERES",
+            "doc_name": "Multimedia HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/204cce33-a330-4ed6-a8de-75ea37a2301a/2024-hsc-indus-tech-timber.pdf?MOD=AJPERES",
+            "doc_name": "Timber Products And Furniture HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/fbff8881-f702-4d42-9ac0-06afaf068dd2/2024-hsc-Indt-automotive-mg.pdf?MOD=AJPERES",
+            "doc_name": "Automotive Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6b357b18-7320-477d-b983-ed11d278d3cf/2024-hsc-indt-electronics-mg.pdf?MOD=AJPERES",
+            "doc_name": "Electronics Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c80fd14c-6f73-456e-9716-dde872e02865/2024-hsc-indt-graphics-mg.pdf?MOD=AJPERES",
+            "doc_name": "Graphics Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/82548885-b026-49ed-8d03-8c6efce16842/2024-hsc-indt-metal-mg.pdf?MOD=AJPERES",
+            "doc_name": "Metal And Engineering Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/fd235ac1-8188-42d7-8b44-eea0a3be2614/2024-hsc-indt-multimedia-mg.pdf?MOD=AJPERES",
+            "doc_name": "Multimedia Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0c9f1a87-6cd3-4813-bc83-79267295d7aa/2024-hsc-indt-timber-mg.pdf?MOD=AJPERES",
+            "doc_name": "Timber Products And Furniture Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/industrial-technology-2023-hsc-exam-pack",
@@ -22276,6 +23211,20 @@
     "course_name": "Information Processes and Technology",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/information-processes-and-technology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9df384a0-6244-4d7e-bdae-1acab3b1e843/2024-hsc-information-processes-and-technology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/97c6581d-7b4e-4663-bec3-c9bc25f5a3c9/2024-hsc-ipt-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/information-processes-and-technology-2023-hsc-exam-pack",
         "docs": [
@@ -22618,6 +23567,20 @@
   {
     "course_name": "Information and Digital Technology",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/information-and-digital-technology-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/762270e8-ad35-4ab2-b0f1-87323b3e3d42/2024-hsc-vet-information-and-digital-technology.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6fcc7d49-b4bd-43be-8bb7-2528279d50dd/2024-hsc-vet-idt-mg.pdf?MOD=AJPERES",
+            "doc_name": "Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/information-and-digital-technology-2023-hsc-exam-pack",
@@ -23110,6 +24073,20 @@
     "course_name": "Investigating Science",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/investigating-science-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ac490858-435b-4be3-aeb7-cefc3cdb6bfa/2024-hsc-investigating-science.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f9adc871-b9d2-4b9c-88cf-1cfec41e5cbe/2024-hsc-investigating-science-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/investigating-science-2023-hsc-exam-pack",
         "docs": [
@@ -23184,6 +24161,24 @@
   {
     "course_name": "Italian Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/italian-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b5b46397-313b-43d4-b7d7-d72667b3b76f/2024-hsc-italian-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a4c20863-c49f-45ed-be01-1c818a4e923b/2024-hsc-italian-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0837dab0-6486-497e-b159-eae90eef3480/2024-hsc-italian-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/italian-beginners-2023-hsc-exam-pack",
@@ -23636,6 +24631,24 @@
     "course_name": "Italian Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/italian-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4844f228-7657-4c74-8984-163d28f0d29b/2024-hsc-italian-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/56869f50-383f-4cb9-afe0-828a6e99e452/2024-hsc-italian-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ba966a98-d2c5-4142-912d-650834bd9d4f/2024-hsc-italian-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/italian-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -24039,6 +25052,20 @@
     "course_name": "Italian Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/italian-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c15abe42-1ce0-4e39-b513-af75a46597b3/2024-hsc-italian-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6f7ebeba-6ceb-42ef-bc59-e458b8ed990b/2024-hsc-italian-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/italian-extension-2023-hsc-exam-pack",
         "docs": [
@@ -24438,6 +25465,24 @@
     "course_name": "Japanese Beginners",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/japanese-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/074d8b6f-c004-4e51-bdd8-4ba4df309765/2024-hsc-japanese-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/66897091-8c63-4173-bc85-f90db9f82717/2024-hsc-japanese-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/56602850-a0ba-4ae3-9889-bda397fcc899/2024-hsc-japanese-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/japanese-beginners-2023-hsc-exam-pack",
         "docs": [
@@ -24818,6 +25863,24 @@
   {
     "course_name": "Japanese Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/japanese-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/cc375dc3-7a7b-44ea-85af-f7c938c32c8b/2024-hsc-jap-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/23846a14-4511-4f96-ad4c-bd3f1f6fcc49/2024-hsc-jap-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2524f176-9284-4c19-91b5-46054ede8f97/2024-hsc-japanese-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/japanese-continuers-2023-hsc-exam-pack",
@@ -25229,6 +26292,24 @@
   {
     "course_name": "Japanese Extension",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/japanese-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/8e5a860f-edbe-4285-a9cb-6d798dac2a83/2024-hsc-japanese-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b2308e9a-d5bc-4a07-a20b-b6f96f9cdc34/2024-hsc-japanese-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1cb78faa-5871-45e0-ba74-e9d3ce30c035/2024-hsc-japanese-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/japanese-extension-2023-hsc-exam-pack",
@@ -26333,6 +27414,24 @@
     "course_name": "Japanese in Context",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/japanese-in-context-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0f79b09d-ca34-4ed2-94c0-7d666fc30a01/2024-hsc-japanese-in-context-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1b78553e-de47-4070-ac81-2f20e349153d/2024-hsc-japanese-in-context.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b9fbe717-5987-486b-b601-6151bbea5322/2024-hsc-japanese-in-context-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/japanese-in-context-2023-hsc-exam-pack",
         "docs": [
@@ -26683,6 +27782,11 @@
     "course_name": "Khmer Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/khmer-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/khmer-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -26722,6 +27826,24 @@
   {
     "course_name": "Korean Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/korean-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/99294ce4-00fe-4b74-850e-e85f3a721776/2024-hsc-korean-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2665559f-c26a-4cf7-a52a-e69b2ff4f455/2024-hsc-korean-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c8438d47-7c29-4c02-bceb-a7bea130ade7/2024-hsc-korean-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/korean-beginners-2023-hsc-exam-pack",
@@ -26853,6 +27975,24 @@
   {
     "course_name": "Korean Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/korean-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/180365e6-22bc-490a-8d87-a0dce8d9e1cb/2024-hsc-korean-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/93a2577f-7f1b-449b-aa09-5ac9dc561ec5/2024-hsc-korean-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b46206ed-526f-4ce4-85ef-4069262164f5/2024-hsc-korean-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/korean-continuers-2023-hsc-exam-pack",
@@ -27230,6 +28370,24 @@
   {
     "course_name": "Korean and Literature",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/korean-and-literature-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/707d7bc1-79d4-4533-9bd3-5d2bbc6cb9c7/2024-hsc-korean-and-lit-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/eca5135b-3b91-4df0-9413-124976975989/2024-hsc-korean-and-lit.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/86656063-c728-461b-b3a4-4aab0ed8700e/2024-hsc-korean-and-literature-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/korean-and-literature-2023-hsc-exam-pack",
@@ -27971,6 +29129,24 @@
     "course_name": "Korean in Context",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/korean-in-context-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/059ae705-42bf-49d3-b0b2-555edb43cfd6/2024-hsc-korean-in-context-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/08c8b6c7-b681-457d-8afa-bfcb1324e4d7/2024-hsc-korean-in-context.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b97eeab3-16c9-4d36-a1bc-57fd3cc7727c/2024-hsc-korean-in-context-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/korean-in-context-2023-hsc-exam-pack",
         "docs": [
@@ -28347,6 +29523,20 @@
     "course_name": "Latin Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/latin-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/25861afa-6425-4163-a5d6-9cde934a8464/2024-hsc-latin-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3a3518f1-9038-4a0f-8945-af6eb1670946/2024-hsc-latin-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/latin-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -28710,6 +29900,20 @@
     "course_name": "Latin Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/latin-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2e1d5bce-7e7f-4c8c-be06-26e75790bab3/2024-hsc-latin-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a723ba2c-586a-4380-8ce1-956f49523030/2024-hsc-latin-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/latin-extension-2023-hsc-exam-pack",
         "docs": [
@@ -29052,6 +30256,20 @@
   {
     "course_name": "Legal Studies",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/legal-studies-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0bb43120-a55d-4c95-b018-300537f4616d/2024-hsc-legal-studies.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/40ea7fcd-e959-4ed0-a78b-f9e414944762/2024-hsc-legal-studies-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/legal-studies-2023-hsc-exam-pack",
@@ -29426,6 +30644,11 @@
   {
     "course_name": "Macedonian Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/macedonian-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/macedonian-continuers-2023-hsc-exam-pack",
@@ -29820,6 +31043,20 @@
     "course_name": "Mathematics Advanced",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/mathematics-advanced-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1e8c900d-d848-4ace-ae74-64a372e8af17/2024-hsc-maths-adv.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/dc7b0ae3-1c18-43f4-95b1-db86f18be343/2024-hsc-maths-adv-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/mathematics-advanced-2023-hsc-exam-pack",
         "docs": [
@@ -29880,6 +31117,20 @@
   {
     "course_name": "Mathematics Extension 1",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/mathematics-extension-1-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/19eef92a-04ca-40fc-9bd6-a82f594bcf74/2024-hsc-maths-ext-1.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9fe8c5c2-161a-4f91-baf6-5c59c862fdcf/2024-hsc-maths-ext-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/mathematics-extension-1-2023-hsc-exam-pack",
@@ -30245,6 +31496,20 @@
   {
     "course_name": "Mathematics Extension 2",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/mathematics-extension-2-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f852f74a-eddb-4673-b25e-0972424bb966/2024-hsc-maths-ext-2.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ccd3eec6-76ac-464f-b0d2-ecf60de040b0/2024-hsc-maths-ext-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/mathematics-extension-2-2023-hsc-exam-pack",
@@ -30904,6 +32169,28 @@
     "course_name": "Mathematics Standard",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/mathematics-standard-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/d586172a-5107-4630-a28b-5921f392361b/2024-hsc-maths-std-1.pdf?MOD=AJPERES",
+            "doc_name": "1 HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4ee63261-4c5a-48af-a8e3-4ad31aad63f6/2024-hsc-maths-std-2.pdf?MOD=AJPERES",
+            "doc_name": "2 HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/acdf21f3-cd98-416d-b3ab-23cfd17ab8f5/2024-hsc-maths-std-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "1 HSC Marking Guidelines"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a22e40c7-b56c-4ab6-bd5d-199ab95200bb/2024-hsc-maths-std-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "2 HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/mathematics-standard-2023-hsc-exam-pack",
         "docs": [
@@ -31319,6 +32606,24 @@
   {
     "course_name": "Modern Greek Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/modern-greek-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/ccd3285d-5338-4301-9587-7e3dcc17a1ad/2024-hsc-modern-greek-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f85c6733-6b78-4d56-837f-5fdef62056a7/2024-hsc-modern-greek-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/fc73e0c6-c3ed-42c1-8b45-71e5e7fcb0a0/2024-hsc-mod-greek-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/modern-greek-beginners-2023-hsc-exam-pack",
@@ -31759,6 +33064,24 @@
     "course_name": "Modern Greek Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/modern-greek-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/5793afc9-823f-4c3f-88bc-de6119fa6035/2024-hsc-modern-greek-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c59ead83-e2a1-45cf-8ed8-622da7410187/2024-hsc-modern-greek-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f2e54cc0-f908-47f0-9bc9-02e58c373bff/2024-hsc-mod-greek-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/modern-greek-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -32162,6 +33485,24 @@
     "course_name": "Modern Greek Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/modern-greek-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/bddb2279-f116-46ef-a4a7-3ba09ea24bbd/2024-hsc-modern-greek-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/13518c9e-bbb0-4dee-a7c0-49f4da2cfd09/2024-hsc-modern-greek-extension.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2aa96aa9-e877-41a5-bc2d-4d0c6d90428c/2024-hsc-mod-greek-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/modern-greek-extension-2023-hsc-exam-pack",
         "docs": [
@@ -32556,6 +33897,24 @@
   {
     "course_name": "Modern Hebrew Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/modern-hebrew-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/85b2778f-f645-43ec-954e-d6f43ae1f816/2024-hsc-modern-hebrew-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/58f3458a-150b-4c9a-8124-5b7f9110af14/2024-hsc-modern-hebrew-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/33960018-e0e6-4924-aafe-ad2bb1890046/2024-hsc-mod-hebrew-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/modern-hebrew-continuers-2023-hsc-exam-pack",
@@ -32964,6 +34323,20 @@
     "course_name": "Modern History",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/modern-history-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e29c2cd5-a0cc-43eb-9a8f-9702b06a175a/2024-hsc-modern-history.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2fab303e-6c02-4da8-8335-ccba7952ab1e/2024-hsc-modern-history-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/modern-history-2023-hsc-exam-pack",
         "docs": [
@@ -33319,6 +34692,20 @@
     "course_name": "Music 1",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/music-1-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a9043a49-6645-41d8-985a-22b26c0f6ca2/2024-hsc-music-1.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/bd9d5d80-f753-4669-a18e-a3a68e4d5605/2024-hsc-music-1-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/music-1-2023-hsc-exam-pack",
         "docs": [
@@ -33665,6 +35052,20 @@
   {
     "course_name": "Music 2",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/music-2-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f587c004-c599-4757-a399-4e88862c1f77/2024-hsc-music-2.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/248a5de3-b03d-4bda-b666-427968431d06/2024-hsc-music-2-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/music-2-2023-hsc-exam-pack",
@@ -34072,6 +35473,11 @@
     "course_name": "Persian Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/persian-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/persian-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -34119,6 +35525,20 @@
   {
     "course_name": "Personal Development, Health and Physical Education",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/pdhpe-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/35dcd5b4-6751-4b6b-b63b-4622f52f013a/2024-hsc-pdhpe.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/76edc23b-50b8-448a-8585-db54491069ad/2024-hsc-pdhpe-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/pdhpe-2023-hsc-exam-pack",
@@ -34479,6 +35899,20 @@
     "course_name": "Physics",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/physics-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/046d9058-4c19-4b39-a19e-7cc4c42ac42e/2024-hsc-physics.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b6e51962-b082-420c-99c1-19508be57d91/2024-hsc-physics-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/physics-2023-hsc-exam-pack",
         "docs": [
@@ -34830,6 +36264,11 @@
     "course_name": "Polish Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/polish-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/polish-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -34870,6 +36309,11 @@
     "course_name": "Portuguese Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/portuguese-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/portuguese-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -34909,6 +36353,20 @@
   {
     "course_name": "Primary Industries",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/primary-industries-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/60fbfc6d-6289-41aa-9a53-66fb35d8acf8/2024-hsc-vet-primary-industries.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/4a023c82-9c7d-4c3a-958f-2125a0d5379c/2024-hsc-vet-primary-industries-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/primary-industries-2023-hsc-exam-pack",
@@ -35257,6 +36715,11 @@
     "course_name": "Punjabi Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/punjabi-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/punjabi-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -35296,6 +36759,20 @@
   {
     "course_name": "Retail Services",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/retail-services-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b5d7817d-1d24-4e97-9f5f-62ab98435854/2024-hsc-vet-retail-services.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f64c6832-1e58-44fd-a3c1-b12859f0494c/2024-hsc-vet-retail-services-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/retail-services-2023-hsc-exam-pack",
@@ -35691,6 +37168,11 @@
     "course_name": "Russian Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/russian-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/russian-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -35735,6 +37217,16 @@
   {
     "course_name": "Science Extension",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/science-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c00252d4-cdf2-4b90-af1b-2cf7d5f59644/2024-hsc-science-extension-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/science-extension-2023-hsc-exam-pack",
@@ -36080,6 +37572,24 @@
   {
     "course_name": "Serbian Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/serbian-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3c709d5c-a6b1-4562-a246-a344ce849109/2024-hsc-serbian-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3d4895f9-f1c8-460f-8835-ec3dc052b850/2024-hsc-serbian.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/1fda007d-76fa-49c6-ac2e-5591450146c7/2024-hsc-serbian-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/serbian-continuers-2023-hsc-exam-pack",
@@ -36546,6 +38056,20 @@
     "course_name": "Society and Culture",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/society-and-culture-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2b96cf39-15a3-45c5-b1f0-9948b8b01497/2024-hsc-society-and-culture.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3946407c-e349-415d-b043-aab6e497928b/2024-hsc-society-and-culture-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/society-and-culture-2023-hsc-exam-pack",
         "docs": [
@@ -36941,6 +38465,20 @@
     "course_name": "Software Design and Development",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/software-design-and-development-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f8225aa7-0f0e-46c2-9ea1-0b52f664ba21/2024-hsc-software-design-and-development.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/e5aa58d3-6f42-4302-a195-256db5f7ec5b/2024-hsc-software-design-and-dev-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/software-design-and-development-2023-hsc-exam-pack",
         "docs": [
@@ -37291,6 +38829,24 @@
   {
     "course_name": "Spanish Beginners",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/spanish-beginners-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a76de379-24f8-4e5b-8685-bf5bc1302cd2/2024-hsc-spanish-beginners-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/25535e3a-6380-4321-9e45-29f280736106/2024-hsc-spanish-beginners.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/d9c5bf05-4e2d-4ac2-a27b-029dbff23b64/2024-hsc-spanish-beginners-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/spanish-beginners-2023-hsc-exam-pack",
@@ -37731,6 +39287,24 @@
     "course_name": "Spanish Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/spanish-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2bd86db6-4042-4fbf-bf62-2cf22e003fe7/2024-hsc-spanish-continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/7319c542-a6bf-46a5-a35d-2794810186df/2024-hsc-spanish-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c399f0a9-6c9c-4a6e-945c-4fa8a5f5e3f2/2024-hsc-spanish-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/spanish-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -38134,6 +39708,24 @@
     "course_name": "Spanish Extension",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/spanish-extension-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/6d47facb-7f8e-4ed4-ae27-e5b68511bd5e/2024-hsc-spanish-ext-oral.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Oral"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/0163903e-88dc-48e9-9418-223887cd3b19/2024-hsc-spanish-ext.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/647cc5d8-3248-44ec-ba3e-5f7e8b5d0d90/2024-hsc-spanish-ext-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/spanish-extension-2023-hsc-exam-pack",
         "docs": [
@@ -38528,6 +40120,24 @@
   {
     "course_name": "Studies of Religion",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/studies-of-religion-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/94003b35-fd38-4f2a-a800-aaa8764d4a1e/2024-hsc-sor-1.pdf?MOD=AJPERES",
+            "doc_name": "SOR I HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/9b838d51-eda8-4f77-a825-89f9e57789e4/2024-hsc-sor-2.pdf?MOD=AJPERES",
+            "doc_name": "SOR II HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/950c7b1b-c655-4da8-8925-8c377b6e08cc/2024-hsc-studies-of-religion-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/studies-of-religion-2023-hsc-exam-pack",
@@ -38992,6 +40602,24 @@
     "course_name": "Swedish Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/swedish-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c98063c9-faa2-407b-bda3-f7f08dbecc32/2024-hsc-swedish-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/c5054040-31b8-486b-a0c1-995b3ec5fa7a/2024-hsc-swedish.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/172dc6c3-9b6c-4b34-a39a-0dc1546b59c8/2024-hsc-swedish-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/swedish-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -39279,6 +40907,11 @@
     "course_name": "Tamil Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/tamil-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/tamil-continuers-2023-hsc-exam-pack",
         "docs": []
@@ -39318,6 +40951,20 @@
   {
     "course_name": "Textiles and Design",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/textiles-and-design-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/f94eaaee-0f04-4a00-8a80-abfe81d92bc4/2024-hsc-textile-and-design.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/bfe374b9-dc7f-4ae5-b5ae-18d2edcbffe2/2024-hsc-textiles-and-design-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/textiles-and-design-2023-hsc-exam-pack",
@@ -39651,6 +41298,20 @@
   {
     "course_name": "Tourism, Travel and Events",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/tourism-travel-and-events-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/b92e4e64-30cf-411f-b018-c44f4df7ad6c/2024-hsc-vet-tourisim-travel-and-events.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/14aa35f1-ca47-4839-abd9-dc000afe464d/2024-hsc-vet-tourism-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/tourism-travel-and-events-2023-hsc-exam-pack",
@@ -39994,6 +41655,11 @@
   {
     "course_name": "Turkish Continuers",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/turkish-continuers-2024-hsc-exam-pack",
+        "docs": []
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/turkish-continuers-2023-hsc-exam-pack",
@@ -40420,6 +42086,24 @@
     "course_name": "Vietnamese Continuers",
     "packs": [
       {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/vietnamese-continuers-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/be56f7a3-fb55-4489-9cd5-58e312cd7820/2024-hsc-vietnamese+continuers-transcript.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper - Transcript"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/28d626bd-91de-4cee-bde6-81b3b9ba2b5d/2024-hsc-vietnamese-continuers.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/a65c1234-9bbd-47b4-a352-849aad6dd4d3/2024-hsc-vietamese-continuers-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
+      {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/vietnamese-continuers-2023-hsc-exam-pack",
         "docs": [
@@ -40826,6 +42510,20 @@
   {
     "course_name": "Visual Arts",
     "packs": [
+      {
+        "year": "2024",
+        "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2024/visual-arts-2024-hsc-exam-pack",
+        "docs": [
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/3c9d3939-de21-4454-864e-2cb52363f61e/2024-hsc-visual-art.pdf?MOD=AJPERES",
+            "doc_name": "HSC Exam Paper"
+          },
+          {
+            "doc_link": "https://educationstandards.nsw.edu.au/wps/wcm/connect/2fbb143d-8214-47f3-a268-16012ded6255/2024-hsc-visual-arts-mg.pdf?MOD=AJPERES",
+            "doc_name": "HSC Marking Guidelines"
+          }
+        ]
+      },
       {
         "year": "2023",
         "link": "https://educationstandards.nsw.edu.au/wps/portal/nesa/resource-finder/hsc-exam-papers/2023/visual-arts-2023-hsc-exam-pack",
