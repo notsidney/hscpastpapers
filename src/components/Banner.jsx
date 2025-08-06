@@ -29,6 +29,7 @@ export default function Banner() {
           href="https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers"
           target="_blank"
           rel="noopener"
+          className="plausible-event-name=NESA+link"
         >
           official NESA website
         </a>{" "}
@@ -40,6 +41,7 @@ export default function Banner() {
           }
           target="_blank"
           rel="noopener"
+          className="plausible-event-name=Shut+down+info"
         >
           More&nbsp;info
         </a>
