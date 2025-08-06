@@ -31,6 +31,9 @@
   --list-item-active-color: oklch(92% 0.25 285);
   --list-item-active-text-color: oklch(30% 0.25 285);
 
+  --banner-color: oklch(92% 0.25 50);
+  --banner-text-color: oklch(30% 0.25 50);
+
   --done-color: #06c814;
 
   --border-radius: 0.5rem;
@@ -69,6 +72,9 @@
     --header-button-hover: oklch(90% 0.1 285 / 12%);
     --list-item-active-color: oklch(30% 0.1 285);
     --list-item-active-text-color: oklch(100% 0.25 285);
+
+    --banner-color: oklch(30% 0.1 50);
+    --banner-text-color: oklch(95% 0.25 50);
 
     --dialog-shadow: 0 0 0 1px oklch(0% 0.05 285 / 32%),
       0 25px 50px -12px oklch(0% 0.05 285 / 75%),

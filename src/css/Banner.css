@@ -2,11 +2,23 @@
   display: flex;
   align-items: center;
 
-  background-color: var(--list-item-active-color);
-  color: var(--list-item-active-text-color);
+  background-color: var(--banner-color);
+  color: var(--banner-text-color);
   border-radius: calc(var(--border-radius) + 0.5rem);
   min-height: var(--button-height);
   padding-left: 0.5rem;
+  padding-right: 0.75rem;
+
+  line-height: 1.33;
+}
+
+#banner svg {
+  flex-shrink: 0;
+  margin-right: 0.25rem;
+}
+
+#banner span {
+  padding: 0.4rem 0;
 }
 
 #banner .spacer {

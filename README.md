@@ -1,6 +1,25 @@
 # [HSCPastPapers.com](https://hscpastpapers.com/)
 
-Web app to quickly find NSW HSC past exam papers, marking guidelines,
+## Shutting down on 20 October 2025
+
+I built HSCPastPapers.com in 2017 while procrastinating studying for the rest of my HSC exams.
+It was built to make the experience of finding and browsing past HSC exam papers much easier
+compared to the NESA website at the time, including showing the exam PDFs in an iframe, until
+[NESA requested that be removed in 2018](./copyright-changes.md).
+
+Now that NESA has updated their website with improved navigation and search, and
+[changed the URLs](https://github.com/notsidney/hscpastpapers/issues/34)
+to exam paper PDFs, there isn’t a good reason to continue spending time and money to keep this
+up to date.
+
+If you’re looking for past HSC exam papers,
+[visit the official NESA website ↗](https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers)
+
+You can view archived versions of HSCPastPapers.com on the [Internet Archive’s Wayback Machine ↗](https://web.archive.org/web/https://hscpastpapers.com/)
+
+---
+
+A web app to quickly find NSW HSC past exam papers, marking guidelines,
 notes from the marking centre, and more for free. Not affiliated with NESA.
 
 ![Screenshot](https://raw.githubusercontent.com/notsidney/hscpastpapers/main/public/meta.png)
@@ -21,5 +40,5 @@ This web app does not store copies of any NESA documents. No ownership is
 claimed over them. This web app was built for informational purposes only.
 
 On 15 June 2018, changes were made to this web app to comply with
-[NESA Copyright Policy](http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright). Learn more about the changes made due to copyright
-[here](./copyright-changes.md).
+[NESA Copyright Policy](http://educationstandards.nsw.edu.au/wps/portal/nesa/mini-footer/copyright).
+[Learn more](./copyright-changes.md)

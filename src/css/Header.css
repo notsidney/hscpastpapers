@@ -47,7 +47,7 @@ header > .button {
   background-color: transparent;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 68rem) {
   header {
     flex-wrap: wrap;
   }
